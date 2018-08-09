@@ -1,0 +1,32 @@
+						Single Line Comments
+-Single line comments start with //.
+-Ex:
+// Change heading:
+document.getElementById("myH").innerHTML = "My First Page";
+// Change paragraph:
+document.getElementById("myP").innerHTML = "My first paragraph.";
+_____________________________________________________________________
+
+						Multi-line Comments
+-Multi-line comments start with /* and end with */.
+-Ex:
+/*
+The code below will change
+the heading with id = "myH"
+and the paragraph with id = "myP"
+in my web page:
+*/
+document.getElementById("myH").innerHTML = "My First Page";
+document.getElementById("myP").innerHTML = "My first paragraph.";
+_______________________________________________________________________
+
+						Using Comments to Prevent Execution
+-Ex:
+//document.getElementById("myH").innerHTML = "My First Page";
+document.getElementById("myP").innerHTML = "My first paragraph.";
+
+-Ex:
+/*
+document.getElementById("myH").innerHTML = "My First Page";
+document.getElementById("myP").innerHTML = "My first paragraph.";
+*/
