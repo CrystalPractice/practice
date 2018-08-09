@@ -1,0 +1,70 @@
+<!-------- 
+JavaScript Display Possibilities
+JavaScript can "display" data in different ways:
+
+	1.Writing into an HTML element, using innerHTML.
+	2.Writing into the HTML output using document.write().
+	3.Writing into an alert box, using window.alert().
+	4.Writing into the browser console, using console.log().
+----->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Display Possibilities</title>
+</head>
+<body>
+	<h1>Using innerHTML</h1>
+	<p>5 + 6</p>
+	<button type="button" onclick="add()">=</button>
+	<p id="1"></p>
+	<script>
+	function add(){
+	document.getElementById('1').innerHTML = 5 + 6;
+	}
+	</script>
+
+
+	<h1>Using document.write() with Script tag</h1>
+	<script>
+	document.write(5 + 6);
+
+	</script>
+
+
+	<h1>Using document.write() without Script tag</h1>
+	<p>5 + 6</p>
+	<button type="button" onclick="document.write(5+6)">=</button>
+		<!-- Using document.write() after 
+		an HTML document is fully loaded, 
+		will delete all existing HTML-->
+		
+		
+	<h1>Using window.alert()</h1>
+	<script>
+	window.alert(5 + 6);
+	</script>
+	
+	<h1>Using console.log()</h1>
+	<h2>Activate debugging with F12</h2>
+	<p>Select "Console" in the debugger menu. Then click Run again.</p>
+	<script>
+	console.log(5 + 6);
+	</script>
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

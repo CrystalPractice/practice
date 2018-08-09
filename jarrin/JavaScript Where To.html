@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Where To</title>
+	<script>
+	function myFunctionHead(){
+		document.getElementById("content1").innerHTML = "JavaScript in Head";
+	
+	
+	}
+	</script>
+</head>
+<body>
+	<h1>JavaScript in Body</h1>
+	<p id="content"></p>
+	<button type="button" onclick="myFunctionBody()">click here...</button>
+	<script>
+	function myFunctionBody(){
+		document.getElementById('content').innerHTML = 'JavaScript in Body';
+	}
+	</script>
+
+	
+	<h1>JavaScript in Head</h1>
+	<p id="content1"></p>
+	<button type="button" onclick="myFunctionHead()">
+		click here..
+	</button>
+	
+	
+	<h1>External JavaScript</h1>
+	<p id="content2"></p>
+	<button type="button" onclick="myFunctionExternal()">click here...</button>
+	
+	<script src="myScript.js"></script>
+	
+	
+	<h1>External References</h1>
+	<p id="demo"></p>
+	<button type="button" onclick="myFunction()">click here...</button>
+
+	<script src="https://www.w3schools.com/js/myScript.js"></script>
+
+	
+	
+	
+	
+	</body>
+
+
+</html>
