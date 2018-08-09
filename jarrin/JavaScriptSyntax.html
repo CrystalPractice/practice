@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Syntax</title>
+</head>
+<body>
+<h2>JavaScript Numbers</h2>
+
+<p>Number can be written with or without decimals.</p>
+<p id="demo"></p>
+<script>
+	document.getElementById("demo").innerHTML = 10.50000;
+</script>
+________________________________________________________________
+
+<h2>JavaScript Strings</h2>
+
+<p>Strings can be written with double or single quotes.</p>
+
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML = 'Hello!';
+</script>
+_________________________________________________________________
+
+<h2>JavaScript Variables</h2>
+
+<p>In this example, x is defined as a variable.
+Then, x is assigned the value of 6:</p>
+<p id="demo2"></p>
+
+<script>
+	var x;
+	x=6;
+	document.getElementById("demo2").innerHTML = x;
+</script>
+___________________________________________________________________
+
+<h2>JavaScript Operators</h2>
+
+<p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+
+<p id="demo3"></p>
+<script>
+	document.getElementById("demo3").innerHTML = (5+6) * 10;
+</script>
+_________________________________________________________________
+
+<h2>Assigning JavaScript Values</h2>
+
+<p>In JavaScript the = operator is used to assign values to variables.</p>
+
+<p id="demo4"></p>
+
+<script>
+var x, y;
+x = 5;
+y = 6;
+document.getElementById("demo4").innerHTML = x + y;
+</script>
+_________________________________________________________________
+
+<h2>JavaScript Expressions</h2>
+
+<p>Expressions compute to values.</p>
+
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<script>
+var x;
+x=5;
+document.getElementById("demo5").innerHTML = 5 * 10;
+document.getElementById("demo6").innerHTML = x * 10;
+document.getElementById("demo7").innerHTML = "hi" + " " +"!";
+</script>
+_________________________________________________________________
+
+<br>
+ Code after double slashes // or between /* and */ is treated as a comment
+<br>
+_____________________________________________________________________
+
+<h2>JavaScript is Case Sensitive</h2>
+
+<p>Try change lastName to lastname.</p>
+
+<p id="demo8"></p>
+
+<script>
+var lastname, lastName;
+lastName = "Doe";
+lastname = "Peterson";
+document.getElementById("demo8").innerHTML = lastname;
+</script>
+_____________________________________________________________________
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
