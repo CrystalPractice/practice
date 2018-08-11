@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>JavascriptPractiece</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap-4/bootstrap.min.css">
-    <script src="bootstrap-4/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--========================================================================================================================-->
+    <script>
+        function myFunction() {
+            document.getElementById("demo6").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    <!--========================================================================================================================-->
 
 
 </head>
-<body bgcolor="white">
+<body bgcolor="#708090">
 <div class="container">
 
 
-<!--========================================================================================================================-->
+    <!--=======Introduction=================================================================================================================-->
 
 
-<div class="panel panel-primary">
-    <div class="panel-heading">What Can JavaScript Do?</div>
-    <div class="panel-body">
-        <p id="demo1">JavaScript can change HTML content.</p>
-        <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+    <div class="panel panel-primary">
+        <div class="panel-heading">What Can JavaScript Do?</div>
+        <div class="panel-body">
+            <p id="demo1">JavaScript can change HTML content.</p>
+            <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+        </div>
     </div>
-</div>
 
 
 
-<!--========================================================================================================================-->
+    <!--========================================================================================================================-->
 
     <div class="panel panel-primary">
         <div class="panel-heading">JavaScript can change HTML attribute values.</div>
@@ -41,43 +48,173 @@
 
 
 
-<!--========================================================================================================================-->
+    <!--========================================================================================================================-->
 
-<p id="demo2">JavaScript can change the style of an HTML element.</p>
-<button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+    <p id="demo2">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
 
 
-<!--========================================================================================================================-->
+    <!--========================================================================================================================-->
 
-<p id="demo3">JavaScript can hide HTML elements.</p>
-<button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!</button>
+    <p id="demo3">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!</button>
 
-<!--========================================================================================================================-->
+    <!--========================================================================================================================-->
 
-<p>JavaScript can show hidden HTML elements.</p>
-<p id="demo4" style="display:none">Hello JavaScript!</p>
-<button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me!</button>
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="demo4" style="display:none">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me!</button>
 
-<!--========================================================================================================================-->
+    <!--========Where to?================================================================================================================-->
 
-<h2>JavaScript in Body</h2>
-<p id="demo5"></p>
-<script>
-    document.getElementById("demo5").innerHTML = "My First JavaScript";
-</script>
+    <h2>JavaScript in Body</h2>
+    <p id="demo5"></p>
+    <script>
+        document.getElementById("demo5").innerHTML = "My First JavaScript";
+    </script>
 
-<!--========================================================================================================================-->
+    <!--========================================================================================================================-->
 
-<h1>My First Web Page</h1>
-<p>My First Paragraph</p>
+    <!--header part is in head-->
+    <h2>JavaScript in Head</h2>
+    <p id="demo6">A Paragraph.</p>
+    <button type="button" onclick="myFunction()">Try it</button>
 
-<p id="demo"></p>
+    <!--========================================================================================================================-->
 
-<script>
-    document.getElementById("demo").innerHTML = 5 + 6;
-</script>
 
-<!--========================================================================================================================-->
+
+    <!--========================================================================================================================-->
+
+
+    <h1>A Web Page</h1>
+    <p id="demo8">Paragraph8</p>
+    <button type="button" onclick="myFunction8()">Try it</button>
+
+    <script>
+        function myFunction8() {
+            document.getElementById("demo8").innerHTML = "Paragraph8 changed.";
+        }
+    </script>
+
+    <!--=========================================================================================================================-->
+
+    <h2>External JavaScript</h2>
+    <p id="demo9">A Paragraph.</p>
+    <button type="button" onclick="myFunction9()">Try it</button>
+    <p>(myFunction is stored in an external file called "myScript.js")</p>
+    <script src="myScript.js"></script>
+
+    <h2>External JavaScript Advantages</h2>
+    <P>Placing scripts in external files has some advantages:
+    </P>
+    <ul>
+        <li>It separates HTML and code</li>
+        <li>It makes HTML and JavaScript easier to read and maintain</li>
+        <li>Cached JavaScript files can speed up page loads</li>
+    </ul>
+    <p>To add several script files to one page  - use several script tags:</p>
+    <ul>
+        <li>script src="myScript1.js"></li>
+        <li>script src="myScript2.js"></li>
+    </ul>
+
+    <!--========Output===============================================================================================================-->
+
+    <p>JavaScript can "display" data in different ways:</p>
+      <ul>
+          <li>Writing into an HTML element, using innerHTML.</li>
+          <li>Writing into the HTML output using document.write().</li>
+          <li>Writing into an alert box, using window.alert().</li>
+          <li>Writing into the browser console, using console.log().</li>
+      </ul>
+
+    <!--==============================================================================-->
+
+
+    <h2>Using innerHTML</h2>
+    <p>My First Paragraph.</p>
+
+    <p id="demo10"></p>
+
+    <script>
+        document.getElementById("demo10").innerHTML = 5 + 6;
+    </script>
+
+
+<!--=============================================================================================================-->
+
+    <h1>Using document.write()</h1>
+    <p>My first paragraph.</p>
+
+    <script>
+        document.write(5 + 6);
+    </script>
+
+
+    <h1>Using document.write() with button</h1>
+    <p>My first paragraph.</p>
+
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+
+
+<!--=============================================================================================================-->
+
+    <h1>Using window.alert()</h1>
+    <p>My first paragraph.</p>
+
+    <script>
+        window.alert(5 + 6);
+    </script>
+
+<!--=======================================================================================-->
+
+    <h2>Using window.alert()</h2>
+    <script>
+        console.log(5 + 6);
+    </script>
+
+
+
+    <!--=======JavaScript Statements======================================================================-->
+
+    <h2>JavaScript Statements</h2>
+
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+    <p id="demo11"></p>
+
+    <script>
+
+        var x, y, z;  // Statement 1
+        x = 5;        // Statement 2
+        y = 6;        // Statement 3
+        z = x + y;    // Statement 4
+
+        document.getElementById("demo11").innerHTML =
+            "The value of z is " + z + ".";
+
+    </script>
+
+    <!--===========================================================================-->
+
+    <h2>JavaScript Statements</h2>
+    <p>In HTML, JavaScript statements are executed by the browser.</p>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello Dolly.";
+    </script>
+
+
+
+
+
+
+
+
+
 
 
 
