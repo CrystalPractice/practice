@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Statements</title>
+</head>
+<body>
+<h1>A 
+	<b>JavaScript program</b> 
+	is a list of 
+	<b>statements</b> 
+	to be executed by a computer.
+</h1>
+<p id="demo"></p>
+
+<script>
+var x,y,z;
+x = 5;
+y = 6;
+z=x+y;
+
+document.getElementById("demo").innerHTML = "The value of z is" + z + ".";
+</script>
+__________________________________________________________________________
+
+<h1>In HTML, JavaScript statements are executed by the browser.</h1>
+<p id="demo1"></p>
+
+<script>
+	document.getElementById("demo1").innerHTML = "Hello!!!";
+</script>
+_____________________________________________________________________
+<h1>JavaScript statements are separated by semicolons.</h1>
+<p id="demo2"></p>
+<script>
+var a,b,c;
+a=1;
+b=2;
+c= a+b;
+document.getElementById("demo2").innerHTML = c;
+</script>
+_____________________________________________________________________
+
+<h1>Multiple statements on one line is allowed.</h1>
+<p id="demo3"></p>
+<script>
+	var a,b,c;
+	a=1;b=2;c=a+b;
+	document.getElementById("demo3").innerHTML = c;
+</script>
+________________________________________________________________________
+
+<h1>
+The best place to break a code line is after an operator or a comma.
+</h1>
+<p id="demo4"></p>
+<script>
+	document.getElementById("demo4").innerHTML =
+	"Hello!!!";
+</script>
+______________________________________________________________________
+
+<h1>JavaScript code blocks are written between { and }</h1>
+<button type="button" onclick="myFunction1()">click here....</button>
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+<script>
+function myFunction1(){
+	document.getElementById("demo5").innerHTML = "Hi!";
+	document.getElementById("demo6").innerHTML = "Hello!";
+
+}
+</script>
+______________________________________________________________________
+
+
+
+</body>
+
+</html>
