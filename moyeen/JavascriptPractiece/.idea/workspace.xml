@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="177ba64a-2a86-433b-9e5b-ae93d5135155" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavascriptPractiece.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavascriptPractiece.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavascriptPractiece.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavascriptPractiece.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bootstrap-4/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bootstrap-4/bootstrap.min.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,7 +57,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1596" />
+          <entry key="HTML" value="1812" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
@@ -78,7 +72,7 @@
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1596" />
+          <entry key="html" value="1812" />
           <entry key="js" value="2" />
           <entry key="txt" value="4" />
         </counts>
@@ -97,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JavascriptPractiece.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="209" lean-forward="true" selection-start-line="209" selection-end-line="209" />
+            <state relative-caret-position="267">
+              <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#6;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -148,7 +142,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="675" />
     <option name="width" value="698" />
     <option name="height" value="735" />
@@ -199,7 +193,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533970504764" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533971692891" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/WEB/StartIt Main Files" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -225,7 +219,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../jarrin/hide HTML elements.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -233,10 +226,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../jarrin/JavaScriptComments.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../jarrin/JavaScriptStatements.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../jarrin/JavaScriptSyntax.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../jarrin/myScript.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../jarrin/JavaScriptOperators.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -350,7 +340,7 @@
       <workItem from="1533615875586" duration="11608000" />
       <workItem from="1533802038532" duration="1031000" />
       <workItem from="1533809007218" duration="1934000" />
-      <workItem from="1533962138808" duration="8148000" />
+      <workItem from="1533962138808" duration="9007000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1533809495432</created>
@@ -366,11 +356,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533963571235</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1533970495216</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533970495216</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22721000" />
+    <option name="totallyTimeSpent" value="23580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="675" y="0" width="698" height="735" extended-state="0" />
@@ -434,8 +431,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavascriptPractiece.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="209" lean-forward="true" selection-start-line="209" selection-end-line="209" />
+        <state relative-caret-position="267">
+          <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#6;n#body#0;n#html#0;n#!!top" expanded="true" />
