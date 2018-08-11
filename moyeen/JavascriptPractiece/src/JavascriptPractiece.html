@@ -229,9 +229,179 @@
     <!--======================================================================================================-->
 
 
+    <h2>JavaScript Code Blocks</h2>
+
+    <p>
+        The best place to break a code line is after an operator or a comma.
+    </p>
+
+    <p id="demo14"></p>
+
+    <script>
+        document.getElementById("demo14").innerHTML =
+            "Hello Dolly!";
+    </script>
+
+    <!--====================================================================================================-->
+
+
+    <h2>JavaScript Code Blocks</h2>
+
+    <p>JavaScript code blocks are written between { and }</p>
+
+    <button type="button" onclick="myFunction16()">Click Me!</button>
+
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+
+    <script>
+        function myFunction16() {
+            document.getElementById("demo15").innerHTML = "Hello Dolly!";
+            document.getElementById("demo16").innerHTML = "How are you?";
+        }
+    </script>
 
 
 
+    <!--===================================================================================================-->
+
+
+
+
+<h2>JavaScript Keywords</h2>
+
+
+    <table class="table table-bordered" style="width: 100%">
+        <tbody><tr>
+            <th style="height: 25px">Keyword</th>
+            <th style="height: 25px">Description</th>
+        </tr>
+
+        <tr>
+            <td>break</td>
+            <td>Terminates a switch or a loop</td>
+        </tr>
+        <tr>
+            <td>continue</td>
+            <td>Jumps out of a loop and starts at the top</td>
+        </tr>
+        <tr>
+            <td>debugger</td>
+            <td>Stops the execution of JavaScript, and calls (if available) the debugging
+                function</td>
+        </tr>
+        <tr>
+            <td>do ... while</td>
+            <td>Executes a block of statements, and repeats the block, while a condition is
+                true</td>
+        </tr>
+        <tr>
+            <td>for</td>
+            <td>Marks a block of statements to be executed, as long as a condition is true</td>
+        </tr>
+        <tr>
+            <td>function</td>
+            <td>Declares a function</td>
+        </tr>
+        <tr>
+            <td>if ... else</td>
+            <td>Marks a block of statements to be executed, depending on a condition</td>
+        </tr>
+        <tr>
+            <td>return</td>
+            <td>Exits a function</td>
+        </tr>
+        <tr>
+            <td>switch</td>
+            <td>Marks a block of statements to be executed, depending on different cases</td>
+        </tr>
+        <tr>
+            <td>try ... catch</td>
+            <td>Implements error handling to a block of statements</td>
+        </tr>
+        <tr>
+            <td>var</td>
+            <td>Declares a variable</td>
+        </tr>
+        </tbody></table>
+
+<!--========JavaScript Syntax=====================================================================================================-->
+
+
+    <h2>JavaScript Numbers & String</h2>
+
+    <p>Number can be written with or without decimals.</p>
+
+    <p id="demo17"></p>
+
+    <script>
+        document.getElementById("demo17").innerHTML = 10.50;
+    </script>
+
+    <p id="demo18"></p>
+
+    <script>
+        document.getElementById("demo18").innerHTML = 'John Doe';
+    </script>
+
+
+
+    <!--=========================================================================================================-->
+
+
+    <h2>JavaScript is Case Sensitive</h2>
+
+    <p>Try change lastName to lastname.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var lastname, lastName;
+        lastName = "Doe";
+        lastname = "Peterson";
+        document.getElementById("demo").innerHTML = lastName;
+    </script>
+
+
+    <!--=====JavaScript Comments======================================================================================================-->
+
+
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+
+    <script>
+        // Change heading:
+        document.getElementById("myH").innerHTML = "JavaScript Comments";
+        // Change paragraph:
+        document.getElementById("myP").innerHTML = "My first paragraph.";
+    </script>
+    <script>
+    /*
+    The code below will change
+    the heading with id = "myH"
+    and the paragraph with id = "myp"
+    */
+    document.getElementById("myH").innerHTML = "JavaScript Comments";
+    document.getElementById("myP").innerHTML = "My first paragraph.";
+    </script>
+
+    <!--========JavaScript Variables===================================================================================================-->
+
+    <h2>JavaScript Variables</h2>
+
+    <p>Strings are written with quotes.</p>
+    <p>Numbers are written without quotes.</p>
+
+    <p id="demo20"></p>
+
+    <script>
+        var pi = 3.14;
+        var person = "John Doe";
+        var answer = 'Yes I am!';
+
+        document.getElementById("demo20").innerHTML =
+            pi + "<br>" + person + "<br>" + answer;
+    </script>
 
 
 
