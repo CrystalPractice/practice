@@ -142,7 +142,8 @@
     </script>
 
 
-<!--=============================================================================================================-->
+
+    <!--=============================================================================================================-->
 
     <h1>Using document.write()</h1>
     <p>My first paragraph.</p>
@@ -159,7 +160,8 @@
 
 
 
-<!--=============================================================================================================-->
+
+    <!--=============================================================================================================-->
 
     <h1>Using window.alert()</h1>
     <p>My first paragraph.</p>
@@ -168,7 +170,8 @@
         window.alert(5 + 6);
     </script>
 
-<!--=======================================================================================-->
+
+    <!--=======================================================================================-->
 
     <h2>Using window.alert()</h2>
     <script>
@@ -207,7 +210,8 @@
         document.getElementById("demo12").innerHTML = "Hello Dolly.";
     </script>
 
-<!--====================================================================================-->
+
+    <!--====================================================================================-->
 
 
     <h2>JavaScript Statements</h2>
@@ -325,7 +329,8 @@
         </tr>
         </tbody></table>
 
-<!--========JavaScript Syntax=====================================================================================================-->
+
+    <!--========JavaScript Syntax=====================================================================================================-->
 
 
     <h2>JavaScript Numbers & String</h2>
@@ -335,7 +340,7 @@
     <p id="demo17"></p>
 
     <script>
-        document.getElementById("demo17").innerHTML = 10.50;
+        document.getElementById("demo17").innerHTML =   10.50;
     </script>
 
     <p id="demo18"></p>
@@ -353,13 +358,13 @@
 
     <p>Try change lastName to lastname.</p>
 
-    <p id="demo"></p>
+    <p id="demo19"></p>
 
     <script>
         var lastname, lastName;
         lastName = "Doe";
         lastname = "Peterson";
-        document.getElementById("demo").innerHTML = lastName;
+        document.getElementById("demo19").innerHTML = lastName;
     </script>
 
 
@@ -404,12 +409,140 @@
     </script>
 
 
+    <!--========JavaScript Operators==============================================================================================================-->
+
+    <h2>JavaScript Operators</h2>
+
+    <p>x = 5, y = 2, calculate z = x + y, and display z:</p>
+
+    <p id="demo21"></p>
+
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = x + y;
+        document.getElementById("demo21").innerHTML = z;
+    </script>
+
+    <h2>The = Operator</h2>
+
+    <p id="demo22"></p>
+
+    <script>
+        var x = 10;
+        document.getElementById("demo22").innerHTML = x;
+    </script>
+
+
+    <!--Operator	Description-->
+    <!--+	        Addition-->
+    <!-- -	        Subtraction-->
+    <!--*	        Multiplication-->
+    <!--/	        Division-->
+    <!--%	        Modulus (Division Remainder)-->
+    <!--++	        Increment-->
+    <!--&#45;&#45;  Decrement-->
+
+    <!--===========================================================================================================================-->
+
+
+    <h2>String Operators</h2>
+
+    <p>The assignment operator += can concatenate strings.</p>
+
+    <p id="demo23"></p>
+
+    <script>
+        txt1 = "What a very ";
+        txt1 += "nice day";
+        document.getElementById("demo23").innerHTML = txt1;
+    </script>
 
 
 
 
+    <!--=====================================================================================================================================-->
 
 
+    <h2>Dynamic Types</h2>
+
+    <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+    <p id="demo24"></p>
+
+    <script>
+        var x;               // Now x is undefined
+        x = 5;               // Now x is a Number
+        x = "John";          // Now x is a String
+
+        document.getElementById("demo24").innerHTML = x;
+    </script>
+
+
+    <!--=============================================================================================-->
+
+    <p>Strings are written with quotes. You can use single or double quotes:</p>
+
+    <p id="demo25"></p>
+
+    <script>
+        var carName1 = "Volvo XC60";
+        var carName2 = 'Volvo XC60';
+
+        document.getElementById("demo25").innerHTML =
+            carName1 + "<br>" +
+            carName2;
+    </script>
+
+    <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+
+    <p id="demo26"></p>
+
+    <script>
+        var answer1 = "It's alright";
+        var answer2 = "He is called 'Johnny'";
+        var answer3 = 'He is called "Johnny"';
+
+        document.getElementById("demo26").innerHTML =
+            answer1 + "<br>" +
+            answer2 + "<br>" +
+            answer3;
+    </script>
+
+    <!--=======================================================================================================================-->
+
+
+    <h2>JavaScript Arrays</h2>
+
+    <p>Array indexes are zero-based, which means the first item is [0].</p>
+
+    <p id="demo27"></p>
+
+    <script>
+        var cars = ["Saab","Volvo","BMW"];
+
+        document.getElementById("demo27").innerHTML = cars[0];
+    </script>
+
+
+    <!--==================================================================================================================-->
+
+
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo28"></p>
+
+    <script>
+        var person = {
+            firstName : "John",
+            lastName  : "Doe",
+            age       : 50,
+            eyeColor  : "blue"
+        };
+
+        document.getElementById("demo28").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+    </script>
 
 
 
