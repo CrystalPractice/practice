@@ -3,50 +3,420 @@
 <head>
     <meta charset="UTF-8">
     <title>JavascriptPractiece</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--========================================================================================================================-->
+    <script>
+        function myFunction() {
+            document.getElementById("demo6").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    <!--========================================================================================================================-->
+
+
 </head>
-<body bgcolor="white">
-
-<!--========================================================================================================================-->
-
-<h2>What Can JavaScript Do?</h2>
-<p id="demo1">JavaScript can change HTML content.</p>
-<button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-
-<!--========================================================================================================================-->
-
-<p>JavaScript can change HTML attribute values.</p>
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-<button onclick="document.getElementById('myImage').src='image/on.png'">Turn on the light</button>
-<img id="myImage" src="image/off.jpg" style="width:100px">
-<button onclick="document.getElementById('myImage').src='image/off.jpg'">Turn off the light</button>
-
-<!--========================================================================================================================-->
-
-<p id="demo2">JavaScript can change the style of an HTML element.</p>
-<button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+<body bgcolor="#708090">
+<div class="container">
 
 
-<!--========================================================================================================================-->
-
-<p id="demo3">JavaScript can hide HTML elements.</p>
-<button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!</button>
-
-<!--========================================================================================================================-->
-
-<p>JavaScript can show hidden HTML elements.</p>
-<p id="demo4" style="display:none">Hello JavaScript!</p>
-<button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me!</button>
-
-<!--========================================================================================================================-->
-
-<h2>JavaScript in Body</h2>
-<p id="demo5"></p>
-<script>
-    document.getElementById("demo5").innerHTML = "My First JavaScript";
-</script>
-
-<!--========================================================================================================================-->
+    <!--=======Introduction=================================================================================================================-->
 
 
+    <div class="panel panel-primary">
+        <div class="panel-heading">What Can JavaScript Do?</div>
+        <div class="panel-body">
+            <p id="demo1">JavaScript can change HTML content.</p>
+            <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+        </div>
+    </div>
+
+
+
+    <!--========================================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">JavaScript can change HTML attribute values.</div>
+        <div class="panel-body">
+            <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+            <button onclick="document.getElementById('myImage').src='image/on.png'">Turn on the light</button>
+            <img id="myImage" src="image/off.jpg" style="width:100px">
+            <button onclick="document.getElementById('myImage').src='image/off.jpg'">Turn off the light</button>
+        </div>
+    </div>
+
+
+
+    <!--========================================================================================================================-->
+
+    <p id="demo2">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+
+
+    <!--========================================================================================================================-->
+
+    <p id="demo3">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!</button>
+
+    <!--========================================================================================================================-->
+
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="demo4" style="display:none">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me!</button>
+
+    <!--========Where to?================================================================================================================-->
+
+    <h2>JavaScript in Body</h2>
+    <p id="demo5"></p>
+    <script>
+        document.getElementById("demo5").innerHTML = "My First JavaScript";
+    </script>
+
+    <!--========================================================================================================================-->
+
+    <!--header part is in head-->
+    <h2>JavaScript in Head</h2>
+    <p id="demo6">A Paragraph.</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <!--========================================================================================================================-->
+
+
+
+    <!--========================================================================================================================-->
+
+
+    <h1>A Web Page</h1>
+    <p id="demo8">Paragraph8</p>
+    <button type="button" onclick="myFunction8()">Try it</button>
+
+    <script>
+        function myFunction8() {
+            document.getElementById("demo8").innerHTML = "Paragraph8 changed.";
+        }
+    </script>
+
+    <!--=========================================================================================================================-->
+
+    <h2>External JavaScript</h2>
+    <p id="demo9">A Paragraph.</p>
+    <button type="button" onclick="myFunction9()">Try it</button>
+    <p>(myFunction is stored in an external file called "myScript.js")</p>
+    <script src="myScript.js"></script>
+
+    <h2>External JavaScript Advantages</h2>
+    <P>Placing scripts in external files has some advantages:
+    </P>
+    <ul>
+        <li>It separates HTML and code</li>
+        <li>It makes HTML and JavaScript easier to read and maintain</li>
+        <li>Cached JavaScript files can speed up page loads</li>
+    </ul>
+    <p>To add several script files to one page  - use several script tags:</p>
+    <ul>
+        <li>script src="myScript1.js"></li>
+        <li>script src="myScript2.js"></li>
+    </ul>
+
+    <!--========Output===============================================================================================================-->
+
+    <p>JavaScript can "display" data in different ways:</p>
+      <ul>
+          <li>Writing into an HTML element, using innerHTML.</li>
+          <li>Writing into the HTML output using document.write().</li>
+          <li>Writing into an alert box, using window.alert().</li>
+          <li>Writing into the browser console, using console.log().</li>
+      </ul>
+
+    <!--==============================================================================-->
+
+
+    <h2>Using innerHTML</h2>
+    <p>My First Paragraph.</p>
+
+    <p id="demo10"></p>
+
+    <script>
+        document.getElementById("demo10").innerHTML = 5 + 6;
+    </script>
+
+
+<!--=============================================================================================================-->
+
+    <h1>Using document.write()</h1>
+    <p>My first paragraph.</p>
+
+    <script>
+        document.write(5 + 6);
+    </script>
+
+
+    <h1>Using document.write() with button</h1>
+    <p>My first paragraph.</p>
+
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+
+
+<!--=============================================================================================================-->
+
+    <h1>Using window.alert()</h1>
+    <p>My first paragraph.</p>
+
+    <script>
+        window.alert(5 + 6);
+    </script>
+
+<!--=======================================================================================-->
+
+    <h2>Using window.alert()</h2>
+    <script>
+        console.log(5 + 6);
+    </script>
+
+
+
+    <!--=======JavaScript Statements======================================================================-->
+
+    <h2>JavaScript Statements</h2>
+
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+    <p id="demo11"></p>
+
+    <script>
+
+        var x, y, z;  // Statement 1
+        x = 5;        // Statement 2
+        y = 6;        // Statement 3
+        z = x + y;    // Statement 4
+
+        document.getElementById("demo11").innerHTML =
+            "The value of z is " + z + ".";
+
+    </script>
+
+    <!--===========================================================================-->
+
+    <h2>JavaScript Statements</h2>
+    <p>In HTML, JavaScript statements are executed by the browser.</p>
+    <p id="demo12"></p>
+
+    <script>
+        document.getElementById("demo12").innerHTML = "Hello Dolly.";
+    </script>
+
+<!--====================================================================================-->
+
+
+    <h2>JavaScript Statements</h2>
+
+    <p>
+        The best place to break a code line is after an operator or a comma.
+    </p>
+
+    <p id="demo13"></p>
+
+    <script>
+        document.getElementById("demo13").innerHTML =
+            "Hello Dolly!";
+    </script>
+
+
+
+
+    <!--======================================================================================================-->
+
+
+    <h2>JavaScript Code Blocks</h2>
+
+    <p>
+        The best place to break a code line is after an operator or a comma.
+    </p>
+
+    <p id="demo14"></p>
+
+    <script>
+        document.getElementById("demo14").innerHTML =
+            "Hello Dolly!";
+    </script>
+
+    <!--====================================================================================================-->
+
+
+    <h2>JavaScript Code Blocks</h2>
+
+    <p>JavaScript code blocks are written between { and }</p>
+
+    <button type="button" onclick="myFunction16()">Click Me!</button>
+
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+
+    <script>
+        function myFunction16() {
+            document.getElementById("demo15").innerHTML = "Hello Dolly!";
+            document.getElementById("demo16").innerHTML = "How are you?";
+        }
+    </script>
+
+
+
+    <!--===================================================================================================-->
+
+
+
+
+<h2>JavaScript Keywords</h2>
+
+
+    <table class="table table-bordered" style="width: 100%">
+        <tbody><tr>
+            <th style="height: 25px">Keyword</th>
+            <th style="height: 25px">Description</th>
+        </tr>
+
+        <tr>
+            <td>break</td>
+            <td>Terminates a switch or a loop</td>
+        </tr>
+        <tr>
+            <td>continue</td>
+            <td>Jumps out of a loop and starts at the top</td>
+        </tr>
+        <tr>
+            <td>debugger</td>
+            <td>Stops the execution of JavaScript, and calls (if available) the debugging
+                function</td>
+        </tr>
+        <tr>
+            <td>do ... while</td>
+            <td>Executes a block of statements, and repeats the block, while a condition is
+                true</td>
+        </tr>
+        <tr>
+            <td>for</td>
+            <td>Marks a block of statements to be executed, as long as a condition is true</td>
+        </tr>
+        <tr>
+            <td>function</td>
+            <td>Declares a function</td>
+        </tr>
+        <tr>
+            <td>if ... else</td>
+            <td>Marks a block of statements to be executed, depending on a condition</td>
+        </tr>
+        <tr>
+            <td>return</td>
+            <td>Exits a function</td>
+        </tr>
+        <tr>
+            <td>switch</td>
+            <td>Marks a block of statements to be executed, depending on different cases</td>
+        </tr>
+        <tr>
+            <td>try ... catch</td>
+            <td>Implements error handling to a block of statements</td>
+        </tr>
+        <tr>
+            <td>var</td>
+            <td>Declares a variable</td>
+        </tr>
+        </tbody></table>
+
+<!--========JavaScript Syntax=====================================================================================================-->
+
+
+    <h2>JavaScript Numbers & String</h2>
+
+    <p>Number can be written with or without decimals.</p>
+
+    <p id="demo17"></p>
+
+    <script>
+        document.getElementById("demo17").innerHTML = 10.50;
+    </script>
+
+    <p id="demo18"></p>
+
+    <script>
+        document.getElementById("demo18").innerHTML = 'John Doe';
+    </script>
+
+
+
+    <!--=========================================================================================================-->
+
+
+    <h2>JavaScript is Case Sensitive</h2>
+
+    <p>Try change lastName to lastname.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var lastname, lastName;
+        lastName = "Doe";
+        lastname = "Peterson";
+        document.getElementById("demo").innerHTML = lastName;
+    </script>
+
+
+    <!--=====JavaScript Comments======================================================================================================-->
+
+
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+
+    <script>
+        // Change heading:
+        document.getElementById("myH").innerHTML = "JavaScript Comments";
+        // Change paragraph:
+        document.getElementById("myP").innerHTML = "My first paragraph.";
+    </script>
+    <script>
+    /*
+    The code below will change
+    the heading with id = "myH"
+    and the paragraph with id = "myp"
+    */
+    document.getElementById("myH").innerHTML = "JavaScript Comments";
+    document.getElementById("myP").innerHTML = "My first paragraph.";
+    </script>
+
+    <!--========JavaScript Variables===================================================================================================-->
+
+    <h2>JavaScript Variables</h2>
+
+    <p>Strings are written with quotes.</p>
+    <p>Numbers are written without quotes.</p>
+
+    <p id="demo20"></p>
+
+    <script>
+        var pi = 3.14;
+        var person = "John Doe";
+        var answer = 'Yes I am!';
+
+        document.getElementById("demo20").innerHTML =
+            pi + "<br>" + person + "<br>" + answer;
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 </body>
 </html>

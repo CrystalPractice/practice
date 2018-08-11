@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+
+<p>Booleans can have two values: true or false:</p>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 5;
+var z = 6;
+document.getElementById("demo").innerHTML =
+(x == y) + "<br>" + (x == z);
+</script>
+_____________________________________________________________
+
+<h2>JavaScript has dynamic types. This means that 
+	the same variable can be used to hold different data types
+</h2>
+
+<p id="demo1"></p>
+<script>
+var x;  		<!--Now x is undefined -->
+x = 5;			<!--Now x is Number -->
+x = "John"; 	<!--Now x is String -->
+document.getElementById("demo1").innerHTML = x;
+</script>
+_____________________________________________________________
+
+<h2>Strings are written with quotes. 
+	You can use single or double quotes
+</h2>
+
+<p id="demo2"></p>
+
+<script>
+	var carName1 = "Volvo XC60";
+	var carName2 = 'Volvo XC60';
+	
+	document.getElementById("demo2").innerHTML = carName1 + "<br>" + carName2;
+</script>
+_____________________________________________________________
+
+<h2>You can use quotes inside a string,
+	as long as they don't match the quotes surrounding the string
+</h2>
+
+<p id="demo3"></p>
+<script>
+	var answer1 = "It's alright";
+	var answer2 = "He is called 'Johnny'";
+	var answer3 = 'He is called "Johnny"';
+	
+document.getElementById("demo3").innerHTML = 
+		answer1 + "<br>" +
+		answer2 + "<br>" +
+		answer3;
+	
+</script>
+_____________________________________________________________
+
+<h2>JavaScript Arrays</h2>
+
+<h3>Array indexes are zero-based, which means the first item is [0].</h3>
+<p id="demo4"></p>
+<script>
+	var cars = ["saab","volvo","BMW"];
+	document.getElementById("demo4").innerHTML = cars[0];
+</script>
+_____________________________________________________________
+
+<h2>JavaScript Objects</h2>
+<p id ="demo5"></p>
+<script>
+	var person = {
+				firstName : "Jarrin",
+				lastName  : "Tanjeem"
+				};
+document.getElementById("demo5").innerHTML = 
+person.firstName +  person.lastName;
+				
+</script>
+_____________________________________________________________
+
+<h2>An empty string has both a legal value and a type</h2>
+
+<p id="demo6"></p>
+<script>
+	var car = "";
+	document.getElementById("demo6").innerHTML =
+	"The value is: " +
+	car + "<br>" +
+	"The type is: "
+	+ typeof car;
+</script>
+</body>
+</html>
