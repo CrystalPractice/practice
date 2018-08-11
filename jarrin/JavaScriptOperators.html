@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>x = 5, y = 2, calculate z = x + y, and display z:</h2>
+
+
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+______________________________________________________________
+
+<h2>The = Operator</h2>
+<p id="demo1"></p>
+<script>
+var x = 10;
+document.getElementById("demo1").innerHTML = x;
+</script>
+_______________________________________________________________
+
+<h2>The + Operator</h2>
+
+<p id="demo2"></p>
+<script>
+var x = 5;
+var y = 2;
+var z = x + y;
+document.getElementById("demo2").innerHTML = z;
+</script>
+_______________________________________________________________
+
+<h2>The * Operator</h2>
+
+<p id="demo3"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x * y;
+
+document.getElementById("demo3").innerHTML = z;
+</script>
+_______________________________________________________________
+
+<h2>The += Operator</h2>
+
+<p id = "demo4"></p>
+
+<script>
+var x =10;
+x += 5;  <!-- x = x + 5-->
+document.getElementById("demo4").innerHTML = x;
+</script>
+_______________________________________________________________
+
+<h2>The + operator concatenates (adds) strings.</h2>
+
+<p id = "demo5"></p>
+
+<script>
+var text1 = "John";
+var text2 = "Doe";
+document.getElementById("demo5").innerHTML = text1 + " " + text2;
+</script>
+_______________________________________________________________
+
+<h2>The assignment operator += can concatenate strings.</h2>
+
+<p id="demo6"></p>
+
+<script>
+text3 = "What a very";
+text3 += " nice Day!";
+document.getElementById("demo6").innerHTML = text3;
+</script>
+_______________________________________________________________
+
+<h2>Adding a number and a string, returns a string.</h2>
+<p id ="demo7"></p>
+<script>
+var x = 5+5;
+var y = "5" + 5;
+var z = "Hello" + 5;
+document.getElementById("demo7").innerHTML = x + "<br>" + y + "<br>" + z;
+</script>
+
+</body>
+</html>
