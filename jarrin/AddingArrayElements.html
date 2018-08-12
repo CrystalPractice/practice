@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adding Array Elements</title>
+</head>
+<body>
+	<p>The push method appends a new element to an array.</p>
+	
+	<button onclick="myFunctionAdd()">Add</button>
+	
+	<p id="demo"></p>
+	
+	<script>
+		var fruits = ["Banana","Orange","Apple","Mango"];
+		document.getElementById("demo").innerHTML = fruits;
+		
+		function myFunctionAdd()
+		{
+			fruits.push("Lemon");
+			document.getElementById("demo").innerHTML = fruits;
+		}
+	
+	</script>
+	_____________________________________________________________________
+	
+	<p>The length property provides an easy way to append 
+		new elements to an array without using the push() method.
+	</p>
+	<button onclick="myFunctionAdd2()">Add</button>
+	
+	<p id = "demo1"></p>
+	
+	<script>
+		var fruits2 = ["Banana","Orange","Apple","Mango"];
+		document.getElementById("demo1").innerHTML = fruits2;
+		
+		function myFunctionAdd2()
+		{
+			fruits2[fruits2.length] = "Lemon";
+			document.getElementById("demo1").innerHTML = fruits2;
+		}
+	</script>
+	_____________________________________________________________________
+	
+	<p>Adding elements with
+	high indexes can create undefined "holes" in an array.
+	</p>
+	
+	<p id="demo2"></p>
+	
+	<script>
+		var numbers = [1,2,3,4,5,6,7,8,9];
+		numbers[9] = 10;
+		var text = "";
+		var fLength = numbers.length;
+		var j;
+		for(j=0; j<fLength; j++)
+		{
+			text += numbers[j] + "<br>";
+		}
+	document.getElementById("demo2").innerHTML = text;	
+	</script>
+	_____________________________________________________________________
+
+	
+<p>If you use a named index when accessing an array, JavaScript will redefine the array to a standard object, and some array methods and properties will produce undefined or incorrect results.</p>
+
+<p id="demo3"></p>
+
+<script>
+var person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46; 
+document.getElementById("demo3").innerHTML =
+person[0] + " " + person.length;
+</script>
+_____________________________________________________________________
+
+<h2>Change the first item of cars to "Opel" by referring to the index number, 
+and display the whole array.
+</h2>
+
+<p id="demo4"></p>
+<script>
+	var cars = ["Sabb","Volvo","BMW"];
+	cars[0] = "Opel";
+document.getElementById("demo4").innerHTML = cars;	
+</script>
+_____________________________________________________________________
+
+<h2>Use the length property to add a new item to cars: Mercedes.</h2>
+
+<p id="demo5"></p>
+<script>
+	var cars1 = ["Saab", "Volvo", "BMW"];
+cars1[cars1.length] = "Mercedes";
+document.getElementById("demo5").innerHTML = cars1;
+	</script>
+	</body>
+</html>

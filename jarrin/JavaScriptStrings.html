@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = "John Doe";  // String written inside double quotes
+var y = 'John Doe';   // Single quotes
+document.getElementById("demo").innerHTML = x + "<br> " + y;
+</script>
+_____________________________________________________________________
+
+<h2>You can use quotes inside a string, 
+	as long as they don't match the quotes surrounding the string
+</h2>
+<h3>The length property returns the length of a string</h3>
+<h4>The escape sequence \" inserts a double quote in a string</h4>
+<h5>The escape sequence \' inserts a single quote in a string</h5>
+<h6>The escape sequence \\ inserts a backslash in a string</h6>
+<p id="demo1"></p>
+
+<script>
+	var answer1 = "It's alright";
+	var answer2 = "He is called 'Johnny'";
+	var answer3 = 'He is called "Johnny"';
+	var answer4 = "We are the so-called \"Vikings\" from the north.";
+	var answer5 = 'It\'s alright';
+	var answer6 = "The character \\ is called backslash.";
+
+document.getElementById("demo1").innerHTML = 
+	answer1 + "<br>" + answer2 + "<br>" + answer3.length + 
+	"<br>" + answer4 + "<br>" + answer5 + "<br>" + answer6;
+</script>
+_____________________________________________________________________
+
+<h2>Breaking Long Code Lines</h2>
+<p>
+The best place to break a code line is after an operator or a comma.
+</p>
+
+<p>You can break a code line within a text string with a backslash</p>
+<p>
+The safest way to break a code line in a string is using string addition.
+</p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+	document.getElementById("demo2").innerHTML =
+	"Hello Dolly!";
+	document.getElementById("demo3").innerHTML = "Hello \
+	Dolly!";
+	document.getElementById("demo4").innerHTML = "Hello " +
+"Dolly!";
+</script>
+_____________________________________________________________________
+
+<h2>Strings Can be Objects</h2>
+<p>Strings and objects cannot be safely compared.</p>
+<p>JavaScript objects cannot be compared.</p>
+<p id="demo5"></p>
+<script>
+	var x = "John";
+	var y = new String("John"); //y is an object
+	var z = new String("John"); //z is an object
+	
+	document.getElementById("demo5").innerHTML = 
+	typeof x + "<br>" + typeof y + "<br>" + (x==y) +
+	"<br>" +(x===y) + "<br>" + (y==z) + "<br>" + (y===z);
+</script>
+_____________________________________________________________________
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center><h1>JavaScript String Properties</h1></center>
+_________________________________________________________________________________________________________________________________________________________
+
+<h2>The length property returns the length of a string:</h2>
+<h2>The indexOf() method 
+	returns the position of 
+	the first occurrence of a specified text
+</h2>
+<h2>The lastIndexOf() method returns 
+	the position of the last occurrence of a specified text
+</h2>
+<h2>
+	Both indexOf(), and lastIndexOf() return -1 if the text is not found
+</h2>
+<h2>The indexOf() method accepts a 
+	second parameter as the starting 
+	position for the search
+</h2>
+<h2>The search() method returns the position of 
+	the first occurrence of a specified text in a string
+</h2>
+<h2>
+	The slice() method extract a part of a string
+	and returns the extracted parts in a new string
+</h2>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<P id="demo6"></p>
+<P id="demo7"></p>
+<P id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+
+
+<script>
+var txt = "ABCEFGHIJKLMNOPQRSTUVWXYZ";
+var position = txt.indexOf("NOP"); //Finding a String in a String
+var position1 = txt.lastIndexOf("NOP");
+var position2 = txt.indexOf("D");
+var position3 = txt.indexOf("E",0);
+var position4 = txt.search("NOP"); //Searching for a String in a String
+var result = txt.slice(7,10); //slice(start, end)
+var result1 = txt.slice(-10,-7);
+var result2 = txt.slice(7);
+var result3 = txt.slice(-7);
+var result4 = txt.substring(7,10); //substring() is similar to slice().
+var result5 = txt.substr(7,10); //substr() is similar to slice().
+document.getElementById("demo1").innerHTML = txt.length;
+document.getElementById("demo2").innerHTML = position;
+document.getElementById("demo3").innerHTML = position1;
+document.getElementById("demo4").innerHTML = position2;
+document.getElementById("demo5").innerHTML = position3;
+document.getElementById("demo6").innerHTML = position4;
+document.getElementById("demo7").innerHTML = result;
+document.getElementById("demo8").innerHTML = result1;
+document.getElementById("demo9").innerHTML = result2;
+document.getElementById("demo10").innerHTML = result3;
+document.getElementById("demo11").innerHTML = result4;
+document.getElementById("demo12").innerHTML = result5;
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+<h2>Replacing String Content</h2>
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">click here....</button>
+<p id="demo13">Please visit Microsoft And Microsoft!</p>
+
+
+<script>
+	function myFunction()
+	{
+	var string = document.getElementById("demo13").innerHTML;
+	var text = string.replace("Microsoft","W3Schools");
+
+	document.getElementById("demo13").innerHTML = text;
+	
+	}
+</script>
+_________________________________________________________________________________________________________________________________________________________
+<br>
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo14">Please visit Microsoft!</p>
+
+<script>
+function myFunction1() {
+    var str1 = document.getElementById("demo14").innerHTML; 
+    var txt1 = str1.replace(/MICROSOFT/i,"W3Schools"); //change one by one
+    document.getElementById("demo14").innerHTML = txt1;
+}
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+<br>
+<button onclick="myFunction2()">Try it</button>
+
+<p id="demo15">Please visit Microsoft and Microsoft!</p>
+
+<script>
+function myFunction2() {
+    var str2 = document.getElementById("demo15").innerHTML; 
+    var txt2 = str2.replace(/Microsoft/g,"W3Schools"); //change both together
+    document.getElementById("demo15").innerHTML = txt2;
+}
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+
+<h2>Convert string to upper case</h2>
+
+<button onclick="myFunction3()">Try it</button>
+
+<p id="demo16">Hello World!</p>
+
+<script>
+function myFunction3() {
+    var text1 = document.getElementById("demo16").innerHTML;
+    document.getElementById("demo16").innerHTML = text1.toUpperCase();
+}
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+
+<h2>Convert string to lower case</h2>
+
+<button onclick="myFunction4()">Try it</button>
+
+<p id="demo17">Hello World!</p>
+
+<script>
+function myFunction4() {
+    var text2 = document.getElementById("demo17").innerHTML;
+    document.getElementById("demo17").innerHTML = text2.toLowerCase();
+}
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+<h2>The concat() method joins two or more strings</h2>
+
+<p id="demo18"></p>
+
+<script>
+	var text3 = "Hello";
+	var text4 = "World!";
+	var text5 = text3.concat(" ",text4);
+document.getElementById("demo18").innerHTML = text5;	
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+<p>The charAt() method returns the character at a given position in a string:</p>
+
+<p id="demo19"></p>
+
+<script>
+var str2 = "HELLO WORLD";
+document.getElementById("demo19").innerHTML = str2.charAt(2);
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+
+<p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p>
+
+<p id="demo20"></p>
+
+<script>
+var str3 = "j";
+document.getElementById("demo20").innerHTML = str3.charCodeAt(0);
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+<p>ECMAScript 5 allows property acces on strings:</p>
+
+<p id="demo21"></p>
+
+<script>
+var str4 = "HELLO WORLD";
+document.getElementById("demo21").innerHTML = str4[0];
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+
+<p>ECMAScript 5 allows property acces on strings. but read only:</p>
+
+<p id="demo22"></p>
+
+<script>
+var str5 = "HELLO WORLD";
+str5[0] = "A";  // Does not work
+document.getElementById("demo22").innerHTML = str5[0];
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+<p>Click "Try it" to display the first array element, after a string split.</p>
+
+<button onclick="myFunction5()">Try it</button>
+
+<p id="demo23"></p>
+
+<script>
+function myFunction5() {
+    var str6 = "a,b,c,d,e,f";
+    var arr1 = str6.split(",");
+    document.getElementById("demo23").innerHTML = arr1[0];
+}
+</script>
+_________________________________________________________________________________________________________________________________________________________
+
+<p id="demo24"></p>
+
+<script>
+	var str7 = "HELLO";
+	var arr2 = str7.split("");
+	var text6 = "";
+	var i;
+	for(i = 0; i<arr2.length; i++)
+	{
+		text6 += arr2[i] + "<br>"
+	}
+document.getElementById("demo24").innerHTML = text6;	
+</script>
+</body>
+</html>
