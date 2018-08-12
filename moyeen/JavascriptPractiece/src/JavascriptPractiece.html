@@ -21,6 +21,13 @@
 <div class="container">
 
 
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
     <!--=======Introduction=================================================================================================================-->
 
 
@@ -33,11 +40,6 @@
     </div>
 
 
-    <div class="panel panel-primary">
-        <div class="panel-heading"> ---- </div>
-        <div class="panel-body">
-        </div>
-    </div>
 
 
 
@@ -233,266 +235,231 @@
 
     <!--=============================================================================================================-->
     <div class="panel panel-primary">
-        <div class="panel-heading"> ---- </div>
+        <div class="panel-heading"> Using window.alert() </div>
         <div class="panel-body">
+            <h1>Using window.alert()</h1>
+            <p>My first paragraph.</p>
+
+            <script>
+                window.alert(5 + 6);
+            </script>
+
         </div>
     </div>
 
-    <h1>Using window.alert()</h1>
-    <p>My first paragraph.</p>
-
-    <script>
-        window.alert(5 + 6);
-    </script>
 
 
-    <!--=======================================================================================-->
+    <!--=============================================================================================================-->
     <div class="panel panel-primary">
-        <div class="panel-heading"> ---- </div>
+        <div class="panel-heading"> Using window.alert() </div>
         <div class="panel-body">
 
-
+            <h2>Using window.alert()</h2>
+            <script>
+                console.log(5 + 6);
+            </script>
 
         </div>
     </div>
-
-
-
-
-
-    <h2>Using window.alert()</h2>
-    <script>
-        console.log(5 + 6);
-    </script>
-
 
 
     <!--=======JavaScript Statements======================================================================-->
     <div class="panel panel-primary">
-        <div class="panel-heading"> ---- </div>
+        <div class="panel-heading"> JavaScript Statements </div>
         <div class="panel-body">
 
+            <h2>JavaScript Statements</h2>
 
+            <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+            <p id="demo11"></p>
+
+            <script>
+
+                var x, y, z;  // Statement 1
+                x = 5;        // Statement 2
+                y = 6;        // Statement 3
+                z = x + y;    // Statement 4
+
+                document.getElementById("demo11").innerHTML =
+                    "The value of z is " + z + ".";
+
+            </script>
 
         </div>
     </div>
 
 
-
-
-    <h2>JavaScript Statements</h2>
-
-    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
-
-    <p id="demo11"></p>
-
-    <script>
-
-        var x, y, z;  // Statement 1
-        x = 5;        // Statement 2
-        y = 6;        // Statement 3
-        z = x + y;    // Statement 4
-
-        document.getElementById("demo11").innerHTML =
-            "The value of z is " + z + ".";
-
-    </script>
 
     <!--===========================================================================-->
 
 
 
     <div class="panel panel-primary">
-        <div class="panel-heading"> ---- </div>
+        <div class="panel-heading"> JavaScript Statements </div>
         <div class="panel-body">
 
+            <h2>JavaScript Statements</h2>
+            <p>In HTML, JavaScript statements are executed by the browser.</p>
+            <p id="demo12"></p>
 
+            <script>
+                document.getElementById("demo12").innerHTML = "Hello Dolly.";
+            </script>
 
         </div>
     </div>
-
-
-
-    <h2>JavaScript Statements</h2>
-    <p>In HTML, JavaScript statements are executed by the browser.</p>
-    <p id="demo12"></p>
-
-    <script>
-        document.getElementById("demo12").innerHTML = "Hello Dolly.";
-    </script>
-
 
     <!--====================================================================================-->
     <div class="panel panel-primary">
-        <div class="panel-heading"> ---- </div>
+        <div class="panel-heading"> The best place to break a code line is after an operator or a comma. </div>
         <div class="panel-body">
 
-
+            <h2>JavaScript Statements</h2>
+            <p>
+                The best place to break a code line is after an operator or a comma.
+            </p>
+            <p id="demo13"></p>
+            <script>
+                document.getElementById("demo13").innerHTML =
+                    "Hello Dolly!";
+            </script>
 
         </div>
     </div>
-
-
-
-
-
-    <h2>JavaScript Statements</h2>
-
-    <p>
-        The best place to break a code line is after an operator or a comma.
-    </p>
-
-    <p id="demo13"></p>
-
-    <script>
-        document.getElementById("demo13").innerHTML =
-            "Hello Dolly!";
-    </script>
-
-
 
 
     <!--======================================================================================================-->
 
     <div class="panel panel-primary">
-        <div class="panel-heading"> ---- </div>
+        <div class="panel-heading"> JavaScript Code Blocks </div>
         <div class="panel-body">
 
+            <h2>JavaScript Code Blocks</h2>
 
+            <p>
+                The best place to break a code line is after an operator or a comma.
+            </p>
+
+            <p id="demo14"></p>
+
+            <script>
+                document.getElementById("demo14").innerHTML =
+                    "Hello Dolly!";
+            </script>
 
         </div>
     </div>
 
-
-
-
-
-    <h2>JavaScript Code Blocks</h2>
-
-    <p>
-        The best place to break a code line is after an operator or a comma.
-    </p>
-
-    <p id="demo14"></p>
-
-    <script>
-        document.getElementById("demo14").innerHTML =
-            "Hello Dolly!";
-    </script>
 
     <!--====================================================================================================-->
     <div class="panel panel-primary">
-        <div class="panel-heading"> ---- </div>
+        <div class="panel-heading"> JavaScript code blocks are written between { and } </div>
         <div class="panel-body">
 
+            <h2>JavaScript Code Blocks</h2>
+            <p>JavaScript code blocks are written between { and }</p>
+            <button type="button" onclick="myFunction16()">Click Me!</button>
 
+            <p id="demo15"></p>
+            <p id="demo16"></p>
+
+            <script>
+                function myFunction16() {
+                    document.getElementById("demo15").innerHTML = "Hello Dolly!";
+                    document.getElementById("demo16").innerHTML = "How are you?";
+                }
+            </script>
 
         </div>
     </div>
-
-
-
-
-
-    <h2>JavaScript Code Blocks</h2>
-
-    <p>JavaScript code blocks are written between { and }</p>
-
-    <button type="button" onclick="myFunction16()">Click Me!</button>
-
-    <p id="demo15"></p>
-    <p id="demo16"></p>
-
-    <script>
-        function myFunction16() {
-            document.getElementById("demo15").innerHTML = "Hello Dolly!";
-            document.getElementById("demo16").innerHTML = "How are you?";
-        }
-    </script>
-
-
 
     <!--===================================================================================================-->
 
     <div class="panel panel-primary">
-        <div class="panel-heading"> ---- </div>
+        <div class="panel-heading"> JavaScript Keywords </div>
         <div class="panel-body">
 
+            <h2>JavaScript Keywords</h2>
 
+
+            <table class="table table-bordered" style="width: 100%">
+                <tbody><tr>
+                    <th style="height: 25px">Keyword</th>
+                    <th style="height: 25px">Description</th>
+                </tr>
+
+                <tr>
+                    <td>break</td>
+                    <td>Terminates a switch or a loop</td>
+                </tr>
+                <tr>
+                    <td>continue</td>
+                    <td>Jumps out of a loop and starts at the top</td>
+                </tr>
+                <tr>
+                    <td>debugger</td>
+                    <td>Stops the execution of JavaScript, and calls (if available) the debugging
+                        function</td>
+                </tr>
+                <tr>
+                    <td>do ... while</td>
+                    <td>Executes a block of statements, and repeats the block, while a condition is
+                        true</td>
+                </tr>
+                <tr>
+                    <td>for</td>
+                    <td>Marks a block of statements to be executed, as long as a condition is true</td>
+                </tr>
+                <tr>
+                    <td>function</td>
+                    <td>Declares a function</td>
+                </tr>
+                <tr>
+                    <td>if ... else</td>
+                    <td>Marks a block of statements to be executed, depending on a condition</td>
+                </tr>
+                <tr>
+                    <td>return</td>
+                    <td>Exits a function</td>
+                </tr>
+                <tr>
+                    <td>switch</td>
+                    <td>Marks a block of statements to be executed, depending on different cases</td>
+                </tr>
+                <tr>
+                    <td>try ... catch</td>
+                    <td>Implements error handling to a block of statements</td>
+                </tr>
+                <tr>
+                    <td>var</td>
+                    <td>Declares a variable</td>
+                </tr>
+                </tbody></table>
 
         </div>
     </div>
-
-
-
-
-
-
-
-<h2>JavaScript Keywords</h2>
-
-
-    <table class="table table-bordered" style="width: 100%">
-        <tbody><tr>
-            <th style="height: 25px">Keyword</th>
-            <th style="height: 25px">Description</th>
-        </tr>
-
-        <tr>
-            <td>break</td>
-            <td>Terminates a switch or a loop</td>
-        </tr>
-        <tr>
-            <td>continue</td>
-            <td>Jumps out of a loop and starts at the top</td>
-        </tr>
-        <tr>
-            <td>debugger</td>
-            <td>Stops the execution of JavaScript, and calls (if available) the debugging
-                function</td>
-        </tr>
-        <tr>
-            <td>do ... while</td>
-            <td>Executes a block of statements, and repeats the block, while a condition is
-                true</td>
-        </tr>
-        <tr>
-            <td>for</td>
-            <td>Marks a block of statements to be executed, as long as a condition is true</td>
-        </tr>
-        <tr>
-            <td>function</td>
-            <td>Declares a function</td>
-        </tr>
-        <tr>
-            <td>if ... else</td>
-            <td>Marks a block of statements to be executed, depending on a condition</td>
-        </tr>
-        <tr>
-            <td>return</td>
-            <td>Exits a function</td>
-        </tr>
-        <tr>
-            <td>switch</td>
-            <td>Marks a block of statements to be executed, depending on different cases</td>
-        </tr>
-        <tr>
-            <td>try ... catch</td>
-            <td>Implements error handling to a block of statements</td>
-        </tr>
-        <tr>
-            <td>var</td>
-            <td>Declares a variable</td>
-        </tr>
-        </tbody></table>
-
 
     <!--========JavaScript Syntax=====================================================================================================-->
     <div class="panel panel-primary">
-        <div class="panel-heading"> ---- </div>
+        <div class="panel-heading"> JavaScript Numbers & String </div>
         <div class="panel-body">
 
+            <h2>JavaScript Numbers & String</h2>
 
+            <p>Number can be written with or without decimals.</p>
+
+            <p id="demo17"></p>
+
+            <script>
+                document.getElementById("demo17").innerHTML =   10.50;
+            </script>
+
+            <p id="demo18"></p>
+
+            <script>
+                document.getElementById("demo18").innerHTML = 'John Doe';
+            </script>
 
         </div>
     </div>
@@ -503,21 +470,6 @@
 
 
 
-    <h2>JavaScript Numbers & String</h2>
-
-    <p>Number can be written with or without decimals.</p>
-
-    <p id="demo17"></p>
-
-    <script>
-        document.getElementById("demo17").innerHTML =   10.50;
-    </script>
-
-    <p id="demo18"></p>
-
-    <script>
-        document.getElementById("demo18").innerHTML = 'John Doe';
-    </script>
 
 
 
