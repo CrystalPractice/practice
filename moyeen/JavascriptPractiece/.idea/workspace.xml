@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="177ba64a-2a86-433b-9e5b-ae93d5135155" name="Default Changelist" comment="">
+    <list default="true" id="177ba64a-2a86-433b-9e5b-ae93d5135155" name="Default Changelist" comment="Variable Types">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavascriptPractiece.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavascriptPractiece.html" afterDir="false" />
     </list>
@@ -49,7 +49,11 @@
     <session id="1719874841">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.54" value="1" />
@@ -57,12 +61,12 @@
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.64" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3985" />
+          <entry key="HTML" value="4176" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="26" />
         </counts>
@@ -77,7 +81,7 @@
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3985" />
+          <entry key="html" value="4176" />
           <entry key="js" value="2" />
           <entry key="txt" value="26" />
         </counts>
@@ -96,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JavascriptPractiece.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="450" lean-forward="true" selection-start-line="450" selection-end-line="450" />
+            <state relative-caret-position="339">
+              <caret line="755" column="10" selection-start-line="755" selection-start-column="10" selection-end-line="755" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -222,6 +226,10 @@
       <workItem from="1534049484733" duration="595000" />
       <workItem from="1534062873268" duration="1949000" />
       <workItem from="1534071929933" duration="602000" />
+      <workItem from="1534074720285" duration="385000" />
+      <workItem from="1534094488082" duration="2072000" />
+      <workItem from="1534152321945" duration="74000" />
+      <workItem from="1534152498290" duration="1635000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1533809495432</created>
@@ -290,10 +298,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38571000" />
+    <option name="totallyTimeSpent" value="42737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.34065935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -353,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavascriptPractiece.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="450" lean-forward="true" selection-start-line="450" selection-end-line="450" />
+        <state relative-caret-position="339">
+          <caret line="755" column="10" selection-start-line="755" selection-start-column="10" selection-end-line="755" selection-end-column="10" />
         </state>
       </provider>
     </entry>
