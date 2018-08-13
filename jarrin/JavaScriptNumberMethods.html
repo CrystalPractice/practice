@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Number Methods</title>
+</head>
+<body>
+	<p>The toString() method converts a number to a string.</p>
+	<p id = "demo"></p>
+	
+	<script>
+		var x = 12345678910;
+		document.getElementById("demo").innerHTML = 
+		
+			x.toString() + "<br>" +
+			(123).toString() + "<br>" +
+			(1000 + 23).toString();
+	</script>
+	__________________________________________________________________________
+	
+	
+<p>The toFixed() method rounds a number to a given number of digits.</p>
+<p>For working with money, toFixed(2) is perfect.</p>
+
+<p id="demo1"></p>
+
+<script>
+var x1 = 9.656;
+document.getElementById("demo1").innerHTML =
+    x1.toFixed(0) + "<br>" +
+    x1.toFixed(2) + "<br>" +
+    x1.toFixed(4) + "<br>" +
+    x1.toFixed(6);
+</script>
+__________________________________________________________________________
+<p>The toExponential() method returns a string, with the number rounded and written using exponential notation.</p>
+
+<p>An optional parameter defines the number of digits behind the decimal point.</p>
+
+<p id="demo2"></p>
+
+<script>
+var x2 = 9.656;
+document.getElementById("demo2").innerHTML =
+    x2.toExponential() + "<br>" + 
+    x2.toExponential(2) + "<br>" + 
+    x2.toExponential(4) + "<br>" + 
+    x2.toExponential(6);
+</script>
+__________________________________________________________________________
+
+
+<p>The toFixed() method rounds a number to a given number of digits.</p>
+<p>For working with money, toFixed(2) is perfect.</p>
+
+<p id="demo3"></p>
+
+<script>
+var x3 = 9.656;
+document.getElementById("demo3").innerHTML =
+    x3.toFixed(0) + "<br>" +
+    x3.toFixed(2) + "<br>" +
+    x3.toFixed(4) + "<br>" +
+    x3.toFixed(6);
+</script>
+__________________________________________________________________________
+
+<p>The toPrecision() method returns a string, with a number written with a specified length:</p>
+
+<p id="demo4"></p>
+
+<script>
+var x4 = 9.656;
+document.getElementById("demo4").innerHTML = 
+    x4.toPrecision() + "<br>" +
+    x4.toPrecision(2) + "<br>" +
+    x4.toPrecision(4) + "<br>" +
+    x4.toPrecision(6);    
+</script>
+__________________________________________________________________________
+
+<p id="demo5"></p>
+
+<script>
+var x5 = 123;
+
+document.getElementById("demo5").innerHTML = 
+    x5.valueOf() + "<br>" +
+    (123).valueOf() + "<br>" +
+    (100 + 23).valueOf();
+</script>
+__________________________________________________________________________
+
+<p>The JavaScript function Number() converts variables to numbers:</p>
+
+<p id="demo6"></p>
+
+<script>
+document.getElementById("demo6").innerHTML = 
+    Number(true) + "<br>" +
+    Number(false) + "<br>" +
+    Number("  10") + "<br>" +
+    Number("10  ") + "<br>" +
+    Number("10 6") + "<br>" + 
+    Number("John");
+</script>
+__________________________________________________________________________
+
+
+<p>The JavaScript function Number() can convert a date to a number:</p>
+
+<p id="demo7"></p>
+
+<script>
+var x7 = new Date("2017-09-30");
+document.getElementById("demo7").innerHTML = Number(x7); 
+</script>
+__________________________________________________________________________
+
+<p>The global JavaScript function parseInt() converts strings to numbers:</p>
+
+<p id="demo8"></p>
+
+<script>
+document.getElementById("demo8").innerHTML = 
+    parseInt("10") + "<br>" +
+    parseInt("10.33") + "<br>" +
+    parseInt("10 6") + "<br>" +    
+    parseInt("10 years") + "<br>" +    
+    parseInt("years 10");    
+</script>
+__________________________________________________________________________
+
+
+<p>The global JavaScript function parseFloat() converts strings to numbers:</p>
+
+<p id="demo9"></p>
+
+<script>
+document.getElementById("demo9").innerHTML = 
+    parseFloat("10") + "<br>" +
+    parseFloat("10.33") + "<br>" +
+    parseFloat("10 6") + "<br>" +    
+    parseFloat("10 years") + "<br>" +
+    parseFloat("years 10");        
+</script>
+__________________________________________________________________________
+
+
+</body>
+</html>

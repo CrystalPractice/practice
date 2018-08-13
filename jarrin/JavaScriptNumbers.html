@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	JavaScript Numbers
+</title>
+</head>
+<body>
+
+<h2>Numbers can be written with or without decimals</h2>
+<p>Extra large or extra small numbers
+	can be written with scientific (exponent) notation:
+ </p>
+<p id="demo"></p>
+
+<script>
+	var x = 3.14;
+	var y = 3;
+	var z = 123e5;
+	var i = 123e-5;
+	document.getElementById("demo").innerHTML = 
+	x + "<br>" + y + "<br>" + z + "<br>" + i;
+</script>
+___________________________________________________________________________
+
+<p id="demo1"></p>
+
+<script>
+var x1 = 10;
+var y1 = 20;
+var z1 = x1 + y1;
+document.getElementById("demo1").innerHTML = z1;
+</script>
+___________________________________________________________________________
+
+<p id="demo2"></p>
+<script>
+	var x2 = "10";
+	var y2 = "20";
+	var z2 = x2 + y2;
+	var add = x1 + y2;
+	var multi = x1 * y2;
+	var divide = x1 / y2;
+	document.getElementById("demo2").innerHTML = z2 + "<br>" + add
+	+ "<br>" + multi + "<br>" + divide;
+
+</script>
+___________________________________________________________________________
+
+<p>A number divided by a non-numeric string becomes NaN (Not a Number):</p>
+
+<p id="demo3"></p>
+
+<script>
+document.getElementById("demo3").innerHTML = 100 / "Apple";
+</script>
+___________________________________________________________________________
+
+<p>Infinity is returned 
+	if you calculate a number outside the largest possible number:
+</p>
+
+<p id ="demo4"></p>
+
+<script>
+
+	var myNumber = 2;
+	var txt = "";
+	while(myNumber != Infinity)
+	{
+		myNumber = myNumber * myNumber;
+		txt = txt + myNumber + "<br>";
+	}
+	document.getElementById("demo4").innerHTML = txt;
+</script>
+</body>
+</html>
