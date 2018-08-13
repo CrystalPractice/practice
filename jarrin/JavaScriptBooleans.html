@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="https://www.w3schools.com/js/js_booleans.asp">tutorial link...</a>
+<br>
+______________________________________________________________________________
+<br>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+
+<script>
+	function myFunction() {
+		document.getElementById("demo").innerHTML = Boolean(10 > 9);
+		document.getElementById("demo1").innerHTML = 10 > 9;
+		
+		
+	var b1 = Boolean(100);
+	var b2 = Boolean(3.14);
+	var b3 = Boolean(-15);
+	var b4 = Boolean("Hello");
+	var b5 = Boolean('false');
+	var b6 = Boolean(1 + 7 + 3.14);
+
+	document.getElementById("demo2").innerHTML =
+	"100 is " + b1 + "<br>" +
+	"3.14 is " + b2 + "<br>" +
+	"-15 is " + b3 + "<br>" +
+	"Any (not empty) string is " + b4 + "<br>" +
+	"Even the string 'false' is " + b5 + "<br>" +
+	"Any expression (except zero) is " + b6;
+	}
+</script>
+______________________________________________________________________________
+<br>
+
+<button onclick="myFunction1()">click</button>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+
+<script>
+	function myFunction1(){
+	
+		var x = 0;
+	document.getElementById("demo3").innerHTML = Boolean(x);
+		
+		var x1 = -0;
+    document.getElementById("demo4").innerHTML = Boolean(x1);
+	
+		var x2 = "";
+    document.getElementById("demo5").innerHTML = Boolean(x2);
+	
+		var x3;
+    document.getElementById("demo6").innerHTML = Boolean(x3);
+	
+		var x4 = null;
+    document.getElementById("demo7").innerHTML = Boolean(x4);
+	
+	    var x5 = false;
+    document.getElementById("demo8").innerHTML = Boolean(x5);
+	
+	    var x6 = 10 / "H";
+    document.getElementById("demo9").innerHTML = Boolean(x6);
+	
+		var x7 = false;               // x is a boolean
+		var y1 = new Boolean(false);  // y is an object
+document.getElementById("demo10").innerHTML =
+typeof x7 + "<br>" + typeof y1;
+
+		var x8 = false;               // x is a boolean
+		var y2 = new Boolean(false);  // y is an object
+document.getElementById("demo11").innerHTML = (x8==y2);
+
+		var x9 = false;               // x is a number
+		var y3 = new Boolean(false);  // y is an object
+document.getElementById("demo12").innerHTML = (x9===y3);
+
+		var x10 = new Boolean(false);  // x is an object
+		var y4 = new Boolean(false);  // y is an object
+document.getElementById("demo13").innerHTML = (x10==y4);
+	}
+</script>
+
+</body>
+</html>
