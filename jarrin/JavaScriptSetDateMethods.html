@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript setFullYear()</h2>
+
+<h3>The setFullYear() method sets the year of a date object:</h3>
+
+<p id="demo"></p>
+
+<script>
+	var d = new Date();
+	d.setFullYear(2020);
+	document.getElementById("demo").innerHTML = d;
+</script>
+_______________________________________________________________________________
+
+<h2>JavaScript setFullYear()</h2>
+
+<h3>The setFullYear() method can optionally set month and day.</h3>
+<h3>Please note that month counts from 0. December is month 11:</h3>
+
+<p id="demo1"></p>
+
+<script>
+var d = new Date();
+d.setFullYear(2020, 11, 3);
+document.getElementById("demo1").innerHTML = d;
+</script>
+_______________________________________________________________________________
+
+<h2>JavaScript setMonth()</h2>
+
+<p>The setMonth() method sets the mont of a date object.</p>
+<p>Note that months count from 0. December is month 11:</p>
+
+<p id="demo2"></p>
+
+<script>
+var d = new Date();
+d.setMonth(11);
+document.getElementById("demo2").innerHTML = d;
+</script>
+_______________________________________________________________________________
+
+<h2>JavaScript setDate()</h2>
+
+<h3>The setDate() method sets the day of a date object:</h3>
+
+<p id="demo3"></p>
+
+<script>
+var d = new Date();
+d.setDate(15);
+document.getElementById("demo3").innerHTML = d;
+</script>
+_______________________________________________________________________________
+
+<h2>JavaScript setDate()</h2>
+
+<p>The setDate() method can be used to add days to a date.</p>
+
+<p id="demo4"></p>
+
+<script>
+var d = new Date();
+d.setDate(d.getDate() + 5);
+document.getElementById("demo4").innerHTML = d;
+</script>
+_______________________________________________________________________________
+
+<h2>JavaScript setHours()</h2>
+
+<p>The setHours() method sets the hours of a date object:</p>
+
+<p id="demo5"></p>
+
+<script>
+var d = new Date();
+d.setHours(22);
+document.getElementById("demo5").innerHTML = d;
+</script>
+_______________________________________________________________________________
+
+<h2>JavaScript setMinutes()</h2>
+
+<p>The setMinutes() method sets the minutes of a date object (0-59):</p>
+
+<p id="demo6"></p>
+
+<script>
+var d = new Date();
+d.setMinutes(30);
+document.getElementById("demo6").innerHTML = d;
+</script>
+_______________________________________________________________________________
+
+<h2>JavaScript setSeconds()</h2>
+
+<p>The setSeconds() method sets the seconds of a date object (0-59):</p>
+
+<p id="demo7"></p>
+
+<script>
+var d = new Date();
+d.setSeconds(30);
+document.getElementById("demo7").innerHTML = d;
+</script>
+_______________________________________________________________________________
+<h2>Compare Dates</h2>
+<p id="demo8"></p>
+
+<script>
+var today, someday, text;
+today = new Date();
+someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+    text = "Today is before January 14, 2100.";
+} else {
+    text = "Today is after January 14, 2100.";
+}
+document.getElementById("demo8").innerHTML = text;
+</script>
+_______________________________________________________________________________
+
+
+</body>
+</html>
