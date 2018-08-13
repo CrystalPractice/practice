@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h3>Syntax:
+	    <br>
+	    switch(expression) {
+	    <br>
+		case n:
+		<br>
+		code block
+		<br>
+		break;
+		<br>
+		case n:
+		<br>
+		code block
+		<br>
+		break;
+		<br>
+		default:
+		<br>
+		code block}
+</h3>
+_______________________________________________________________________
+<p id="demo1"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case  6:
+        day = "Saturday";
+}
+document.getElementById("demo1").innerHTML = "Today is " + day;
+</script>
+_______________________________________________________________________
+
+
+<p id="demo"></p>
+
+<script>
+var text;
+switch (new Date().getDay()) {
+    case 6:
+        text = "Today is Saturday";
+        break;
+    case 0:
+        text = "Today is Sunday";
+        break;
+    default:
+        text = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+_______________________________________________________________________
+
+<p id="demo2"></p>
+
+<script>
+var text;
+switch (new Date().getDay()) {
+    default:
+        text = "Looking forward to the Weekend";
+        break;
+    case 6:
+        text = "Today is Saturday";
+        break;
+    case 0:
+        text = "Today is Sunday";
+}
+document.getElementById("demo2").innerHTML = text;
+</script>
+_______________________________________________________________________
+<p id="demo3"></p>
+
+<script>
+var text;
+switch (new Date().getDay()) {
+    case 4:
+    case 5:
+        text = "Soon it is Weekend";
+        break;
+    case 0:
+    case 6:
+        text = "It is Weekend";
+        break;
+    default:
+        text = "Looking forward to the Weekend";
+}
+document.getElementById("demo3").innerHTML = text;
+</script>
+_______________________________________________________________________
+
+<p id="demo4"></p>
+
+<script>
+var x = "0";
+
+switch (x) {
+    case 0:
+        text = "Off";
+        break;
+    case 1:
+        text = "On";
+        break;
+    default:
+        text = "No value found";
+}
+document.getElementById("demo4").innerHTML = text;
+</script>
+</body>
+</html>
