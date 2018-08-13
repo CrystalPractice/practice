@@ -18,3 +18,15 @@ document.getElementById("jsob").innerHTML=person.firstName+" is "+person.age+" y
 
 </body>
 </html>
+<p id="demo2"></p>
+
+var person2 = {
+firstName: "John",
+lastName : "Doe",
+id       : 5566,
+fullName2 : function() {
+return this.firstName + " " + this.lastName;
+}
+};
+
+document.getElementById("demo2").innerHTML = person2.fullName2();

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+    var person = {
+        name: "John",
+        age       : 50,
+        fullName : function() {
+            return this.name + " is " + this.age +" years old";
+        }
+
+
+    };
+
+    document.getElementById("demo").innerHTML = person.fullName();
+
+    </script>
+</body>
+</html>
