@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="jsob3"></p>
+
+<script>
+    var person2 = {
+        firstName: "John",
+        lastName : "Doe",
+        id       : 5566,
+        fullName2 : function() {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+
+    document.getElementById("jsob3").innerHTML = person2.fullName2();
+</script>
+
+</body>
+</html>
+
+
+

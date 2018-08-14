@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>
+    The best place to break a code line is after an operator or a comma.
+</p>
+
+<p id="demo"></p>
+
+<script>
+    document.getElementById("demo").innerHTML =
+        "Hello Emon!";
+</script>
+<br />
+<p>
+    You can break a code line within a text string with a backslash.
+</p>
+
+<p id="demo2"></p>
+<script>
+    document.getElementById("demo2").innerHTML = "Hello \
+Jaman!";
+</script>
+<br />
+<p>
+    The safest way to break a code line in a string is using string addition.
+</p>
+
+<p id="demo3"></p>
+<script>
+    document.getElementById("demo3").innerHTML="Hello"+
+            "Afia! How are you?";
+</script>
+<br />
+<p>(x == y) is true because x and y have equal values</p>
+<p id="demo4"></p>
+
+<script>
+    var x = "Toma";              // x is a string
+    var y = new String("Toma");  // y is an object
+    document.getElementById("demo4").innerHTML = (x==y);
+</script>
+<br />
+<h2>Never Create Strings as objects.</h2>
+<p><b>JavaScript objects cannot be compared.</b></p>
+
+<p id="demo5"></p>
+
+<script>
+    var x = new String("Yela");  // x is an object
+    var y = new String("Yela");  // y is an object
+    document.getElementById("demo5").innerHTML = (x===y);
+</script>
+
+
+
+</body>
+</html>
