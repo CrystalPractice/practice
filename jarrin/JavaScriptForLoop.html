@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Loops</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+	var cars = ["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+	var text = "";
+	var i;
+	var text1 = "";
+	var j;
+	var text2 ="";
+	var z,len;
+	
+	for(i=0; i < cars.length; i++){
+	
+		text += cars[i] + "<br>";
+	}
+	for(j=0;j<5;j++){
+		text1 += "The number is" + j + "<br>"; 
+	
+	}
+	for(z=0, len=cars.length; z<len; z++ ){
+	
+		text2 += cars[z] + "<br>";
+	}
+document.getElementById("demo").innerHTML = text;	
+document.getElementById("demo1").innerHTML = text1;
+document.getElementById("demo2").innerHTML = text2;
+</script>
+________________________________________________________________________
+
+<p id="demo3"></p>
+
+<script>
+	var cars = ["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+	var i=2;
+	var text3 = "";
+	var len = cars.length;
+
+	for(; i<len; i++)
+	{
+
+	text3 += cars[i] + "<br>";
+	}	
+document.getElementById("demo3").innerHTML = text3;				
+</script>
+________________________________________________________________________
+
+<p id="demo4"></p>
+
+<script>
+	var cars = ["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+	var i = 0;
+	var text = "";
+	var len = cars.length;
+	
+	for(; i < len;)
+	{
+	
+		text += cars[i] + "<br>";
+		i++;
+	}
+document.getElementById("demo4").innerHTML = text;	
+	
+</script>
+________________________________________________________________________
+
+
+<h2>The for/in statement loops through the properties of an object.</h2>
+
+<p id="demo5"></p>
+
+<script>
+	var text = "";
+	var person = {fname: "John", lname: "Doe", age: 25};
+	var x;
+	for(x in person)
+	{
+		text += person[x] + " ";
+	}
+document.getElementById("demo5").innerHTML = text;	
+</script>
+________________________________________________________________________
+
+<h2>Make the loop start counting from 5. 
+	Count up to (including) 50, and count only every fifth number
+</h2>
+
+<p id="demo6"></p>
+
+<script>
+var i;
+for (i = 5; i <= 50; i = i + 5) {
+    document.getElementById("demo6").innerHTML += i + "<br>";
+}
+</script>
+________________________________________________________________________
+
+<h2>Make the loop start counting downwards from 10 and stop at 1.
+	<br>
+	The output should be 10 9 8 7 6 5 4 3 2 1 with line breaks
+</h2>
+
+<p id="demo7"></p>
+
+<script>
+var i;
+for (i = 10; i > 0; i--) {
+    document.getElementById("demo7").innerHTML += i + "<br>";
+}
+</script>
+________________________________________________________________________
+<h2>
+	Inside the for loop: 
+	Set the counter variable (i) to 0. 
+	Run the loop as long as i is less than the length of the food array. 
+	Increment i by 1
+</h2>
+
+<p id="demo8"></p>
+
+<script>
+var text = "";
+var food = ["Pizza", "Beans", "Tacos", "Fish", "Chicken"];
+var i;
+
+for (i = 0; i < food.length; i++) {
+    text += "I love " + food[i] + "<br>";
+}
+
+document.getElementById("demo8").innerHTML = text;
+</script>
+
+</body>
+</html>
