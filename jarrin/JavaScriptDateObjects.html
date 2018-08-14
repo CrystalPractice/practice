@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+
+<p id="demo"></p>
+
+<script>
+	var d = new Date();
+	document.getElementById("demo").innerHTML = d;
+</script>
+______________________________________________________________
+<h2>Using new Date(7 numbers), 
+creates a new date object with the specified date and time:
+</h2>
+
+<p id="demo1"></p>
+
+<script>
+	var d = new Date(2018, 11, 24, 10, 33, 30, 0); 
+	//7 numbers specify year, month, day, hour, minute, second, and millisecond
+	document.getElementById("demo1").innerHTML = d;
+</script>
+______________________________________________________________
+
+<h2>6 numbers specify year, month, day, hour, minute and second:</h2>
+
+<p id="demo2"></p>
+
+<script>
+	var d = new Date(2018, 11, 24, 10, 33, 30);
+	document.getElementById("demo2").innerHTML = d;
+</script>
+______________________________________________________________
+
+
+<h2>3 numbers specify year, month, and day:</h2>
+
+<p id="demo3"></p>
+
+<script>
+	var d = new Date(2018, 11, 24);
+	document.getElementById("demo3").innerHTML = d;
+</script>
+______________________________________________________________
+
+<h2>2 numbers specify year and  month:</h2>
+
+<p id="demo4"></p>
+
+<script>
+	var d = new Date(2018, 11);
+	document.getElementById("demo4").innerHTML = d;
+</script>
+______________________________________________________________
+
+<h2>Two digit years will be interpreted as 19xx:</h2>
+
+<p id="demo5"></p>
+
+<script>
+	var d = new Date(99, 11, 24);
+	document.getElementById("demo5").innerHTML = d;
+</script>
+______________________________________________________________
+
+<h2>A Date object can be created with a specified date and time:</h2>
+
+<p id="demo6"></p>
+
+<script>
+	var d = new Date("October 13, 2014 11:13:00");
+	document.getElementById("demo6").innerHTML = d;
+</script>
+_________________________________________________________________________________________________________________________________________________
+
+<h2>Using new Date(milliseconds), 
+creates a new date object as January 1, 
+1970, 00:00:00 Universal Time (UTC) plus the milliseconds:
+</h2>
+
+<p id="demo7"></p>
+
+<script>
+	var d = new Date(0);
+	document.getElementById("demo7").innerHTML = d;
+</script>
+____________________________________________________________________________________________________________
+
+<h2>100000000000 milliseconds from Jan 1, 
+1970, is approximately Mar 3, 1973:
+</h2>
+
+<p id="demo8"></p>
+
+<script>
+	var d = new Date(100000000000);
+	document.getElementById("demo8").innerHTML = d;
+</script>
+____________________________________________________________________________________________________________
+
+
+<h2>100000000000 milliseconds from Jan 1, 
+1970, is approximately Oct 31, 1966:
+</h2>
+
+<p id="demo9"></p>
+
+<script>
+	var d = new Date(-100000000000);
+	document.getElementById("demo9").innerHTML = d;
+</script>
+____________________________________________________________________________________________________________
+
+<h2>Using new Date(milliseconds), 
+creates a new date object as January 1, 
+1970, 00:00:00 Universal Time (UTC) plus the milliseconds:
+</h2>
+<h2>One day (24 hours) is 86,400,000 milliseconds.</h2>
+
+<p id="demo10"></p>
+
+<script>
+	var d = new Date(86400000);
+	document.getElementById("demo10").innerHTML = d;
+</script>
+
+
+____________________________________________________________________________________________________________
+
+<h2>The toUTCString() method converts a date to a 
+UTC string (a date display standard):
+</h2>
+
+<p id="demo11"></p>
+
+<script>
+	var d = new Date();
+	document.getElementById("demo11").innerHTML = d.toUTCString();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript toDateString()</h2>
+
+<h3>The toDateString() method converts a date to a date string:</h3>
+
+<p id="demo12"></p>
+
+<script>
+	var d = new Date();
+	document.getElementById("demo12").innerHTML = d.toDateString();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>Create a Date object to display the current date and time</h2>
+
+<p id="demo13">Display the result here.</p>
+
+<script>
+document.getElementById("demo13").innerHTML = new Date();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>Create a Date object with the following value: 
+"January 10, 2015 10:00:00"
+</h2>
+
+<p id="demo14">Display the result here.</p>
+
+<script>
+document.getElementById("demo14").innerHTML = new Date("January 10, 2015 10:00:00");
+</script>
+____________________________________________________________________________________________________________
+
+<h2>Use the toDateString() method to 
+convert the date to a more readable format
+</h2>
+
+
+<p id="demo15"></p>
+
+<script>
+document.getElementById("demo15").innerHTML = new Date().toDateString();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getMonth()</h2>
+
+<p>The getMonth() method returns the month as a number:</p>
+
+<p>You can use an array to display the name of the month:</p>
+
+<p id="demo16"></p>
+
+<script>
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("demo16").innerHTML = months[d.getMonth()];
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getDate()</h2>
+
+<p>The getDate() method returns the day of a date as a number (1-31):</p>
+
+<p id="demo17"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo17").innerHTML = d.getDate();
+</script>
+____________________________________________________________________________________________________________
+
+
+<h2>JavaScript getHours()</h2>
+
+<p>The getHours() method returns the hours of a date as a number (0-23):</p>
+
+<p id="demo18"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo18").innerHTML = d.getHours();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getMinutes()</h2>
+
+<p>The getMinutes() method returns the minutes of a date as a number (0-59):</p>
+
+<p id="demo19"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo19").innerHTML = d.getMinutes();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getSeconds()</h2>
+
+<p>The getSeconds() method returns the seconds of a date as a number (0-59):</p>
+
+<p id="demo20"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo20").innerHTML = d.getSeconds();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getMilliseconds()</h2>
+
+<p>The getMilliseconds() method returns the milliseconds of a date as a number (0-999):</p>
+
+<p id="demo21"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo21").innerHTML = d.getMilliseconds();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getDay()</h2>
+
+<p>The getDay() method returns the weekday as a number:</p>
+
+<p>You can use an array to display the name of the weekday:</p>
+
+<p id="demo22"></p>
+
+<script>
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("demo22").innerHTML = days[d.getDay()];
+</script>
+____________________________________________________________________________________________________________
+
+
+</body>
+</html>
