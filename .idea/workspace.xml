@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2ada9e-6ec4-4604-b3db-092bbab55197" name="Default" comment="added Javascript Array file">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/FunctionFarenhightToCelsiusAndViceVersa.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavaScriptLongCodeBreak.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavaScriptObject2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavaScriptObject3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JsStringMethods.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavaScriptConverting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavaScriptNumberAdd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavaScriptNumberBaseTypeCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavaScriptNumberCheckToInfinity.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavaScriptSringToArray.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavaScriptStringCharacter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavaScriptStringTrim.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shafiq/JavascriptNumberOperations.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shafiq/JavaScriptObjects.html" afterPath="$PROJECT_DIR$/shafiq/JavaScriptObjects.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shafiq/JavaScriptNumber.html" afterPath="$PROJECT_DIR$/shafiq/JavaScriptNumber.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,101 +22,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FunctionFarenhightToCelsiusAndViceVersa.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shafiq/FunctionFarenhightToCelsiusAndViceVersa.html">
+      <file leaf-file-name="JavaScriptConverting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptConverting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaScriptObjects.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptObjects.html">
+      <file leaf-file-name="JavaScriptStringTrim.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptStringTrim.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaScriptObject3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptObject3.html">
+      <file leaf-file-name="JavaScriptStringCharacter.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptStringCharacter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnClickEvent.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shafiq/OnClickEvent.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JavaScriptString.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptString.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JavaScriptStringSpecialCharacter.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptStringSpecialCharacter.html">
+      <file leaf-file-name="JavaScriptSringToArray.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptSringToArray.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="27" column="65" lean-forward="true" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaScriptLongCodeBreak.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptLongCodeBreak.html">
+      <file leaf-file-name="JavaScriptStringTrimLengthCheck.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptStringTrimLengthCheck.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+            <state relative-caret-position="323">
+              <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsStringMethods.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shafiq/JsStringMethods.html">
+      <file leaf-file-name="JavaScriptNumber.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptNumber.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="88" column="51" lean-forward="true" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+            <state relative-caret-position="197">
+              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaScriptObject2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptObject2.html">
+      <file leaf-file-name="JavaScriptNumberAdd.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptNumberAdd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="externalCS.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shafiq/externalCS.html">
+      <file leaf-file-name="JavascriptNumberOperations.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shafiq/JavascriptNumberOperations.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaScriptNumberCheckToInfinity.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptNumberCheckToInfinity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaScriptNumberBaseTypeCheck.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptNumberBaseTypeCheck.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -151,6 +154,16 @@
         <option value="$PROJECT_DIR$/shafiq/JavaScriptStringSpecialCharacter.html" />
         <option value="$PROJECT_DIR$/shafiq/JavaScriptLongCodeBreak.html" />
         <option value="$PROJECT_DIR$/shafiq/JsStringMethods.html" />
+        <option value="$PROJECT_DIR$/shafiq/JavaScriptConverting.html" />
+        <option value="$PROJECT_DIR$/shafiq/JavaScriptStringTrim.html" />
+        <option value="$PROJECT_DIR$/shafiq/JavaScriptStringCharacter.html" />
+        <option value="$PROJECT_DIR$/shafiq/JavaScriptSringToArray.html" />
+        <option value="$PROJECT_DIR$/shafiq/JavaScriptStringTrimLengthCheck.html" />
+        <option value="$PROJECT_DIR$/shafiq/JavaScriptNumber.html" />
+        <option value="$PROJECT_DIR$/shafiq/JavaScriptNumberAdd.html" />
+        <option value="$PROJECT_DIR$/shafiq/JavascriptNumberOperations.html" />
+        <option value="$PROJECT_DIR$/shafiq/JavaScriptNumberCheckToInfinity.html" />
+        <option value="$PROJECT_DIR$/shafiq/JavaScriptNumberBaseTypeCheck.html" />
       </list>
     </option>
   </component>
@@ -326,7 +339,7 @@
       <workItem from="1534016882697" duration="119000" />
       <workItem from="1534065499567" duration="2673000" />
       <workItem from="1534080507868" duration="5155000" />
-      <workItem from="1534132747525" duration="10392000" />
+      <workItem from="1534132747525" duration="23787000" />
     </task>
     <task id="LOCAL-00001" summary="added test file">
       <created>1533554836930</created>
@@ -339,7 +352,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19361000" />
+    <option name="totallyTimeSpent" value="32756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -575,7 +588,7 @@
     <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptObject3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -583,7 +596,7 @@
     <entry file="file://$PROJECT_DIR$/shafiq/OnClickEvent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -591,7 +604,7 @@
     <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptString.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+          <caret line="21" column="60" lean-forward="false" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -599,7 +612,7 @@
     <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptStringSpecialCharacter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="27" column="65" lean-forward="true" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+          <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -607,15 +620,95 @@
     <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptLongCodeBreak.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <caret line="45" column="6" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shafiq/JsStringMethods.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="88" column="51" lean-forward="true" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+        <state relative-caret-position="486">
+          <caret line="62" column="50" lean-forward="true" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptConverting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptStringTrim.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptStringCharacter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptSringToArray.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptStringTrimLengthCheck.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptNumber.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptNumberAdd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shafiq/JavascriptNumberOperations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptNumberCheckToInfinity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shafiq/JavaScriptNumberBaseTypeCheck.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding />
         </state>
       </provider>

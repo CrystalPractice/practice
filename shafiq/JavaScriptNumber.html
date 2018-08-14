@@ -8,6 +8,12 @@
     and Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
 
 <p id="demo"></p>
+<p>Floating point arithmetic is not always 100% accurate:</p>
+<p id="demo1"></p>
+
+<p>But it helps to multiply and divide:</p>
+
+<p id="demo2"></p>
 
 <script>
 var x1 = 34.00;
@@ -18,6 +24,11 @@ var z = 234e-5;      //.00123
 
 document.getElementById("demo").innerHTML =
 x1 + "<br>" + x2 + "<br>" + x3 +"<br>"+y+"<br>"+z;
+
+var x = 0.2 + 0.1;
+document.getElementById("demo1").innerHTML = "0.2 + 0.1 = " + x;
+var p = (0.2*10 + 0.1*10) / 10;
+document.getElementById("demo2").innerHTML = "0.2 + 0.1 = " + p;
 </script>
 
 </body>
