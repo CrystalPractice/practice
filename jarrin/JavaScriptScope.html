@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Scope</title>
+</head>
+<body>
+	<h2>JavaScript Function Scope</h2>
+	<h3 style="color: tomato">In JavaScript there are two types of scope:</h3>
+	<h4>
+		<ol>
+			<li>Local scope</li>
+			<li>Global scope</li>
+		</ol>
+	</h4>
+	______________________________________________________________________
+	<h2>
+		Local JavaScript Variables
+		<br>
+		Variables declared within a JavaScript function, 
+		become LOCAL to the function.
+		<br>
+		Local variables have Function scope: 
+				They can only be accessed from within the function.
+	</h2>
+	<p>Outside myFunction() carName is undefined.</p>
+	
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	
+	<script>
+		 myFunction();
+			// code here cannot use x
+		 function myFunction()
+		 {
+			var x ="Hello";
+			document.getElementById("demo").innerHTML = 
+				typeof x + " " + x; 
+			// code here CAN use x
+		 }
+		 document.getElementById("demo1").innerHTML = 
+			typeof x;
+	</script>
+	___________________________________________________________________________________________
+	
+	<h2>
+	Global JavaScript Variables
+	<br>
+	A variable declared outside a function, becomes GLOBAL.
+	<br>
+	A global variable has global scope:
+	All scripts and functions on a web page can access it.
+	</h2>
+	
+	<p>A GLOBAL variable can be accessed from any script or function.</p>
+	
+	<p id="demo2"></p>
+	<script>
+		var x = "Hello";
+			// code here can use x
+		myFunction();
+		function myFunction()
+		{
+			document.getElementById("demo2").innerHTML =
+			"I can display " + x;
+				// code here can also use x 
+		}
+	</script>
+	___________________________________________________________________________________________
+	
+	<h2>
+	Automatically Global
+	<br>
+	If you assign a value to a variable that has not been declared, 
+	it will automatically become a GLOBAL variable.
+	<br>
+	This code example will declare a global variable carName, 
+	even if the value is assigned inside a function
+	</h2>
+	
+	<p id="demo3"></p>
+	<script>
+		myFunction();
+		
+		document.getElementById("demo3").innerHTML = 
+		typeof x + " " + x;
+		
+		function myFunction()
+		{
+			var x = "Hello";
+		}
+	</script>
+	___________________________________________________________________________________________
+	
+	<h2>
+	Global Variables in HTML
+	<br>
+	With JavaScript, the global scope is the complete JavaScript environment.
+	<br>
+	In HTML, the global scope is the window object. 
+	All global variables belong to the window object
+	</h2>
+	
+	<p>In HTML, global variables defined with <b>var</b>, will become window variables.</p>
+
+	<p id="demo4"></p>
+
+	<script>
+		var x = "Hello";
+
+		// code here can use window.x
+		document.getElementById("demo4").innerHTML = "I can display " + window.x;
+	</script>
+</body>
+</html>
