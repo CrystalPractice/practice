@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+
+<h2>slice()</h2>
+
+<p>This example slices out a part of an array starting from array element 1 ("Orange"):</p>
+
+<p id="demo"></p>
+<p id="demo"></p>
+
+<script>
+    var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    var citrus = fruits.slice(2);
+    document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
+    var citrus2 = fruits.slice(1,3);
+    document.getElementById("demo2").innerHTML = fruits + "<br><br>" + citrus;
+</script>
+
+</body>
+</html>
