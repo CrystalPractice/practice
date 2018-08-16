@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Search a string for "W3Schools", and display the position of the match:</p>
+<h2 style="color:Tomato;">
+Using String Methods
+<br>
+In JavaScript, regular expressions are often used with the two string methods: search() and replace().
+<br>
+The search() method uses an expression to search for a match, and returns the position of the match.
+<br>
+The replace() method returns a modified string where the pattern is replaced
+</h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+var str = "Visit W3Schools!"; 
+var n = str.search("W3Schools");
+var p = str.search(/W3Schools/i);
+document.getElementById("demo").innerHTML = n;
+document.getElementById("demo1").innerHTML = p;
+</script>
+____________________________________________________________________________________________________________________
+
+<h2>JavaScript String Methods</h2>
+
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+
+<p id="demo3">Hello!</p>
+<button type="button" onclick="change1()">click</button>
+<script>
+	
+
+	function change1()
+	{
+	var str = document.getElementById("demo3").innerHTML;
+	var txt = str.replace("Hello!","Hi!!!");
+	document.getElementById("demo3").innerHTML = txt;
+
+	}
+</script>
+<br>
+___________________________________________________________________________________________________________________
+
+<h2>Use String replace() With a Regular Expression</h2>
+<p id="demo4">Hi!!!</p>
+<button type="button" onclick="change()">click to see the change</button>
+
+<script>
+	function change()
+	{
+		var str = document.getElementById("demo4").innerHTML;
+		var txt = str.replace(/hi/i,"Hello");
+		document.getElementById("demo4").innerHTML = txt;
+	}
+</script>
+</body>
+</html>
