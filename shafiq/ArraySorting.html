@@ -9,6 +9,8 @@
 <button onclick="myFunction()">Click for Array Sorting</button>
 
 <p id="demo"></p>
+<p>By combining sort() and reverse() you can sort an array in descending order.</p>
+<p id="demo2"></p>
 
 <script>
     var fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -17,6 +19,8 @@
     function myFunction() {
         fruits.sort();
         document.getElementById("demo").innerHTML = fruits;
+        fruits.reverse();
+        document.getElementById("demo2").innerHTML=fruits;
     }
 </script>
 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.forEach()</h2>
+
+<p>Calls a function once for each array element.</p>
+<p id="demo"></p>
+<p>JavaScript Array.map()</p>
+<p id="demo1"></p>
+<p>Find Maximum value from array:</p>
+<p id="demo2"></p>
+<p>This example finds the sum of all numbers in an array:</p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p>JavaScript Array.every()</p>
+<p id="demo7"></p>
+
+<script>
+    var txt= "";
+    var numbers=[5,54,23,98,8];
+    numbers.forEach(myFunction);
+    document.getElementById("demo").innerHTML=txt;
+    function myFunction(value,index,array) {
+        txt=txt+value+"<br>";
+    }
+</script>
+<script>
+    var numbers2=[5,54,23,98,8];
+    var numbers3=numbers2.map(myFunction1)
+    document.getElementById("demo1").innerHTML = numbers3;
+
+    function myFunction1(value, index, array) {
+        return value * 3;
+    }
+</script>
+<script>
+    var numbers4 = [5,54,23,98,8];
+    var over18 = numbers4.filter(myFunction4);
+
+    document.getElementById("demo2").innerHTML = over18;
+
+    function myFunction4(value, index, array) {
+        return value > 23;
+    }
+</script>
+
+<script>
+    var numbers5 =[5,54,23,98,8];
+    var sum=numbers5.reduce(myFunction5);
+
+    document.getElementById("demo5").innerHTML = "The sum is " + sum;
+    var sumAnother=numbers5.reduceRight(myFunction5);
+    document.getElementById("demo6").innerHTML="The sum is "+sumAnother;
+    function myFunction5(total, value, index, array) {
+        return total + value;
+
+    }
+    var numbers7 =[5,54,23,98,8];
+    var allOver23 = numbers7.every(myFunction7);
+
+    document.getElementById("demo7").innerHTML = "All over 22 is " + allOver23;
+
+    function myFunction7(value, index, array) {
+        return value > 22;
+    }
+
+</script>
+
+</body>
+</html>
