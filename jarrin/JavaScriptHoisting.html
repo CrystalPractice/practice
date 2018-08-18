@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Hoisting</title>
+</head>
+<body>
+	<h2>In JavaScript, a variable can be declared after it has been used</h2>
+	<p id="demo"></p>
+	<script>
+		x=5;	//Assign 5 to x-fast
+		element = document.getElementById("demo");	//Find an element
+		element.innerHTML = x;				//Display x in the element
+		
+		var x;			//Declare x	
+	</script>
+	_________________________________________________________________________________________
+	
+	<h2>a variable can be used before it has been declared</h2>
+	<p id="demo1"></p>
+	<script>
+		var x;		//declare x
+		x = 5;		//Assign 5 to x
+		
+		element = document.getElementById("demo1");
+		element.innerHTML = x;
+		
+	</script>
+	_________________________________________________________________________________________
+	
+	<h2>JavaScript Initializations are Not Hoisted</h2>
+	<p id="demo2"></p>
+	<script>
+		var x = 5;		//Initialize x
+		var y = 7;		//Initialize y
+		
+		element = document.getElementById("demo2");
+		element.innerHTML = x + " " + y;
+	</script>
+	_________________________________________________________________________________________
+	
+	<p id="demo3"></p>
+	<script>
+		var x = 5;		//Initialize x
+		element = document.getElementById("demo3");
+		element.innerHTML = "x is " + x + "and y is " + y1;
+		var y1 = 7; 		//Initialize y
+	</script>
+	_________________________________________________________________________________________
+	
+	<p id="demo4"></p>
+	<script>
+		var x = 5;		//Initialize x
+		var y2;			//Declare y2
+		
+		element = document.getElementById("demo4");
+		element.innerHTML = x + " " + y2;
+		
+		y2=7;			//Assign 7 to y2
+	</script>
+	
+</body>
+</html>
