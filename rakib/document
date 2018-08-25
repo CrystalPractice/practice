@@ -1,0 +1,10 @@
+# JavaScript is used to create client-side dynamic pages.
+# JavaScript is an object-based scripting language which is lightweight and cross-platform.
+# There is three placess we can put javaScript Code within  1.body tag 2.head tag 3.external js file
+# The script tag specifies that we are using JavaScript.
+# The text/javascript is the content type that provides information to the browser about the data.
+# The document.write() function is used to display dynamic content through JavaScript. We will learn about document object in detail
+# /* */ and //  use for commenting
+# There are two types of data types in JavaScript. 1.Primitive 2. non-primitive
+# It is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine.
+#
