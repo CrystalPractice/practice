@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Errors</title>
+</head>
+<body>
+	<h2>When executing JavaScript code, different errors can occur.
+		<ol>
+			<li>Errors can be coding errors made by the programmer</li> 
+			<li>errors due to wrong input</li>
+			<li>other unforeseeable things</li>
+		</ol>
+	</h2>
+	
+	<p id="demo"></p>
+	
+	<script>
+		try
+		{
+			addalert("Welcome!!!");
+		}
+		catch(err)
+		{
+			document.getElementById("demo").innerHTML = err.message;
+		}
+	</script>
+	__________________________________________________________________________________________________________
+	
+	<h2>
+		Range Error
+		<br>
+		A RangeError is thrown if you use a number 
+		that is outside the range of legal values
+	</h2>
+	
+	<p>You cannot set the number of significant digits of a number to 500:</p>
+	
+	<p id="demo1"></p>
+	<script>
+		var num = 1;
+		try
+		{
+			num.toPrecision(500);		// A number cannot have 500 significant digits
+		}
+		catch(err)
+		{
+			document.getElementById("demo1").innerHTML = err.name;
+		}
+	</script>
+	__________________________________________________________________________________________________________
+	
+	<h2>
+		Reference Error
+		<br>
+		A ReferenceError is thrown if you use (reference) a variable that has not been declared
+	</h2>
+	
+	<p id="demo2"></p>
+	<script>
+		var x;
+		try
+		{
+			x = y + 1;		// y cannot be referenced (used)
+	
+		}
+		catch(err)
+		{
+		document.getElementById("demo2").innerHTML = err.name;
+		}
+	</script>
+	__________________________________________________________________________________________________________
+
+	<h2>
+		Syntax Error
+		<br>
+		A SyntaxError is thrown if you try to evaluate code with a syntax error
+	</h2>
+	
+	<p id="demo3"></p>
+	
+	<script>
+		try
+		{
+			eval("alert('Hello)"); 	 // Missing ' will produce an error
+		}
+		catch(err)
+		{
+			document.getElementById("demo3").innerHTML = err.name;
+		}
+	</script>
+	__________________________________________________________________________________________________________
+	
+	<h2>
+	Type Error
+	<br>
+	A TypeError is thrown if you use a value that is outside the range of expected types
+	</h2>
+	<p>You cannot convert a number to upper case:</p>
+	
+	<p id="demo4"></p>
+	<script>
+		var num = 1;
+		try
+		{
+		num.toUpperCase();		// You cannot convert a number to upper case
+		}
+		catch(err)
+		{
+			document.getElementById("demo4").innerHTML = err.name;
+		}
+	</script>
+	__________________________________________________________________________________________________________
+	
+	<h2>
+		URI (Uniform Resource Identifier) Error
+		<br>
+		A URIError is thrown if you use illegal characters in a URI function
+	</h2>
+	<p>Some characters cannot be decoded with decodeURI():</p>
+
+	<p id="demo5"></p>
+
+	<script>
+		try 
+		{
+			decodeURI("%%%");
+		}
+		catch(err) 
+		{
+			document.getElementById("demo5").innerHTML = err.name;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Number Methods</h2>
+
+<p>The JavaScript function Number() can convert a date to a number:</p>
+
+<p id="demo">
+
+</p>The JavaScript function Number() converts variables to numbers:</p>
+<p id="demo2"></p>
+<p>The global JavaScript function parseInt() converts strings to numbers:</p>
+<p id="demo3"></p>
+<p> parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:</p>
+<p id="demo4"></p>
+<script>
+    var y = new Date("2018-08-14");
+    document.getElementById("demo").innerHTML = Number(y);
+    document.getElementById("demo2").innerHTML =
+        Number(true) + "<br>" +
+        Number(false) + "<br>" +
+        Number("  10") + "<br>" +
+        Number("10  ") + "<br>" +
+        Number("10 6") + "<br>" +
+        Number("John")+ "<br>"+
+        Number("20 30");
+    document.getElementById("demo3").innerHTML =
+        parseInt("10") + "<br>" +
+        parseInt("10.33") + "<br>" +
+        parseInt("10 6") + "<br>" +
+        parseInt("10 years") + "<br>" +
+        parseInt("years 10") +"<br>" +
+        parseInt("20 56");
+    document.getElementById("demo4").innerHTML =
+        parseFloat("10") + "<br>" +
+        parseFloat("10.33") + "<br>" +
+        parseFloat("10 6") + "<br>" +
+        parseFloat("10 years") + "<br>" +
+        parseFloat("years 10");
+</script>
+
+</body>
+</html>

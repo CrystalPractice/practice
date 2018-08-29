@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>JavaScript Break and Continue</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+	var text = "";
+	var i;
+	for( i=0; i<10; i++)
+	{
+		if(i == 3)
+		{
+		
+			break;
+		
+		
+		}
+	text += "The number is " + i + "<br>";
+	}
+	document.getElementById("demo").innerHTML = text;
+</script>
+______________________________________________________________________________
+
+<h2>A loop which will skip the step where i = 3</h2>
+
+<p id="demo1"></p>
+
+<script>
+	var text = "";
+	var i;
+	for(i = 0; i<10; i++)
+	{
+		if(i==3)
+		{
+		continue;
+		}
+	
+	text += "The number is " + i + "<br>";
+	
+	
+	}
+	document.getElementById("demo1").innerHTML = text;
+</script>
+______________________________________________________________________________
+
+<h2>JavaScript Labels</h2>
+
+<h3 style="color:Tomato;">
+label:
+<br>
+statements
+<br>
+The break and the continue statements are the only 
+JavaScript statements that can "jump out of" a code block
+<br>
+Syntax:
+<br>
+break labelname; 
+<br>
+continue labelname;
+
+</h3>
+
+<p id="demo2"></p>
+
+<script>
+	var cars = ["BMW","Volvo","Saab","Ford"];
+	var text = "";
+	
+	list:
+	{
+	text += cars[0]  + "<br>";
+	text += cars[1]  + "<br>";
+	break list;
+	text += cars[2]  + "<br>";
+	text += cars[3]  + "<br>";
+	}
+	document.getElementById("demo2").innerHTML = text;
+</script>
+______________________________________________________________________________
+
+<h2>Use the continue statement to skip the numbers 5 AND 7 in the loop.</h2>
+
+<p id="demo3"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 1; i < 10; i++) {
+    if (i === 5 || i === 7) continue;
+    document.getElementById("demo3").innerHTML += i + "<br>";
+}
+</script>
+______________________________________________________________________________
+
+<h2>Use the continue statement to not output the array's element "Saab"</h2>
+<p id="demo4"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var text = ""
+var i;
+for (i = 0; i < cars.length; i++) {
+    if (cars[i] === "Saab") continue;
+    text += cars[i] + "<br>";
+}
+document.getElementById("demo4").innerHTML = text;
+</script>
+______________________________________________________________________________
+
+
+</body>
+</html>

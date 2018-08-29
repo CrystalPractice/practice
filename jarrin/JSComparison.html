@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Syntax
+variablename = (condition) ? value1:value2 
+</p>
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18"/>
+
+<button onclick="myFunction()">click</button>
+
+<p id="demo"></p>
+
+<script>
+	function myFunction(){
+	
+		var age = document.getElementById("age").value;
+		
+		var voteable = (age < 18)? "Too young":"Old enough";
+		
+		document.getElementById("demo").innerHTML =  voteable + " to vote";
+	
+	
+						}
+</script>
+___________________________________________________________________________
+
+<br>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo1"></p>
+
+<script>
+function myFunction1() {
+    var age, voteable;
+    age = Number(document.getElementById("age").value);
+    if (isNaN(age)) {
+        voteable = "Input is not a number";
+    } else {
+        voteable = (age < 18) ? "Too young" : "Old enough";
+    }
+    document.getElementById("demo1").innerHTML = voteable;
+}
+</script>
+___________________________________________________________________________
+
+<h2>Use a conditional (ternary) operator for this exercise:
+	If the variable firstName is equal to "John", the value of the variable result should be "Hello John!", 
+	otherwise the value of result should be "You're not John!".
+</h2>
+First Name: <input type="text" id="fname" value="John">
+<button onclick="checkName()">Check Name</button>
+<p id="demo2"></p>
+
+<script>
+function checkName() {
+  var firstName = document.getElementById("fname").value;
+  var result = (firstName === "John") ? "Hello John!":"You're not John!";
+  document.getElementById("demo2").innerHTML = result;
+}
+</script>
+</body>
+</html>

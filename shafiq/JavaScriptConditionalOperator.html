@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="21"/>
+
+
+<button onclick="myFunction2()">Check it</button>
+
+<p id="demo"></p>
+
+<script>
+
+        function myFunction2() {
+            var age,voteable;
+            age=document.getElementById("age").value;
+            voteable=(age<21)?"Too Young":"Old enough";
+            document.getElementById("demo").innerHTML=voteable+" to vote.";
+        }
+
+</script>
+
+</body>
+</html>

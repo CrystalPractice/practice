@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The push method appends a new element to an array.</p>
+<button onclick="myFunction()">Add it
+
+</button>
+<p id="arrayAdd"></p>
+<p id="numIndex"></p>
+<script>
+    var fruits=["Banana","Orange","Apple","Mango"];
+    document.getElementById("arrayAdd").innerHTML=fruits;
+    function myFunction() {
+        fruits.push("Lemon");
+        fruits[fruits.length] = "Guaba";
+        fruits[fruits.length]="Bel"
+        document.getElementById("arrayAdd").innerHTML=fruits;
+        document.getElementById("numIndex").innerHTML =
+            fruits[2] + " " + fruits.length;
+    }
+</script>
+</body>
+</html>

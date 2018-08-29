@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The JavaScript this Keyword</title>
+</head>
+<body>
+
+<p>In this example, <b>this</b> represents the <b>person</b> object.</p>
+<p>Because the person object "owns" the fullName method.</p>
+
+
+<p id="demo"></p>
+
+<script>
+	//create an object
+	var person = {
+		firstName: "John",
+		lastName: "Doe",
+		id: 5000,
+		fullName: function(){
+			return this.firstName + " " + this.lastName;
+		}
+	};
+	//display data from the object
+	document.getElementById("demo").innerHTML = person.fullName();
+	
+</script>
+____________________________________________________________________________________
+
+<p>In this example, <b>this</b> represents the window Object:</p>
+
+<p id="demo1"></p>
+<script>
+	var x = this;
+	document.getElementById("demo1").innerHTML = x;
+</script>
+____________________________________________________________________________________
+
+<p>In this example, <b>this</b> 
+	represents the person object that "owns" the fullName method.
+</p>
+
+<p id="demo2"></p>
+<script>
+	document.getElementById("demo2").innerHTML = myFunction();
+	
+	function myFunction()
+	{
+		return this;
+	}
+</script>
+____________________________________________________________________________________
+
+<p id="demo3"></p>
+
+<script>
+	"use strict";
+	document.getElementById("demo3").innerHTML = myFunction();
+	function myFunction()
+	{
+		return this;
+	}
+</script>
+____________________________________________________________________________________
+
+<p id="demo4"></p>
+
+<script>
+	var person = {
+	firstName: "John",
+	lastName: "Doe",
+	id: "5500",
+	myFunction: function(){
+	return this;
+	}
+	
+	};
+	document.getElementById("demo4").innerHTML = person.myFunction();
+</script>
+____________________________________________________________________________________
+
+<p>In this example <strong>this</strong> 
+	refers to person2, even if it is a method of person1:
+</p>
+
+<p id="demo5"></P>
+
+<script>
+	var person1 = {
+	fullName: function(){
+	return this.firstName + "  " + this.lastName;
+	}
+	}
+	
+	var person2 = {
+	
+	firstName: "John",
+	lastName: "Doe"
+	
+	}
+	
+	var x = person1.fullName.call(person2);
+	document.getElementById("demo5").innerHTML = x;
+</script>
+</body>
+</html>

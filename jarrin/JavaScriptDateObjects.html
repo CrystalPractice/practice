@@ -183,5 +183,99 @@ convert the date to a more readable format
 <script>
 document.getElementById("demo15").innerHTML = new Date().toDateString();
 </script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getMonth()</h2>
+
+<p>The getMonth() method returns the month as a number:</p>
+
+<p>You can use an array to display the name of the month:</p>
+
+<p id="demo16"></p>
+
+<script>
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("demo16").innerHTML = months[d.getMonth()];
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getDate()</h2>
+
+<p>The getDate() method returns the day of a date as a number (1-31):</p>
+
+<p id="demo17"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo17").innerHTML = d.getDate();
+</script>
+____________________________________________________________________________________________________________
+
+
+<h2>JavaScript getHours()</h2>
+
+<p>The getHours() method returns the hours of a date as a number (0-23):</p>
+
+<p id="demo18"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo18").innerHTML = d.getHours();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getMinutes()</h2>
+
+<p>The getMinutes() method returns the minutes of a date as a number (0-59):</p>
+
+<p id="demo19"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo19").innerHTML = d.getMinutes();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getSeconds()</h2>
+
+<p>The getSeconds() method returns the seconds of a date as a number (0-59):</p>
+
+<p id="demo20"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo20").innerHTML = d.getSeconds();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getMilliseconds()</h2>
+
+<p>The getMilliseconds() method returns the milliseconds of a date as a number (0-999):</p>
+
+<p id="demo21"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo21").innerHTML = d.getMilliseconds();
+</script>
+____________________________________________________________________________________________________________
+
+<h2>JavaScript getDay()</h2>
+
+<p>The getDay() method returns the weekday as a number:</p>
+
+<p>You can use an array to display the name of the weekday:</p>
+
+<p id="demo22"></p>
+
+<script>
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("demo22").innerHTML = days[d.getDay()];
+</script>
+____________________________________________________________________________________________________________
+
+
 </body>
 </html>

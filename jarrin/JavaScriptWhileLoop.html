@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript While Loop</title>
+</head>
+<body>
+________________________________________________
+<h3 style="color:Tomato;">
+<br>
+Syntax:
+<br>
+	while (condition)
+<br>	
+	{
+		code block to be executed
+	}
+</h3>	
+<br>
+_______________________________________________	
+	
+<p id="demo"></p>
+
+<script>
+	var i = 0;
+	var text = "";
+	
+	while(i < 10)
+	{
+		text += "The number is " + i + "<br>";
+		i++;
+	}
+document.getElementById("demo").innerHTML = text;	
+</script>
+________________________________________________________________________
+
+<h2>The Do/While Loop</h2>
+
+<h3 style="color:Tomato;">
+Syntax:
+<br>
+do {
+<br>
+    code block to be executed
+<br>	
+}
+<br>
+while (condition);
+</h3>
+
+<p id="demo1"></p>
+<script>
+	var text = "";
+	var i = 0;
+	
+	
+	do{
+	text += "The number is " + i + "<br>";
+		i++;
+	}
+	while(i < 10);
+document.getElementById("demo1").innerHTML = text;	
+</script>
+__________________________________________________________________________________
+
+<h2>Comparing For and While</h2>
+
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+	var cars = ["BMW", "Volvo", "Saab", "Ford"];
+	var i = 0;
+	var text = "";
+	var text1 = "";
+	while(cars[i]) {
+		text += cars[i] + "<br>";
+		i++;
+	}
+	document.getElementById("demo2").innerHTML = text;
+	for(; cars[i];){
+		text1 += cars[i] + "<br>";
+		i++;
+	}
+	document.getElementById("demo3").innerHTML = text1;
+</script>
+____________________________________________________________________________________
+
+<h2>Make the loop start counting from 5. 
+	Count up to (including) 50 and count only every fifth number
+</h2>
+<p id="demo4"></p>
+
+<script>
+	var i = 5;
+	while (i <= 50) {
+		document.getElementById("demo4").innerHTML += i + "<br>";
+		i = i + 5;
+	}
+</script>
+
+</body>
+</html>

@@ -2,11 +2,39 @@
 <html>
 <body>
 
-<h2>Javascript file check</h2>
-<p id="idname"></p>
-<button type="button"
-onclick="document.getElementById('idname').innerHTML = Date()">
-Date and Time here.</button>
+<h2>JavaScript new Date()</h2>
+
+<p>Using new Date(), creates a new date object with the current date and time:</p>
+
+<p id="demo"></p>
+<p>Using new Date(7 numbers), creates a new date object with the specified date and time:</p>
+<p id="demo2"></p>
+<p>Two digit years will be interpreted as 19xx:</p>
+<p id="demo3"></p>
+<p>new Date(dateString) creates a new date object from a date string:</p>
+<p id="demo4"></p>
+<p>100000000000 milliseconds from Jan 1, 1970, is approximately Mar 3, 1973:</p>
+<p id="demo5"></p>
+<p>100000000000 milliseconds from Jan 1, 1970, is approximately Oct 31, 1966:</p>
+<p id="demo6"></p>
+<p>The toUTCString() method converts a date to a UTC string (a date display standard):</p>
+<p id="demo7"></p>
+<script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d;
+    var d2=new Date(2018, 11, 24, 10, 33, 30, 0);
+    document.getElementById("demo2").innerHTML=d2;
+    var d3 = new Date(99, 11, 24);
+    document.getElementById("demo3").innerHTML = d3;
+    var d4 = new Date("February , 2018 07:07:07");
+    document.getElementById("demo4").innerHTML=d4;
+    var d5 = new Date(100000000000);
+    document.getElementById("demo5").innerHTML = d5;
+    var d6=new Date(-100000000000);
+    document.getElementById("demo6").innerHTML=d6;
+    var d7=new Date();
+    document.getElementById("demo7").innerHTML=d7.toUTCString();
+</script>
 
 </body>
-</html> 
+</html>

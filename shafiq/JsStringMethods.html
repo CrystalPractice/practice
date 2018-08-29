@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+    var str = "Please locate where 'locate' occurs!";
+    var strNo = "It is our Mother Land";
+    var pos = str.indexOf("locate");
+    var posSearch=str.search("locate");
+    var posLast=str.lastIndexOf("locate");
+    var posNo=strNo.indexOf("Hello")
+    document.getElementById("demo").innerHTML = pos;
+    document.getElementById("demo2").innerHTML=posLast;
+    document.getElementById("demo3").innerHTML = posNo;
+    document.getElementById("demo4").innerHTML = posSearch;
+
+
+</script>
+<h3>Slice Method() Example</h3>
+<br/>
+<p id="demo5"></p>
+<br/>
+<p id="demo6"></p>
+<br/>
+<p id="demo7"></p>
+<br/>
+<p id="demo8"></p>
+
+<script>
+    var str = "Apple, Banana, Kiwi";
+    var res = str.slice(7,13);
+    var res2=str.slice(-12,-6);
+    var res3=str.slice(7);
+    var res4=str.slice(-12);
+    document.getElementById("demo5").innerHTML = res;
+    document.getElementById("demo6").innerHTML = res2;
+    document.getElementById("demo7").innerHTML = res3;
+    document.getElementById("demo8").innerHTML = res4;
+
+</script>
+<h1>The substring() Method</h1>
+<p>substring() is similar to slice().The difference is that substring() cannot accept negative indexes.</p>
+
+<h2>The substr() Method</h2>
+<p>substr() is similar to slice().The difference is that the second parameter specifies the length of the extracted part.</p>
+<p id="dem9"></p>
+
+<script>
+    var str = "Apple, Banana, Kiwi";
+    var res = str.substr(7,4);
+    document.getElementById("dem9").innerHTML = res;
+</script>
+<br />
+<button onclick="myFunction2()">Change it</button>
+
+<p id="demo10">Please visit Microsoft!</p>
+
+<script>
+    function myFunction2() {
+        var str = document.getElementById("demo10").innerHTML;
+        var txt = str.replace("Microsoft","W3Schools");
+        document.getElementById("demo10").innerHTML = txt;
+    }
+</script>
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+<button onclick="myFunction()">Change it!</button>
+
+<p id="demo11">Please visit Microsoft!</p>
+
+<script>
+    function myFunction() {
+        var str = document.getElementById("demo11").innerHTML;
+        var txt = str.replace(/MICROSOFT/i,"W3Schools");
+        document.getElementById("demo11").innerHTML = txt;
+    }
+</script>
+
+<p>Replace all occurrences of "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction2()">All Change</button>
+
+<p id="demo12">Please visit Microsoft and Microsoft!</p>
+
+<script>
+    function myFunction2() {
+        var str = document.getElementById("demo12").innerHTML;
+        var txt = str.replace(/Microsoft/g,"W3Schools");
+        document.getElementById("demo12").innerHTML = txt;
+    }
+</script>
+
+
+
+</body>
+</html>

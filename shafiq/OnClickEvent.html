@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="pid"></p>
+<br />
+
+<button onclick="document.getElementById('pid').innerHTML=Date()">Time check</button>
+
+<p id="pid2"></p>
+<button onclick="this.innerHTML=Date()">What time is it?</button>
+
+
+<p>Click the button to display the date.</p>
+<br />
+<p id="pid3"></p>
+<button onclick="showDate()">New time</button>
+<script>
+    function showDate() {
+        document.getElementById("pid3").innerHTML=Date();
+        
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript ISO Dates</h2>
+
+<p id="demo"></p>
+<p2>JavaScript ISO Dates only year</p2>
+<p id="demo2"></p>
+<p2>JavaScript Short Dates</p2>
+<p id="demo3"></p>
+<p>Date.parse(string) returns milliseconds.</p>
+<p>You can use the return value to convert the string to a date object:</p>
+
+<p id="demo4"></p>
+
+
+<script>
+    var d = new Date("2015-03-25");
+    document.getElementById("demo").innerHTML = d;
+    var d2 = new Date("2015");
+    document.getElementById("demo2").innerHTML = d2;
+    var d3 = new Date("03/25/2015");
+    document.getElementById("demo3").innerHTML = d3;
+    var msec = Date.parse("March 21, 2012");
+    var d4 = new Date(msec);
+    document.getElementById("demo4").innerHTML = d4;
+</script>
+
+</body>
+</html>
