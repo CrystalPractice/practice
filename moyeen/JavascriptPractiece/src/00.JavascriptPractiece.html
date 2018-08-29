@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavascriptPractiece</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+
+
+    <h3>Trigger Button Click on Enter</h3>
+    <p>Press the "Enter" key inside the input field to trigger the button.</p>
+
+    <input id="myInput" value="Some text..">
+    <button id="myBtn" onclick="javascript:alert('Hello World!')">Button</button>
+
+    <script>
+        var input = document.getElementById("myInput");
+        input.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                document.getElementById("myBtn").click();
+            }
+        });
+    </script>
+
+
+
+
+
+    <!--===========================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> String Operators </div>
+        <div class="panel-body">
+
+            <h2>String Operators</h2>
+
+            <p>The assignment operator += can concatenate strings.</p>
+
+            <p id="demo23"></p>
+
+            <script>
+                txt1 = "What a very ";
+                txt1 += "nice day";
+                document.getElementById("demo23").innerHTML = txt1;
+            </script>
+
+        </div>
+    </div>
+
+    <!--===========================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> Dynamic Types </div>
+        <div class="panel-body">
+            <h2>Dynamic Types</h2>
+
+            <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+            <p id="demo24"></p>
+
+            <script>
+                var x;               // Now x is undefined
+                x = 5;               // Now x is a Number
+                x = "John";          // Now x is a String
+
+                document.getElementById("demo24").innerHTML = x;
+            </script>
+
+        </div>
+    </div>
+
+    <!--============================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> Strings are written with quotes. You can use single or double quotes: </div>
+        <div class="panel-body">
+
+            <p>Strings are written with quotes. You can use single or double quotes:</p>
+
+            <p id="demo25"></p>
+
+            <script>
+                var carName1 = "Volvo XC60";
+                var carName2 = 'Volvo XC60';
+
+                document.getElementById("demo25").innerHTML =
+                    carName1 + "<br>" +
+                    carName2;
+            </script>
+
+        </div>
+    </div>
+
+<!--==============================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> You can use quotes inside a string, as long as they don't match the quotes surrounding the string: </div>
+        <div class="panel-body">
+
+            <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+
+            <p id="demo26"></p>
+
+            <script>
+                var answer1 = "It's alright";
+                var answer2 = "He is called 'Johnny'";
+                var answer3 = 'He is called "Johnny"';
+
+                document.getElementById("demo26").innerHTML =
+                    answer1 + "<br>" +
+                    answer2 + "<br>" +
+                    answer3;
+            </script>
+
+        </div>
+    </div>
+
+    <!--============================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> JavaScript Arrays </div>
+        <div class="panel-body">
+
+            <h2>JavaScript Arrays</h2>
+
+            <p>Array indexes are zero-based, which means the first item is [0].</p>
+
+            <p id="demo27"></p>
+
+            <script>
+                var cars = ["Saab","Volvo","BMW"];
+
+                document.getElementById("demo27").innerHTML = cars[0];
+            </script>
+
+        </div>
+    </div>
+
+    <!--============================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+            <h2>JavaScript Objects</h2>
+
+            <p id="demo28"></p>
+
+            <script>
+                var person = {
+                    firstName : "John",
+                    lastName  : "Doe",
+                    age       : 50,
+                    eyeColor  : "blue"
+                };
+
+                document.getElementById("demo28").innerHTML =
+                    person.firstName + " is " + person.age + " years old.";
+            </script>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--============================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> JavaScript typeof </div>
+        <div class="panel-body">
+
+            <h2>JavaScript typeof</h2>
+            <p>The typeof operator returns the type of a variable or an expression.</p>
+
+            <p id="demo29"></p>
+
+            <script>
+                document.getElementById("demo29").innerHTML =
+                    typeof "" + "<br>" +
+                    typeof "John" + "<br>" +
+                    typeof "John Doe";
+            </script>
+
+        </div>
+    </div>
+    <!--=================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+
+
+        </div>
+    </div>
+<!--================================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--===============================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> An empty string has both a legal value and a type: </div>
+        <div class="panel-body">
+            <h2>JavaScript</h2>
+
+            <p>An empty string has both a legal value and a type:</p>
+
+            <p id="demo31"></p>
+
+            <script>
+                var car = "";
+                document.getElementById("demo31").innerHTML =
+                    "The value is: " +
+                    car + "<br>" +
+                    "The type is: " + typeof car;
+            </script>
+        </div>
+    </div>
+    <!--===========================================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Set the value to undefined </div>
+        <div class="panel-body">
+
+            <h2>JavaScript</h2>
+
+            <p>Variables can be emptied if you set the value to <b>undefined</b>.</p>
+
+            <p id="demo30"></p>
+
+            <script>
+                var car = "Volvo";
+                car = undefined;
+                document.getElementById("demo30").innerHTML =
+                    car + "<br>" + typeof car;
+            </script>
+
+
+<!--======================================================================================================================-->
+            <div class="panel panel-primary">
+                <div class="panel-heading"> ---- </div>
+                <div class="panel-body">
+
+
+
+                </div>
+            </div>
+
+            <h2>Undefined and null</h2>
+
+
+            <p>Undefined and null are equal in value but different in type:</p>
+
+            <p id="demo32"></p>
+
+            <script>
+                document.getElementById("demo32").innerHTML =
+                    typeof undefined + "<br>" +
+                    typeof null + "<br><br>" +
+                    (null === undefined) + "<br>" +
+                    (null == undefined);
+            </script>
+
+        </div>
+    </div>
+
+    <!--=======================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+
+
+        </div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> JavaScript typeof </div>
+        <div class="panel-body">
+
+            <h2>JavaScript typeof</h2>
+            <p>The typeof operator returns object for both objects, arrays, and null.</p>
+            <p>The typeof operator does not return object for functions.</p>
+
+            <p id="demo33"></p>
+
+            <script>
+                document.getElementById("demo33").innerHTML =
+                    typeof {name:'john', age:34} + "<br>" +
+                    typeof [1,2,3,4] + "<br>" +
+                    typeof null + "<br>" +
+                    typeof function myFunc(){};
+            </script>
+
+        </div>
+    </div>
+
+<!--===========Functions=============================================================================================================-->
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+
+    <h2>JavaScript Functions</h2>
+
+    <p>This example calls a function which performs a calculation, and returns the result:</p>
+
+    <p id="demo34"></p>
+
+    <script>
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        document.getElementById("demo34").innerHTML = myFunction(4, 3);
+    </script>
+<!--<button type="button" onclick='document.getElementById("demo34").innerHTML="45345"'>click</button>-->
+    <script>
+        function number(a, b){
+            return a+b
+    }
+        document.getElementById("demo34").innerHTML=number(6, 8)
+    </script>
+
+
+<!--========================================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+
+
+        </div>
+    </div>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> JavaScript Functions </div>
+        <div class="panel-body">
+            <h2>JavaScript Functions</h2>
+
+            <p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+            <p id="demo35"></p>
+
+            <script>
+                function toCelsius(f) {
+                    return (5/9) * (f-32);
+                }
+                document.getElementById("demo35").innerHTML = toCelsius(77);
+            </script>
+        </div>
+    </div>
+
+    <!--=======================================================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+
+
+        </div>
+    </div>
+
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo36"></p>
+
+    <script>
+        // Create an object:
+        var car = {type:"Fiat", model:"500", color:"white"};
+
+        // Display some data from the object:
+        document.getElementById("demo36").innerHTML = car.type;
+    </script>
+
+    <!--============================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+
+
+        </div>
+    </div>
+
+
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo37"></p>
+
+    <script>
+        // Create an object:
+        var person = {
+            firstName : "John",
+            lastName  : "Doe",
+            age       : 50,
+            eyeColor  : "blue"
+        };
+
+        // Display some data from the object:
+        document.getElementById("demo38").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+    </script>
+
+    <!--============================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+
+
+        </div>
+    </div>
+    <h2>JavaScript Objects</h2>
+    <p>There are two different ways to access an object property.</p>
+    <p>You can use person.property or person["property"].</p>
+    <p id="demo39"></p>
+
+    <script>
+        // Create an object:
+        var person = {
+            firstName: "John",
+            lastName : "Doe",
+            id       :  5566
+        };
+        // Display some data from the object:
+        document.getElementById("demo").innerHTML =
+            person["firstName"] + " " + person["lastName39"];
+    </script>
+    <!--=============================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+
+
+        </div>
+    </div>
+
+    <h2>JavaScript Objects</h2>
+
+    <p>An object method is a function definition, stored as a property value.</p>
+
+    <p id="demo40"></p>
+
+    <script>
+        // Create an object:
+        var person = {
+            firstName: "John",
+            lastName : "Doe",
+            id       : 5566,
+            fullName : function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        // Display data from the object:
+        document.getElementById("demo40").innerHTML = person.fullName();
+    </script>
+    <!--========JavaScript Events==========================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+
+
+        </div>
+    </div>
+
+
+    <button onclick="document.getElementById('demo41').innerHTML=Date()">The time is?</button>
+
+    <p id="demo41"></p>
+<!--==========================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+
+
+
+        </div>
+    </div>
+
+    <p>Click the button to display the date.</p>
+
+    <button onclick="displayDate()">The time is?</button>
+
+    <script>
+        function displayDate() {
+            document.getElementById("demo42").innerHTML = Date();
+        }
+    </script>
+
+    <p id="demo42"></p>
+    <!--====================================================================================================================-->
+
+    <!--Common HTML Events-->
+    <!--Here is a list of some common HTML events:-->
+
+    <!--Event	        Description-->
+    <!--onchange	    An HTML element has been changed-->
+    <!--onclick	The     user clicks an HTML element-->
+    <!--onmouseover	    The user moves the mouse over an HTML element-->
+    <!--onmouseout	    The user moves the mouse away from an HTML element-->
+    <!--onkeydown	    The user pushes a keyboard key-->
+    <!--onload	        The browser has finished loading the page-->
+
+    <!--What can JavaScript Do?-->
+    <!--Event handlers can be used to handle, and verify, user input, user actions, and browser actions:-->
+
+    <!--Things that should be done every time a page loads-->
+    <!--Things that should be done when the page is closed-->
+    <!--Action that should be performed when a user clicks a button-->
+    <!--Content that should be verified when a user inputs data-->
+    <!--And more ...-->
+    <!--Many different methods can be used to let JavaScript work with events:-->
+
+    <!--HTML event attributes can execute JavaScript code directly-->
+    <!--HTML event attributes can call JavaScript functions-->
+    <!--You can assign your own event handler functions to HTML elements-->
+    <!--You can prevent events from being sent or being handled-->
+    <!--And more ...-->
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> Common HTML Events </div>
+        <div class="panel-body">
+            <p>Here is a list of some common HTML events:</p>
+            <table style="width: 100%">
+                <tbody>
+                <tr>
+                    <th>Event</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>onchange</td>
+                    <td>An HTML element has been changed</td>
+                </tr>
+                <tr>
+                    <td>onclick</td>
+                    <td>The user clicks an HTML element</td>
+                </tr>
+                <tr>
+                    <td>onmouseover</td>
+                    <td>The user moves the mouse over an HTML element</td>
+                </tr>
+                <tr>
+                    <td>onmouseout</td>
+                    <td>The user moves the mouse away from an HTML element</td>
+                </tr>
+                <tr>
+                    <td>onkeydown</td>
+                    <td>The user pushes a keyboard key</td>
+                </tr>
+                <tr>
+                    <td>onload</td>
+                    <td>The browser has finished loading the page</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> What can JavaScript Do? </div>
+        <div class="panel-body">
+            <h3>Event handlers can be used to handle, and verify, user input, user actions, and browser actions:</h3>
+
+            Things that should be done every time a page loads
+            Things that should be done when the page is closed
+            Action that should be performed when a user clicks a button
+            Content that should be verified when a user inputs data
+            And more ...
+
+            <h3>Many different methods can be used to let JavaScript work with events:</h3>
+            HTML event attributes can execute JavaScript code directly
+            HTML event attributes can call JavaScript functions
+            You can assign your own event handler functions to HTML elements
+            You can prevent events from being sent or being handled
+            And more ...
+        </div>
+    </div>
+
+<!--========================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript Strings</h2>
+
+    <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+    <p id="demo43"></p>
+
+    <script>
+
+        var answer1 = "It's alright";
+        var answer2 = "He is called 'Johnny'";
+        var answer3 = 'He is called "Johnny"';
+
+        document.getElementById("demo43").innerHTML =
+            answer1 + "<br>" + answer2 + "<br>" + answer3;
+
+    </script>
+
+<!--========================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+
+    <h2>JavaScript String Properties</h2>
+
+    <p>The length property returns the length of a string:</p>
+
+    <p id="demo44"></p>
+
+    <script>
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo44").innerHTML = txt.length;
+    </script>
+    <!--===========================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+
+    <h2>JavaScript Strings</h2>
+
+    <p>The escape sequence \" inserts a double quote in a string.</p>
+
+    <p id="demo45"></p>
+
+    <script>
+
+        var x = "We are the so-called \"Vikings\" from the north.";
+        document.getElementById("demo45").innerHTML = x;
+
+    </script>
+
+
+    <!--    Code	Result	    Description         -->
+    <!--    \'	    '	        Single quote        -->
+    <!--    \"	    "	        Double quote        -->
+    <!--    \\	    \	        Backslash           -->
+
+
+    <!--    \b	    Backspace               -->
+    <!--    \f	    Form Feed               -->
+    <!--    \n	    New Line                -->
+    <!--    \r	    Carriage Return         -->
+    <!--    \t	    Horizontal Tabulator    -->
+    <!--    \v	    Vertical Tabulator      -->
+
+    <!--======================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+
+    <h2>JavaScript Statements</h2>
+
+    <p>
+        The best place to break a code line is after an operator or a comma.
+    </p>
+
+    <p id="demo46"></p>
+
+    <script>
+        document.getElementById("demo46").innerHTML =
+            "Hello Dolly!";
+    </script>
+    <!--====================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript Strings</h2>
+
+    <p>
+        You can break a code line within a text string with a backslash.
+    </p>
+
+    <p id="demo47"></p>
+
+    <script>
+        document.getElementById("demo47").innerHTML = "Hello \
+Dolly!";
+    </script>
+
+    <!--=========================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+
+    <h2>JavaScript Strings</h2>
+
+    <p>
+        The safest way to break a code line in a string is using string addition.
+    </p>
+
+    <p id="demo48"></p>
+
+    <script>
+        document.getElementById("demo48").innerHTML = "Hello " +
+            "Dolly!";
+    </script>
+
+    <!--==============================================================================================================================-->
+
+    <!--<h2>JavaScript Statements</h2>-->
+
+    <!--<p id="demo49">You cannot break a code line with a \ backslash.</p>-->
+
+    <!--<script>-->
+        <!--document.getElementById("demo49").innerHTML =\-->
+<!--"Hello Dolly.";-->
+    <!--</script>-->
+
+    <!--===================================================================================================================-->
+
+    <!--<h2>JavaScript Statements</h2>-->
+
+    <!--<p id="demo50">You cannot break a code line with a \ backslash.</p>-->
+
+    <!--<script>-->
+        <!--document.getElementById("demo50").innerHTML = \-->
+<!--"Hello Dolly.";-->
+    <!--</script>-->
+    <!--============================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+
+    <h2>Never Create Strings as objects.</h2>
+    <p>Strings and objects cannot be safely compared.</p>
+
+    <p id="demo51"></p>
+
+    <script>
+        var x = "John";              // x is a string
+        var y = new String("John");  // y is an object
+        document.getElementById("demo51").innerHTML = (x==y);
+    </script>
+    <!--================================================================================================================-->
+
+
+
+<!--============================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>Never Create Strings as objects.</h2>
+    <p>JavaScript objects cannot be compared.</p>
+
+    <p id="demo53"></p>
+
+    <script>
+        var x = new String("John");  // x is an object
+        var y = new String("John");  // y is an object
+        document.getElementById("demo53").innerHTML = (x===y);
+    </script>
+<!--====================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+
+    <p id="demo54"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("locate");
+        document.getElementById("demo54").innerHTML = pos;
+    </script>
+    <!--=======================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+
+    <p id="demo55"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.lastIndexOf("locate");
+        document.getElementById("demo55").innerHTML = pos;
+    </script>
+
+    <!--======================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+
+    <p id="demo56"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.lastIndexOf("locate");
+        document.getElementById("demo56").innerHTML = pos;
+    </script>
+
+    <!--==================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>Both indexOf(), and lastIndexOf() return -1 if the text is not found:</p>
+
+    <p id="demo57"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("John");
+        document.getElementById("demo57").innerHTML = pos;
+    </script>
+
+<!--======================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+
+    <p id="demo58"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("locate",15);
+        document.getElementById("demo58").innerHTML = pos;
+    </script>
+    <!--====================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+
+    <p id="demo59"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.search("locate");
+        document.getElementById("demo59").innerHTML = pos;
+    </script>
+
+    <!--============================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The slice() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+
+    <p id="demo60"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(7,13);
+        document.getElementById("demo60").innerHTML = res;
+    </script>
+
+    <!--=========================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The slice() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+
+    <p id="demo61"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(-12,-6);
+        document.getElementById("demo61").innerHTML = res;
+    </script>
+<!--==============================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+
+    <h2>JavaScript String Methods</h2>
+
+    <p>The slice() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+
+    <p id="demo62"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(7);
+        document.getElementById("demo62").innerHTML = res;
+    </script>
+    <!--================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The slice() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+
+    <p id="demo63"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(-12)
+        document.getElementById("demo63").innerHTML = res;
+    </script>
+
+    <!--=====================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The substr() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+
+    <p id="demo64"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.substring(7,13);
+        document.getElementById("demo64").innerHTML = res;
+    </script>
+
+    <!--======================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The substr() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+
+    <p id="demo65"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.substr(7,6);
+        document.getElementById("demo65").innerHTML = res;
+    </script>
+    <!--======================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The substr() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+
+    <p id="demo66"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.substr(7);
+        document.getElementById("demo66").innerHTML = res;
+    </script>
+    <!--======================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo67">Please visit Microsoft!</p>
+
+    <script>
+        function myFunction() {
+            var str = document.getElementById("demo").innerHTML;
+            var txt = str.replace("Microsoft","W3Schools");
+            document.getElementById("demo67").innerHTML = txt;
+        }
+    </script>
+
+    <!--============================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo68">Please visit Microsoft and Microsoft!</p>
+
+    <script>
+        function myFunction() {
+            var str = document.getElementById("demo68").innerHTML;
+            var txt = str.replace("Microsoft","W3Schools");
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+
+    <!--=======================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo69">Please visit Microsoft!</p>
+
+    <script>
+        function myFunction() {
+            var str = document.getElementById("demo69").innerHTML;
+            var txt = str.replace("MICROSOFT","W3Schools");
+            document.getElementById("demo69").innerHTML = txt;
+        }
+    </script>
+
+    <p>The example does not work because MICROSOFT is written with upper case letters."</p>
+    <!--================================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+
+    <h2>JavaScript String Methods</h2>
+
+    <p>Replace all occurrences of "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo">Please visit Microsoft and Microsoft!</p>
+
+    <script>
+        function myFunction() {
+            var str = document.getElementById("demo70").innerHTML;
+            var txt = str.replace(/Microsoft/g,"W3Schools");
+            document.getElementById("demo70").innerHTML = txt;
+        }
+    </script>
+
+    <!--=====================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <p>Convert string to upper case:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo71">Hello World!</p>
+
+    <script>
+        function myFunction() {
+            var text = document.getElementById("demo71").innerHTML;
+            document.getElementById("demo").innerHTML = text.toUpperCase();
+        }
+    </script>
+    <!--=============================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+    <p>Convert string to lower case:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo72">Hello World!</p>
+
+    <script>
+        function myFunction() {
+            var text = document.getElementById("demo72").innerHTML;
+            document.getElementById("demo73").innerHTML = text.toLowerCase();
+        }
+    </script>
+    <!--========================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> JavaScript String Methods </div>
+        <div class="panel-body">
+            <h2>JavaScript String Methods</h2>
+
+            <p>The concat() method joins two or more strings:</p>
+
+            <p id="demo74"></p>
+
+            <script>
+                var text1 = "Hello";
+                var text2 = "World!";
+                var text3 = text1.concat(" ",text2);
+                document.getElementById("demo74").innerHTML = text3;
+            </script>
+        </div>
+    </div>
+
+    <!--=======================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> JavaScript String.trim() </div>
+        <div class="panel-body">
+            <h2>JavaScript String.trim()</h2>
+
+            <p>Click the button to alert the string with removed whitespace.</p>
+
+            <button onclick="myFunction()">Try it</button>
+
+            <p><strong>Note:</strong> The trim() method is not supported in Internet Explorer 8 and earlier versions.</p>
+
+            <script>
+                function myFunction() {
+                    var str = "       Hello World!       ";
+                    alert(str.trim());
+                }
+            </script>
+        </div>
+    </div>
+
+    <!--===========================================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"> ---- </div>
+        <div class="panel-body">
+        </div>
+    </div>
+</div>
+</body>
+</html>

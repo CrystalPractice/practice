@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>syntax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <!--=======1. Arrays========================================================================================-->
+
+    <div class="panel panel-info">
+        <div class="panel-heading"></div>
+        <div class="panel-body" align="center"><h1>JavaScript Arrays</h1></div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">1. JavaScript arrays are used to store multiple values in a single variable.</div>
+        <div class="panel-body">
+            <p>JavaScript arrays are used to store multiple values in a single variable.</p>
+            <p id="demo1"></p>
+
+            <script>
+                var cars = ["Saab", "Volvo", "BMW"];
+                document.getElementById("demo1").innerHTML = cars;
+            </script>
+        </div>
+    </div>
+
+    <!--============2===========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">2. Spaces and line breaks are not important. A declaration can span multiple lines:</div>
+        <div class="panel-body">
+            <p>Spaces and line breaks are not important. A declaration can span multiple lines:</p>
+            <p id="demo2"></p>
+
+            <script>
+                var cars = [
+                    "Saab",
+                    "Volvo",
+                    "BMW"   // Putting a comma after the last element (like "BMW",)  is inconsistent across browsers. IE 8 and earlier will fail
+                ];
+                document.getElementById("demo2").innerHTML = cars;
+            </script>
+            <p>Putting a comma after the last element (like "BMW",)  is inconsistent across browsers. IE 8 and earlier will fail.</p>
+        </div>
+    </div>
+
+    <!--===========3=============================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">3. Using the JavaScript Keyword new</div>
+        <div class="panel-body">
+            <p id="demo3"></p>
+            <script>
+                var cars = new Array("Saab", "Volvo", "BMW");
+                document.getElementById("demo3").innerHTML = cars;
+            </script>
+        </div>
+    </div>
+
+    <!--=============4===========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">4. JavaScript array elements are accesses using numeric indexes (starting from 0).</div>
+        <div class="panel-body">
+            <p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p>
+            <p id="demo4"></p>
+            <script>
+                var cars = ["Saab", "Volvo", "BMW"];
+                document.getElementById("demo4").innerHTML = cars[0];
+            </script>
+        </div>
+    </div>
+
+    <!--=========5================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">5. Access the Full Array</div>
+        <div class="panel-body">
+            <p id="demo5"></p>
+            <script>
+                var cars = ["Saab", "Volvo", "BMW"];
+                document.getElementById("demo5").innerHTML = cars;
+            </script>
+        </div>
+    </div>
+
+    <!--=========6================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Arrays are Objects</div>
+        <div class="panel-body">
+
+        </div>
+    </div>
+
+    <!--========6==================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">Arrays use numbers to access its "elements". In this example, person[0] returns John</div>
+        <div class="panel-body">
+            <p>Arrays are a special type of objects. <br>
+                The typeof operator in JavaScript returns "object" for arrays. <br>
+                But, JavaScript arrays are best described as arrays.</p>
+
+            <p>Arrays use numbers to access its elements.</p>
+            <p id="demo6"></p>
+            <script>
+                var person = ["John", "Doe", 46];
+                document.getElementById("demo6").innerHTML = person[0];
+            </script>
+        </div>
+    </div>
+
+    <!--========7=================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            <h2>JavaScript Objects</h2>
+            <p>JavaScript uses names to access object properties.</p>
+            <p id="demo7"></p>
+            <script>
+                var person = {firstName:"John", lastName:"Doe", age:46};
+                document.getElementById("demo7").innerHTML = person["firstName"];
+            </script>
+        </div>
+    </div>
+
+
+    <!--=========8================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+<p>            Array Elements Can Be Objects
+    JavaScript variables can be objects. Arrays are special kinds of objects.
+
+    Because of this, you can have variables of different types in the same Array.
+
+    You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:
+    myArray[0] = Date.now;
+    myArray[1] = myFunction;
+    myArray[2] = myCars;</p>
+        </div>
+    </div>
+
+
+    <!--=========9================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            <!--Array Properties and Methods-->
+            <!--The real strength of JavaScript arrays are the built-in array properties and methods:-->
+
+            <!--Examples-->
+            <!--var x = cars.length;   // The length property returns the number of elements-->
+            <!--var y = cars.sort();   // The sort() method sorts arrays-->
+            <!--Array methods are covered in the next chapters.-->
+
+
+            <!--The length Property-->
+            <!--The length property of an array returns the length of an array (the number of array elements).-->
+
+            <h2>JavaScript Arrays</h2>
+            <p>The length property returns the length of an array.</p>
+
+            <p id="demo9"></p>
+
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                document.getElementById("demo9").innerHTML = fruits.length;
+            </script>
+
+            The length property is always one more than the highest array index.
+        </div>
+    </div>
+
+
+
+    <!--========10==============================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            Looping Array Elements
+            The best way to loop through an array, is using a "for" loop:
+
+            <h2>JavaScript Arrays</h2>
+
+            <p>The best way to loop through an array is using a standard for loop:</p>
+
+            <p id="demo10"></p>
+
+            <script>
+                var fruits, text, fLen, i;
+
+                fruits = ["Banana", "Orange", "Apple", "Mango"];
+                fLen = fruits.length;
+                text = "<ul>";
+                for (i = 0; i < fLen; i++) {
+                    text += "<li>" + fruits[i] + "</li>";
+                }
+                text += "</ul>";
+                document.getElementById("demo10").innerHTML = text;
+            </script>
+        </div>
+    </div>
+
+
+    <!--===========11===========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            Adding Array Elements
+            The easiest way to add a new element to an array is using the push method:
+            <h2>JavaScript Arrays</h2>
+
+            <p>The push method appends a new element to an array.</p>
+
+            <button onclick="myFunction()">Try it</button>
+
+            <p id="demo11"></p>
+
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                document.getElementById("demo").innerHTML = fruits;
+
+                function myFunction() {
+                    fruits.push("Lemon");
+                    document.getElementById("demo11").innerHTML = fruits;
+                }
+            </script>
+        </div>
+    </div>
+
+
+    <!--============12=========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            New element can also be added to an array using the length property:
+
+            <h2>JavaScript Arrays</h2>
+            <p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+            <button onclick="myFunction()">Try it</button>
+
+            <p id="demo12"></p>
+
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                document.getElementById("demo").innerHTML = fruits;
+
+                function myFunction() {
+                    fruits[fruits.length] = "Lemon";
+                    document.getElementById("demo12").innerHTML = fruits;
+                }
+            </script>
+        </div>
+    </div>
+
+
+
+    <!--===========13==========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            Looping Array Elements
+            The best way to loop through an array, is using a "for" loop:
+            <h2>JavaScript Arrays</h2>
+
+            <p>The best way to loop through an array is using a standard for loop:</p>
+
+            <p id="demo13"></p>
+
+            <script>
+                var fruits, text, fLen, i;
+
+                fruits = ["Banana", "Orange", "Apple", "Mango"];
+                fLen = fruits.length;
+                text = "<ul>";
+                for (i = 0; i < fLen; i++) {
+                    text += "<li>" + fruits[i] + "</li>";
+                }
+                text += "</ul>";
+                document.getElementById("demo13").innerHTML = text;
+            </script>
+        </div>
+    </div>
+
+
+
+
+
+    <!--==========14==========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            Adding Array Elements
+            The easiest way to add a new element to an array is using the push method:
+
+            <h2>JavaScript Arrays</h2>
+
+            <p>The push method appends a new element to an array.</p>
+
+            <button onclick="myFunction()">Try it</button>
+
+            <p id="demo14"></p>
+
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                document.getElementById("demo").innerHTML = fruits;
+
+                function myFunction() {
+                    fruits.push("Lemon");
+                    document.getElementById("demo14").innerHTML = fruits;
+                }
+            </script>
+        </div>
+    </div>
+
+
+    <!--===========15========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            New element can also be added to an array using the length property:
+
+            <h2>JavaScript Arrays</h2>
+
+            <p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+
+            <button onclick="myFunction()">Try it</button>
+
+            <p id="demo15"></p>
+
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                document.getElementById("demo").innerHTML = fruits;
+
+                function myFunction() {
+                    fruits[fruits.length] = "Lemon";
+                    document.getElementById("demo15").innerHTML = fruits;
+                }
+            </script>
+        </div>
+    </div>
+
+
+    <!--===========16==========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            WARNING !
+            Adding elements with high indexes can create undefined "holes" in an array:
+            <h2>JavaScript Arrays</h2>
+
+            <p>Adding elements with high indexes can create undefined "holes" in an array.</p>
+
+            <p id="demo16"></p>
+
+            <script>
+                var fruits, text, fLen, i;
+                fruits = ["Banana", "Orange", "Apple", "Mango"];
+                fruits[6] = "Lemon";
+
+                fLen = fruits.length;
+                text = "";
+                for (i = 0; i < fLen; i++) {
+                    text += fruits[i] + "<br>";
+                }
+                document.getElementById("demo16").innerHTML = text;
+            </script>
+        </div>
+    </div>
+
+
+<!--==============17==========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            Associative Arrays
+            Many programming languages support arrays with named indexes.
+
+            Arrays with named indexes are called associative arrays (or hashes).
+
+            JavaScript does not support arrays with named indexes.
+
+            In JavaScript, arrays always use numbered indexes.
+
+            <h2>JavaScript Arrays</h2>
+
+            <p id="demo17"></p>
+
+            <script>
+                var person = [];
+                person[0] = "John";
+                person[1] = "Doe";
+                person[2] = 46;
+                document.getElementById("demo17").innerHTML =
+                    person[0] + " " + person.length;
+            </script>
+        </div>
+    </div>
+
+
+    <!--===========18=======================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            WARNING !!
+            If you use named indexes, JavaScript will redefine the array to a standard object.
+            After that, some array methods and properties will produce incorrect results.
+            <h2>JavaScript Arrays</h2>
+
+            <p>If you use a named index when accessing an array, JavaScript will redefine the array to a standard object, and some array methods and properties will produce undefined or incorrect results.</p>
+
+            <p id="demo18"></p>
+
+            <script>
+                var person = [];
+                person["firstName"] = "John";
+                person["lastName"] = "Doe";
+                person["age"] = 46;
+                document.getElementById("demo18").innerHTML =
+                    person[0] + " " + person.length;
+            </script>
+        </div>
+    </div>
+
+
+    <!--========19============================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            The Difference Between Arrays and Objects
+            In JavaScript, arrays use numbered indexes.
+
+            In JavaScript, objects use named indexes.
+
+            Arrays are a special kind of objects, with numbered indexes.
+
+            When to Use Arrays. When to use Objects.
+            JavaScript does not support associative arrays.
+            You should use objects when you want the element names to be strings (text).
+            You should use arrays when you want the element names to be numbers.
+        </div>
+    </div>
+
+
+
+
+    <!--==========20===========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            Avoid new Array()
+            There is no need to use the JavaScript's built-in array constructor new Array().
+
+            Use [] instead.
+
+            These two different statements both create a new empty array named points:
+
+            var points = new Array();         // Bad
+            var points = [];                  // Good
+            <h2>JavaScript Arrays</h2>
+
+            <p>Avoid using new Array(). Use [] instead.</p>
+
+            <p id="demo20"></p>
+
+            <script>
+                //var points = new Array(40, 100, 1, 5, 25, 10);
+                var points = [40, 100, 1, 5, 25, 10];
+                document.getElementById("demo20").innerHTML = points[0];
+            </script>
+        </div>
+    </div>
+
+
+
+    <!--===========21===========================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            These two different statements both create a new array containing 6 numbers:
+            <h2>JavaScript Arrays</h2>
+
+            <p>Avoid using new Array(). Use [] instead.</p>
+
+            <p id="demo21"></p>
+
+            <script>
+                //var points = new Array(40, 100, 1, 5, 25, 10);
+                var points = [40, 100, 1, 5, 25, 10];
+                document.getElementById("demo21").innerHTML = points[0];
+            </script>
+        </div>
+    </div>
+
+
+    <!--==========22============================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            The new keyword only complicates the code. It can also produce some unexpected results:
+            var points = new Array(40, 100);  // Creates an array with two elements (40 and 100)
+            <h2>JavaScript Arrays</h2>
+
+            <p>Avoid using new Array().</p>
+
+            <p id="demo22"></p>
+
+            <script>
+                var points = new Array(40);
+                document.getElementById("demo22").innerHTML = points[0];
+            </script>
+        </div>
+    </div>
+
+
+    <!--==========23=============================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            How to Recognize an Array
+            A common question is: How do I know if a variable is an array?
+
+            The problem is that the JavaScript operator typeof returns "object":
+
+
+            <h2>JavaScript Arrays</h2>
+
+            <p>The typeof operator, when used on an array, returns object:</p>
+
+            <p id="demo23"></p>
+
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                document.getElementById("demo23").innerHTML = typeof fruits;
+            </script>
+        </div>
+    </div>
+
+
+    <!--==========24=======================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            The typeof operator returns object because a JavaScript array is an object.
+
+            Solution 1:
+            To solve this problem ECMAScript 5 defines a new method Array.isArray():
+            <h2>JavaScript Arrays</h2>
+
+            <p>The new ECMASCRIPT 5 method isArray returns true when used on an array:</p>
+
+            <p id="demo24"></p>
+
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                document.getElementById("demo24").innerHTML = Array.isArray(fruits);
+            </script>
+        </div>
+    </div>
+
+<!--==============25=====================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            The problem with this solution is that ECMAScript 5 is not supported in older browsers.
+
+            Solution 2:
+            To solve this problem you can create your own isArray() function:
+
+
+            <h2>JavaScript Arrays</h2>
+
+            <p>This "home made" isArray() function returns true when used on an array:</p>
+
+            <p id="demo25"></p>
+
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                document.getElementById("demo25").innerHTML = isArray(fruits);
+
+                function isArray(myArray) {
+                    return myArray.constructor.toString().indexOf("Array") > -1;
+                }
+            </script>
+        </div>
+    </div>
+
+
+    <!--==========26========================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">----</div>
+        <div class="panel-body">
+            The function above always returns true if the argument is an array.
+
+            Or more precisely: it returns true if the object prototype contains the word "Array".
+
+            Solution 3:
+            The instanceof operator returns true if an object is created by a given constructor:
+
+            <h2>JavaScript Arrays</h2>
+
+            <p>The instanceof operator returns true when used on an array:</p>
+
+            <p id="demo26"></p>
+
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                document.getElementById("demo26").innerHTML = fruits instanceof Array;
+            </script>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>
