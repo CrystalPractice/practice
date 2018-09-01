@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>syntax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="lib/bootstrap_3.3.7.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+
+    <!--=======1. Home==========================================================================================-->
+
+    <div class="panel panel-info">
+        <div class="panel-heading"></div>
+        <div class="panel-body" align="center"><h1>jQuery Slide</h1></div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Fading</div>
+        <div class="panel-body">
+
+        </div>
+    </div>
+
+    <!--============2============================================================================================================-->
+</div>
+</body>
+</html>
