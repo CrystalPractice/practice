@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery Selectors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="../customStyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui segment">
+        <h1 align="center">jQuery Selectors</h1>
+        <section>
+            <h1>Selectors</h1>
+            <p>In simple words, you can say that selectors are used to select one or more HTML elements using jQuery and
+                once the element is selected then you can perform various operation on that.
+                <span>  All jQuery selectors start with a dollor sign and parenthesis e.g. $() It is known as the factory function</span>
+            </p>
+        </section>
+        <h1>The $() factory function</h1>
+        <p>Every jQuery selector start with thiis sign $(). This sign is known as the factory function</p>
+        <h2>Example:</h2>
+        <p>$('p') selects all paragraphs'p'in the document. $('#real-id') selects a specific element in the document
+            that has an ID of real-id. $('real-class') selects all elements in the document that have a class of
+            real-class.</p>
+    </div>
+    <div class="ui segment">
+        <div class="ui icon message">
+            <i class="sticky note icon"></i>
+            <div class="content"><p>If you have any confliction with theuse of dollor sign $ in any JavaScript library
+                then you can use jQuery() function instead of factory function $(). The factory function $() and the
+                jQuery function is the same.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ui segment">
+        <h1>Different jQuery Selectors</h1>
+        <table class="ui striped orange unstackable celled table">
+            <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Example</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>*</td>
+                <td> $("*")</td>
+                <td>It is used to select all elements</td>
+            </tr>
+            <tr>
+                <td>#id</td>
+                <td>$("#firstname")</td>
+                <td> It will select the element with id="firstname"</td>
+            </tr>
+            <tr>
+                <td>#id</td>
+                <td>$("#firstname")</td>
+                <td> It will select the element with id="firstname"</td>
+            </tr>
+            <tr>
+                <td>.class</td>
+                <td> $(".primary")</td>
+                <td> It will select all elements with class="primary"</td>
+            </tr>
+            <tr>
+                <td>class,.class</td>
+                <td> $(".primary,.secondary")</td>
+                <td> It will select all elements with the class "primary" or "secondary"</td>
+            </tr>
+            <tr>
+                <td>el1,el2,el3</td>
+                <td> $("h1,div,p")</td>
+                <td> It will select all h1, div, and p elements.</td>
+            </tr>
+            <tr>
+                <td>el1,el2,el3</td>
+                <td> $("h1,div,p")</td>
+                <td> It will select all h1, div, and p elements.</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th colspan="3">
+                    <p>For more Info visit https://www.javatpoint.com/jquery-selectors </p>
+                    <a href="jQueryEffects.html">
+                        <button class="ui right floated animated green large button" tabindex="0">
+                            <div class="visible content">Next</div>
+                            <div class="hidden content">
+                                <i class="right arrow icon"></i>
+                            </div>
+                        </button>
+                    </a>
+                </th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+</body>
+</html>
