@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").keypress(function(){   //press a keyboard key inside the <input> element, 
+									  //it should be hidden. Use the correct event to do so.
+        $(this).hide();
+    });
+});
+</script>
+</head>
+<body>
+
+<input type="text" value="Press any key inside me to hide me" size="40">
+
+</body>
+</html>
