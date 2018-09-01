@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Display the Boolean value of falses:</h2>
+<p>Display the Boolean value of NaN:</p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p>Display the Boolean value of false:</p>
+<button onclick="myFunction2()">Try it</button>
+<p id="demo2"></p>
+
+<p>Display the Boolean value of null:</p>
+<button onclick="myFunction3()">Try it</button>
+<p id="demo3"></p>
+
+
+<script>
+    function myFunction() {
+        var x = 10 / "H";
+        document.getElementById("demo").innerHTML = Boolean(x);
+    }
+</script>
+<script>
+    function myFunction2() {
+        var x = false;
+        document.getElementById("demo2").innerHTML = Boolean(x);
+    }
+</script>
+<script>
+    function myFunction3() {
+        var x = null;
+        document.getElementById("demo3").innerHTML = Boolean(x);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript getFullYear()</h2>
+
+<p>The getFullYear() method returns the full year of a date:</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.getFullYear();
+    var d2 = new Date();
+    document.getElementById("demo2").innerHTML = d2.getMonth();
+
+    var d3 = new Date();
+    var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    document.getElementById("demo3").innerHTML = months[d.getMonth()];
+</script>
+
+</body>
+</html>

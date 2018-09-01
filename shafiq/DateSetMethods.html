@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript setFullYear()</h2>
+
+<p>The setFullYear() method sets the year of a date object:</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p>The setDate() method can be used to add days to a date.</p>
+<p id="demo3"></p>
+
+<script>
+    var d = new Date();
+    d.setFullYear(2020);
+    document.getElementById("demo").innerHTML = d;
+    var d2 = new Date();
+    d.setFullYear(2020, 11, 3);
+    document.getElementById("demo2").innerHTML = d2;
+    var d3 = new Date();
+    d3.setDate(d3.getDate() + 50);
+    document.getElementById("demo3").innerHTML = d3;
+</script>
+</script>
+
+</body>
+</html>
