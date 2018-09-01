@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Strict Mode</title>
+</head>
+<body>
+<h2>With "use strict":</h2>
+<h3>Using a variable without declaring it, is not allowed.</h3>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+
+<script>
+"use strict";
+x = 3.14;    // This will cause an error (x is not defined).
+</script>
+_____________________________________________________________________________________________
+
+<script>
+"use strict";
+myFunction();
+
+function myFunction() {
+    y = 3.14;   // This will cause an error (y is not defined)
+}
+</script>
+_____________________________________________________________________________________________
+
+
+<p>"use strict" in a function will only cause errors in that function.</p>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+
+<script>
+x = 3.14;        // This will not cause an error.
+myFunction();
+
+function myFunction() {
+    "use strict";
+    y = 3.14;    // This will cause an error (y is not defined).
+}
+</script>
+_____________________________________________________________________________________________
+
+<script>
+"use strict";
+x = {p1:10, p2:20};   // This will cause an error (x is not defined).
+</script>
+_____________________________________________________________________________________________
+
+<h2>With "use strict":</h2>
+<h3>Deleting a variable (or object) is not allowed.</h3>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+
+<script>
+"use strict";
+var x = 3.14;
+delete x;       // This will cause an error 
+</script>
+_____________________________________________________________________________________________
+
+<h2>With "use strict":</h2>
+<h3>Duplicating a parameter name is not allowed.</h3>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+
+<script>
+"use strict";
+function x(p1, p1) {};   // This will cause an error 
+</script>
+</body>
+</html>
