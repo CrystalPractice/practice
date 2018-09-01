@@ -2,26 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jQuery Get Started</title>
+    <title>Get Started</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
     <script src="lib/bootstrap_3.3.7.js"></script>
     <script src="lib/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="container">
 
+    <!--=======3. Get Started==========================================================================================-->
+
+    <div class="panel panel-info">
+        <div class="panel-heading"></div>
+        <div class="panel-body" align="center"><h1>jQuery Tutorial</h1></div>
+    </div>
+    <!--=========Note=========================================================================================-->
+
+    <div class="panel panel-danger">
+        <div class="panel-heading">Adding jQuery to Your Web Pages</div>
+        <div class="panel-body">
+            There are several ways to start using jQuery on your web site. You can:
+            <ul>
+                <li>Download the jQuery library from jQuery.com</li>
+                <li>Include jQuery from a CDN, like Google</li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-danger">
+        <div class="panel-heading">Downloading jQuery</div>
+        <div class="panel-body">
+            There are two versions of jQuery available for downloading:<br>
+            <ul>
+                <li>Production version - this is for your live website because it has been minified and compressed</li>
+                <li>Development version - this is for testing and development (uncompressed and readable code)</li>
+            </ul>
+            <h6>Both versions can be downloaded from jQuery.com.</h6>
+        </div>
+    </div>
+
+    <div class="panel panel-danger">
+        <div class="panel-heading">One big advantage of using the hosted jQuery from Google or Microsoft:</div>
+        <div class="panel-body">
+            Many users already have downloaded jQuery from Google or Microsoft when visiting another site. As a result,
+            it will be loaded from cache when they visit your site, which leads to faster loading time.
+            Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server
+            closest to them, which also leads to faster loading time.
+        </div>
+    </div>
+    <!--=======End of Note==========================================================================================-->
     <script>
         $(document).ready(function(){
-            $("button").click(function(){
-                $("p").hide();
+            $("p").click(function(){
+                $(this).hide();
             });
         });
     </script>
-</head>
-<body>
-<h2>This is a heading</h2>
+    <div class="panel panel-primary">
+        <div class="panel-heading">jQuery Examples</div>
+        <div class="panel-body">
+            <p>If you click on me, I will disappear.</p>
+            <p>Click me away!</p>
+            <p>Click me too!</p>
+        </div>
+    </div>
 
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-
-<button>Click me</button>
+</div>
 </body>
 </html>

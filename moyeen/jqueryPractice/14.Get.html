@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>syntax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <script src="lib/bootstrap_3.3.7.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+
+    <!--======Java Scripts=========================================================================================-->
+
+</head>
+<body>
+<div class="container">
+
+    <div class="panel panel-info">
+        <div class="panel-heading"></div>
+        <div class="panel-body" align="center"><h1>jQuery HTML</h1></div>
+    </div>
+
+    <div class="panel panel-danger">
+        <div class="panel-heading">Get Content - text(), html(), and val()</div>
+        <div class="panel-body">
+            <h4>Three simple, but useful, jQuery methods for DOM manipulation are:</h4>
+            text() - Sets or returns the text content of selected elements <br>
+            html() - Sets or returns the content of selected elements (including HTML markup) <br>
+            val() - Sets or returns the value of form fields <br>
+        </div>
+    </div>
+
+    <!--===================Get1=====================================================================================-->
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("Text: " + $("#test").text());
+            });
+            $("#btn2").click(function(){
+                alert("HTML: " + $("#test").html());
+            });
+        });
+    </script>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Get - how to get content with the jQuery text() and html() methods:</div>
+        <div class="panel-body">
+            <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+            <button id="btn1">Show Text</button>
+            <button id="btn2">Show HTML</button>
+
+        </div>
+    </div>
+
+    <!--===================Get2=====================================================================================-->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("Value: " + $("#test2").val());
+            });
+        });
+    </script>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Get -how to get the value of an input field with the jQuery val() method:</div>
+        <div class="panel-body">
+            <p>Name: <input type="text" id="test2" value="Mickey Mouse"></p>
+            <button>Show Value</button>
+        </div>
+    </div>
+    <!--=========Get Attributes - attr()============================================================================-->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert($("#w3s").attr("href"));
+            });
+        });
+    </script>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Get Attributes - attr() - how to get the value of the href attribute in a link:</div>
+        <div class="panel-body">
+            <p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+            <button>Show href Value</button>
+        </div>
+    </div>
+
+    <!--===============================================================================================================-->
+    <!--=========Set============================================================================-->
+    <script>
+        $(document).ready(function(){
+            $("#btn11").click(function(){
+                $("#test11").text("Hello world!");
+            });
+            $("#btn21").click(function(){
+                $("#test21").html("<b>Hello world!</b>");
+            });
+            $("#btn31").click(function(){
+                $("#test31").val("Dolly Duck");
+            });
+        });
+    </script>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Set - set content with the jQuery text(), html(), and val() methods:</div>
+        <div class="panel-body">
+            <p id="test11">This is a paragraph.</p>
+            <p id="test21">This is another paragraph.</p>
+
+            <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+            <button id="btn11">Set Text</button>
+            <button id="btn21">Set HTML</button>
+            <button id="btn31">Set Value</button>
+        </div>
+    </div>
+
+    <!--=========Set - A Callback Function for text(), html(), and val()============================================================================-->
+    <script>
+        $(document).ready(function(){
+            $("#btn151").click(function(){
+                $("#test151").text(function(i, origText){
+                    return "Old text: " + origText + " New text: Hello world! (index: " + i + ")";
+                });
+            });
+
+            $("#btn152").click(function(){
+                $("#test152").html(function(i, origText){
+                    return "Old html: " + origText + " New html: Hello <b>world!</b> (index: " + i + ")";
+                });
+            });
+        });
+    </script>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Set - A Callback Function for text(), html(), and val()</div>
+        <div class="panel-body">
+            <p id="test151">This is a <b>bold</b> paragraph.</p>
+            <p id="test152">This is another <b>bold</b> paragraph.</p>
+
+            <button id="btn151">Show Old/New Text</button>
+            <button id="btn152">Show Old/New HTML</button>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+</body>
+</html>
