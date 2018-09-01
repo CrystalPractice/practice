@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="177ba64a-2a86-433b-9e5b-ae93d5135155" name="Default Changelist" comment="">
+    <list default="true" id="177ba64a-2a86-433b-9e5b-ae93d5135155" name="Default Changelist" comment="Variable Types">
+      <change afterPath="$PROJECT_DIR$/src/01.Home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/02.Introduction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/03.WhereTo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/04.Output.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavascriptPractiece.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavascriptPractiece.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavascriptPractiece.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,43 +53,55 @@
     <session id="1719874841">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="19" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.33" value="2" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.54" value="2" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.64" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3985" />
+          <entry key="HTML" value="18377" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="html" value="178" />
           <entry key="java" value="1" />
-          <entry key="js" value="2" />
+          <entry key="js" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3985" />
+          <entry key="html" value="18377" />
           <entry key="js" value="2" />
           <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="HTML" value="178" />
           <entry key="JAVA" value="1" />
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -94,10 +110,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/JavascriptPractiece.html">
+        <entry file="file://$PROJECT_DIR$/src/21.ArrayMethods.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="450" lean-forward="true" selection-start-line="450" selection-end-line="450" />
+            <state relative-caret-position="133">
+              <caret line="174" column="120" selection-start-line="174" selection-start-column="120" selection-end-line="174" selection-end-column="120" />
             </state>
           </provider>
         </entry>
@@ -107,10 +123,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>JavaScript Variables</find>
+      <find>panel</find>
+      <find>inf</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -118,8 +141,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/myScript.js" />
-        <option value="$PROJECT_DIR$/src/JavascriptPractiece.html" />
+        <option value="$PROJECT_DIR$/src/Data Types.html" />
+        <option value="$PROJECT_DIR$/src/Date Get Methods.html" />
+        <option value="$PROJECT_DIR$/src/Date Set Methods.html" />
+        <option value="$PROJECT_DIR$/src/Dates.html" />
+        <option value="$PROJECT_DIR$/src/Debugging.html" />
+        <option value="$PROJECT_DIR$/src/Errors.html" />
+        <option value="$PROJECT_DIR$/src/Events.html" />
+        <option value="$PROJECT_DIR$/src/Forms.html" />
+        <option value="$PROJECT_DIR$/src/Forms API.html" />
+        <option value="$PROJECT_DIR$/src/Functions.html" />
+        <option value="$PROJECT_DIR$/src/Hoisting.html" />
+        <option value="$PROJECT_DIR$/src/JS Date Formats.html" />
+        <option value="$PROJECT_DIR$/src/JSON.html" />
+        <option value="$PROJECT_DIR$/src/Let.html" />
+        <option value="$PROJECT_DIR$/src/Loop For.html" />
+        <option value="$PROJECT_DIR$/src/Loop While.html" />
+        <option value="$PROJECT_DIR$/src/Math.html" />
+        <option value="$PROJECT_DIR$/src/Mistakes.html" />
+        <option value="$PROJECT_DIR$/src/Number Methods.html" />
+        <option value="$PROJECT_DIR$/src/Numbers.html" />
+        <option value="$PROJECT_DIR$/src/Objects.html" />
+        <option value="$PROJECT_DIR$/src/Performance.html" />
+        <option value="$PROJECT_DIR$/src/Random.html" />
+        <option value="$PROJECT_DIR$/src/RegExp.html" />
+        <option value="$PROJECT_DIR$/src/Reserved Words.html" />
+        <option value="$PROJECT_DIR$/src/Scope.html" />
+        <option value="$PROJECT_DIR$/src/Strict Mode.html" />
+        <option value="$PROJECT_DIR$/src/String Methods.html" />
+        <option value="$PROJECT_DIR$/src/Strings.html" />
+        <option value="$PROJECT_DIR$/src/Style Guide.html" />
+        <option value="$PROJECT_DIR$/src/Switch.html" />
+        <option value="$PROJECT_DIR$/src/this Keyword.html" />
+        <option value="$PROJECT_DIR$/src/Type Conversion.html" />
+        <option value="$PROJECT_DIR$/src/Version ES5.html" />
+        <option value="$PROJECT_DIR$/src/Version ES6.html" />
+        <option value="$PROJECT_DIR$/src/Versions.html" />
+        <option value="$PROJECT_DIR$/src/05.Statements.html" />
+        <option value="$PROJECT_DIR$/src/01.Home.html" />
+        <option value="$PROJECT_DIR$/src/02.Introduction.html" />
+        <option value="$PROJECT_DIR$/src/04.Output.html" />
+        <option value="$PROJECT_DIR$/src/06.Syntax.html" />
+        <option value="$PROJECT_DIR$/src/07.Comments.html" />
+        <option value="$PROJECT_DIR$/src/08.Variables.html" />
+        <option value="$PROJECT_DIR$/src/09.Operators.html" />
+        <option value="$PROJECT_DIR$/src/10.Arithmetic.html" />
+        <option value="$PROJECT_DIR$/src/12.DataTypes.html" />
+        <option value="$PROJECT_DIR$/src/03.WhereTo.html" />
+        <option value="$PROJECT_DIR$/src/00.JavascriptPractiece.html" />
+        <option value="$PROJECT_DIR$/src/tab.html" />
+        <option value="$PROJECT_DIR$/src/20.Arrays.html" />
+        <option value="$PROJECT_DIR$/src/21.ArrayMethods.html" />
       </list>
     </option>
   </component>
@@ -131,7 +203,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="270" />
-    <option name="width" value="1103" />
+    <option name="y" value="138" />
+    <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -139,49 +212,14 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JavascriptPractiece" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavascriptPractiece" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavascriptPractiece" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavascriptPractiece" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavascriptPractiece" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavascriptPractiece" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavascriptPractiece" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="JavascriptPractiece" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="bootstrap" type="70bed36:NamedLibraryElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533985793112" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/WEB/StartIt Main Files" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534585720588" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -222,6 +260,18 @@
       <workItem from="1534049484733" duration="595000" />
       <workItem from="1534062873268" duration="1949000" />
       <workItem from="1534071929933" duration="602000" />
+      <workItem from="1534074720285" duration="385000" />
+      <workItem from="1534094488082" duration="2072000" />
+      <workItem from="1534152321945" duration="74000" />
+      <workItem from="1534152498290" duration="1648000" />
+      <workItem from="1534226382786" duration="2152000" />
+      <workItem from="1534239485137" duration="596000" />
+      <workItem from="1534321426220" duration="3771000" />
+      <workItem from="1534400220982" duration="2301000" />
+      <workItem from="1534406068394" duration="19987000" />
+      <workItem from="1534476155222" duration="5576000" />
+      <workItem from="1534497824154" duration="18280000" />
+      <workItem from="1534601527280" duration="41000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1533809495432</created>
@@ -286,16 +336,23 @@
       <option name="project" value="LOCAL" />
       <updated>1533985614793</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Variable Types">
+      <created>1534163131056</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1534163131056</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38571000" />
+    <option name="totallyTimeSpent" value="95454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.34065935" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4065934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -323,6 +380,35 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4065934" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -337,24 +423,238 @@
     <option name="LAST_COMMIT_MESSAGE" value="Variable Types" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/image/on.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/FoolGames.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_maxcdn.bootstrapcdn.com_bootstrap_3.3.7_js_bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myScript.js">
+    <entry file="file://$PROJECT_DIR$/src/Dates.html" />
+    <entry file="file://$PROJECT_DIR$/src/Debugging.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavascriptPractiece.html">
+    <entry file="file://$PROJECT_DIR$/src/Errors.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="450" lean-forward="true" selection-start-line="450" selection-end-line="450" />
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Events.html" />
+    <entry file="file://$PROJECT_DIR$/src/Forms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms API.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions.html" />
+    <entry file="file://$PROJECT_DIR$/src/Hoisting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JS Date Formats.html" />
+    <entry file="file://$PROJECT_DIR$/src/JSON.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Let.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Loop For.html" />
+    <entry file="file://$PROJECT_DIR$/src/Loop While.html" />
+    <entry file="file://$PROJECT_DIR$/src/Math.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mistakes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Number Methods.html" />
+    <entry file="file://$PROJECT_DIR$/src/Numbers.html" />
+    <entry file="file://$PROJECT_DIR$/src/Objects.html" />
+    <entry file="file://$PROJECT_DIR$/src/Performance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Random.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RegExp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Reserved Words.html" />
+    <entry file="file://$PROJECT_DIR$/src/Scope.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Strict Mode.html" />
+    <entry file="file://$PROJECT_DIR$/src/String Methods.html" />
+    <entry file="file://$PROJECT_DIR$/src/Strings.html" />
+    <entry file="file://$PROJECT_DIR$/src/Style Guide.html" />
+    <entry file="file://$PROJECT_DIR$/src/Switch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/this Keyword.html" />
+    <entry file="file://$PROJECT_DIR$/src/Type Conversion.html" />
+    <entry file="file://$PROJECT_DIR$/src/Version ES5.html" />
+    <entry file="file://$PROJECT_DIR$/src/Version ES6.html" />
+    <entry file="file://$PROJECT_DIR$/src/Versions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/04.Output.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/16.Strings.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/07.Comments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/08.Variables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/09.Operators.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/12.DataTypes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/03.WhereTo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543">
+          <caret line="40" column="104" selection-start-line="40" selection-start-column="104" selection-end-line="40" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tab.html" />
+    <entry file="file://$PROJECT_DIR$/src/02.Introduction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/00.JavascriptPractiece.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/10.Arithmetic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/11.Assignment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/05.Statements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="109" column="106" selection-start-line="109" selection-start-column="106" selection-end-line="109" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/15.Events.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/06.Syntax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/01.Home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/20.Arrays.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="615" selection-start-line="615" selection-end-line="615" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/21.ArrayMethods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="174" column="120" selection-start-line="174" selection-start-column="120" selection-end-line="174" selection-end-column="120" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where to?</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--============================================================================================================-->
+    <script>
+        function myFunction() {
+            document.getElementById("demo6").innerHTML = "Paragraph changed.";
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+
+    <!--========6. Where to?========================================================================================-->
+
+    <div class="panel panel-info">
+        <div class="panel-heading"></div>
+        <div class="panel-body" align="center"><h1>Where to?</h1><br>Where JavaScript used?</div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">6. JavaScript in Body </div>
+        <div class="panel-body">
+            <h1>A Web Page</h1>
+            <p id="demo5">A Paragraph</p>
+            <button type="button" onclick="myFunction5()">Try it</button>
+            <script>
+                function myFunction5() {
+                    document.getElementById("demo5").innerHTML = "Paragraph changed.";
+                }
+            </script>
+        </div>
+    </div>
+
+    <!--==========7=================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">7. JavaScript in Head </div>
+        <div class="panel-body">
+            <!--header part is in head-->
+            <p id="demo6">A Paragraph.</p>
+            <button type="button" onclick="myFunction()">Try it</button>
+        </div>
+    </div>
+
+
+    <!--=========8===============================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">8. javascript in Body </div>
+        <div class="panel-body">
+            <p id="demo8">Paragraph8</p>
+            <button type="button" onclick="myFunction8()">Try it</button>
+            <script>
+                function myFunction8() {
+                    document.getElementById("demo8").innerHTML = "Paragraph8 changed.";
+                }
+            </script>
+        </div>
+    </div>
+
+    <!--============9=============================================================================================================-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">9. External JavaScript </div>
+        <div class="panel-body">
+            <p id="demo9">A Paragraph.</p>
+            <button type="button" onclick="myFunction9()">Try it</button>
+            <p>(myFunction is stored in an external file called "myScript.js")</p>
+            <script src="myScript.js"></script>
+
+        </div>
+    </div>
+
+    <!--===========10========================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">10. External JavaScript Advantages</div>
+        <div class="panel-body">
+            <P>Placing scripts in external files has some advantages:</P>
+            <ul>
+                <li>It separates HTML and code</li>
+                <li>It makes HTML and JavaScript easier to read and maintain</li>
+                <li>Cached JavaScript files can speed up page loads</li>
+            </ul>
+            <p>To add several script files to one page  - use several script tags:</p>
+            <ul>
+                <li>script src="myScript1.js"></li>
+                <li>script src="myScript2.js"></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

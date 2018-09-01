@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <!--=======1. Introduction ======================================================================================-->
+
+    <div class="panel panel-info">
+        <div class="panel-heading"></div>
+        <div class="panel-body" align="center"><h1>Introduction</h1><br>What Can JavaScript Do?</div>
+    </div>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">1. JavaScript can change HTML content.</div>
+        <div class="panel-body">
+            <p id="demo1">JavaScript can change HTML content.</p>
+            <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+        </div>
+    </div>
+
+    <!--============2===============================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">2. JavaScript can change HTML attribute values.</div>
+        <div class="panel-body">
+            <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+            <button onclick="document.getElementById('myImage').src='image/on.png'">Turn on the light</button>
+            <img id="myImage" src="image/off.jpg" style="width:100px">
+            <button onclick="document.getElementById('myImage').src='image/off.jpg'">Turn off the light</button>
+        </div>
+    </div>
+
+
+    <!--===========3================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">3. JavaScript can change the style of an HTML element. </div>
+        <div class="panel-body">
+            <p id="demo2">JavaScript can change the style of an HTML element.</p>
+            <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+        </div>
+    </div>
+
+    <!--==========4=================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">4. JavaScript can hide HTML elements.</div>
+        <div class="panel-body">
+            <p id="demo3">JavaScript can hide HTML elements.</p>
+            <button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!</button>
+        </div>
+    </div>
+
+    <!--=========5==================================================================================================-->
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">5. JavaScript can show hidden HTML elements.</div>
+        <div class="panel-body">
+            <p id="demo4" style="display:none">Hello JavaScript!</p>
+            <button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me!</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
