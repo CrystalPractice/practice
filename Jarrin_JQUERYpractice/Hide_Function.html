@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<script>
+	$(document).ready(function(){
+		$("p").click(function(){
+			$(this).hide();
+		});
+	});
+	
+
+</script>
+</head>
+<body>
+	<p>If you click on me,I will disappear.</p>
+	<p>Click me away!</p>
+	<p>Click me too!</p>
+
+_____________________________________________________________________________
+<br>
+<script>
+		$(document).ready(function(){
+		$("button").click(function(){
+			$("h2").hide();
+			$("#demo").hide();  //The #id Selector
+			$(".demo").hide();  //The .class Selector
+		});
+	});
+</script>
+<h2>this is a paragraph</h2>
+<h2>this is another paragraph</h2>
+<p id="demo">This is another paragraph</p>
+<p class="demo">This is a class paragraph</p>
+<button>Click me to hide paragraphs</button>
+_____________________________________________________________________________
+
+
+
+</body>
+</html>
