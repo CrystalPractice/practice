@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="../static/customStyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#hide").click(function () {
+                $("#change").hide();
+            })
+        });
+    </script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui segment">
+        <h1 align="center">jQuery Display Effect </h1>
+    </div>
+    <div class="ui segment">
+        <h1>jQuery hide()</h1>
+        <p>The jQuery hide() method is used to hide the selected elements.</p>
+        <h2>Syntex</h2>
+        <div class="ui form">
+            <textarea rows="3" disabled style="font-size: 25px">$(selector).hide();
+$(selector).hide(speed, callback);
+$(selector).hide(speed, easing, callback);
+            </textarea>
+        </div>
+        <p>speed: It is an optional parameter. It specifies the speed of the delay. Its possible vales are slow, fast
+            and milliseconds.</p>
+        <p>easing: It specifies the easing function to be used for transition.</p>
+        <p>callback: It is also an optional parameter. It specifies the function to be called after completion of
+            hide() effect</p>
+    </div>
+    <div class="ui segment">
+        <h3>Example with Code</h3>
+        <div class="ui form">
+            <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+     $(function () {
+        $("#hide").click(function(){
+        $("#change").hide();
+     });
+ &lt;/script&gt;</textarea>
+        </div>
+        <div class="ui segment">
+            <p id="change">Hello ! Make me Hide to Click Hide button</p>
+            <div class="ui yellow button " id="hide">Hide</div>
+            <div class="ui right floated buttons">
+                <a href="jQueryEffects.html">
+                    <button class="ui right floated animated green large button" tabindex="0">
+                        <div class="visible content">Previous</div>
+                        <div class="hidden content">
+                            <i class="left arrow icon"></i>
+                        </div>
+                    </button>
+                </a>
+                <div class="or"></div>
+                <a href="jQshow().html">
+                    <button class="ui right floated animated green large button" tabindex="0">
+                        <div class="visible content">Next</div>
+                        <div class="hidden content">
+                            <i class="right arrow icon"></i>
+                        </div>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
