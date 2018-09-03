@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="../static/customStyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui segment">
+        <div class="ui segment">
+            <h1 align="center">jQuery Events</h1>
+        </div>
+        <h1>jQuery Events</h1>
+        <p>An event represents the precise moment when something happens.</p>
+        <div class="ui segment">
+            <h3>Examples</h3>
+            <ul class="ui list">
+                <li>moving a mouse over an element
+                <li> selecting a radio button</li>
+                <li> clicking on an element</li>
+                <li>An HTML form submission</li>
+                </li>
+            </ul>
+            <p>The term "fires/fired" is often used with events. Example: "The keypress event is fired, the moment you
+                press a key"</p>
+        </div>
+        <div class="ui segment">
+            <p>These events can be categorized on the basis their types:</p>
+            <div class="ui horizontal segments">
+                <div class="ui segment">
+                    <h3>Mouse Events</h3>
+                    <ul class="ui list">
+                        <li> click</li>
+                        <li> dblclick</li>
+                        <li> mouseenter</li>
+                        <li> mouseleave</li>
+                    </ul>
+                </div>
+                <div class="ui segment">
+                    <h3>Keyboard Events</h3>
+                    <ul class="ui list">
+                        <li> keyup</li>
+                        <li> keydown</li>
+                        <li> keypress</li>
+
+                    </ul>
+                </div>
+                <div class="ui segment">
+                    <h3>Form Events</h3>
+                    <ul class="ui list">
+                        <li>submit</li>
+                        <li> change</li>
+                        <li> blur</li>
+                        <li> focus</li>
+                    </ul>
+                </div>
+                <div class="ui segment">
+                    <h3>Document/Window Events</h3>
+                    <ul class="ui list">
+                        <li> load</li>
+                        <li> unload</li>
+                        <li> scroll</li>
+                        <li> resize</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Syntex : </h2>
+                <div class="ui form">
+            <textarea rows="3" disabled style="font-size: 25px">$("p").click(function(){
+  // action goes here!!
+});
+            </textarea>
+                </div>
+            </div>
+            <div class="ui right floated buttons">
+                <a href="">
+                    <button class="ui right floated animated green large button" tabindex="0">
+                        <div class="visible content">Previous</div>
+                        <div class="hidden content">
+                            <i class="left arrow icon"></i>
+                        </div>
+                    </button>
+                </a>
+                <div class="or"></div>
+                <a href="jQclick.html">
+                    <button class="ui right floated animated green large button" tabindex="0">
+                        <div class="visible content">Next</div>
+                        <div class="hidden content">
+                            <i class="right arrow icon"></i>
+                        </div>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
