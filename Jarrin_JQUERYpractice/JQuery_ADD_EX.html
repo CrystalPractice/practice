@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#p2").append("YES!");
+});
+</script>
+</head>
+<body>
+<h2>Use a jQuery method to insert the text "YES!" at the end of the <p> element
+</h2>
+<p id="p2">Is jQuery FUN or what? </p>
+_______________________________________________________________________________________________________________________________
+<h2>Use a jQuery method to insert a third li element: "List item 3", at the end of the ol element
+</h2>
+<script>
+$(document).ready(function(){
+    $("ol").append("<li>List item 3</li>");
+});
+</script>
+
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+</ol>
+_______________________________________________________________________________________________________________________________
+
+<h2>Use a jQuery method to insert the text "Hello" at the beginning of the <p> element.
+</h2>
+<script>
+$(document).ready(function(){
+$("#p1").prepend("Hello");
+    // add code here
+});
+</script>
+<p id="p1"> World!</p>
+_______________________________________________________________________________________________________________________________
+
+<h2>Use a jQuery method to add the text "How are you?" after the p element
+</h2>
+<script>
+$(document).ready(function(){
+    $("#p3").after("How are you?");
+});
+</script>
+<p id="p3">Hello?</p>
+</body>
+</html>
