@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h2><u>jQuery Fading Methods</u>
+<br>
+With jQuery you can fade an element in and out of visibility.
+<br>
+jQuery has the following fade methods:
+<br>
+<ol>
+<li>fadeIn()</li>
+<li>fadeOut()</li>
+<li>fadeToggle()</li>
+<li>fadeTo()</li>
+</ol>
+</h2>
+______________________________________________________________________________________________
+
+<h2>jQuery fadeIn() Method</h2>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#div1").fadeIn();
+			$("#div2").fadeIn("slow");
+			$("#div3").fadeIn(3000);
+		});
+	});
+</script>
+<p>Demonstrate fadeIn() with different parameters.</p>
+<button>Click to fade in boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:90px;height:90px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:100px;height:100px;display:none;background-color:blue;"></div>
+______________________________________________________________________________________________
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#div1").fadeOut();
+			$("#div2").fadeOut("slow");
+			$("#div3").fadeOut(3000);
+		});
+	});
+</script>
+<h2>jQuery fadeOut() Method</h2>
+<p>Demonstrate fadeOut() with different parameters.</p>
+<button>Click to fadeOut boxes</button><br><br>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:90px;height:90px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:100px;height:100px;display:none;background-color:blue;"></div>
+
+</body>
+</html>
+</html>
