@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#w3s").attr("href","https://www.google.com/");
+		});
+	});
+</script>
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+<button>Change href Value</button>
+
+<p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+___________________________________________________________________________________________________________________________
+
+<script>
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $("#w3schools").attr({
+            "href" : "https://www.w3schools.com/jquery/",
+            "title" : "W3Schools jQuery Tutorial"
+        });
+    });
+});
+</script>
+
+
+<p><a href="https://www.w3schools.com" title="some title" id="w3schools">W3Schools.com</a></p>
+
+<button id="button1">Change href and title</button>
+
+<p>Mouse over the link to see that the href attribute has changed and a title attribute is set.</p>
+___________________________________________________________________________________________________________________________
+
+<h2 style="color: green">Use a jQuery method to change the value of the 
+image's src attribute to "img_pulpitrock.jpg".</h2>
+<script>
+$(document).ready(function(){
+	$("#btn2").click(function(){
+    $("img").attr("src", "img_pulpitrock.jpg");
+});
+});
+</script>
+<button id="btn2">Change image</button>
+<br>
+<img id="image" src="img_moustiers-sainte-marie.jpg" width="284" height="213">
+
+<br>
+___________________________________________________________________________________________________________________________
+
+<h2 style="color: green">Use jQuery to change the text of the link to "W3Schools Home",
+and change the value of href's attribute value to "www.w3schools.com"</h2>
+<script>
+$(document).ready(function(){
+	$("#btn3").click(function(){
+    $("a").text("W3Schools Home");
+    $("a").attr("href", "https://www.w3schools.com");
+});
+});
+</script>
+<button id="btn3">Change link & text</button>
+<a href="https://www.w3schools.com/jquery/">Learn jquery here</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h2>
+	Set Content - text(), html(), and val()
+	<br>
+We will use the same three methods from the previous page to set content:
+<br>
+text() - Sets or returns the text content of selected elements
+<br>
+html() - Sets or returns the content of selected elements (including HTML markup)
+<br>
+val() - Sets or returns the value of form fields
+</h2>
+________________________________________________________________________________________________________
+<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("#test1").text("Hello World");
+		});
+		$("#btn2").click(function(){
+			$("#test2").html("<b>Hello World</b>");
+		});
+		$("#btn3").click(function(){
+			$("#test3").val("Tanjeem");
+		});
+	});
+</script>
+<p id="test1">This is a paragraph.</p>
+<p id="test2">This is another paragraph.</p>
+
+<p>Input field: <input type="text" id="test3" value="Jarrin"></p>
+<button id="btn1">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button>
+</body>
+</html>
