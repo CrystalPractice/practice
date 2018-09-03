@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h2>
+Get Content - text(), html(), and val()
+<br>
+Three simple, but useful, jQuery methods for DOM manipulation are:
+<br>
+text() - Sets or returns the text content of selected elements
+<br>
+html() - Sets or returns the content of selected elements (including HTML markup)
+<br>
+val() - Sets or returns the value of form fields
+</h2>
+_________________________________________________________________________________________________________________
+
+<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			alert("Text: " + $("#test").text());
+		});
+		$("#btn2").click(function(){
+			alert("HTML: " + $("#test").html());
+		});
+		$("#btn3").click(function(){
+			alert("Value: " + $("#test1").val());
+		});
+	});
+</script>
+<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+<p>Name: <input type="text" id="test1" ></p>
+<button id="btn1">Show text</button>
+<button id="btn2">Show HTML</button>
+<button id="btn3">Show Value</button>
+
+<br>
+_____________________________________________________________________________________________________________
+
+<h2>
+Get Attributes - attr()
+<br>
+The jQuery attr() method is used to get attribute values
+</h2>
+<script>
+$(document).ready(function(){
+    $("#btn4").click(function(){
+        alert($("#w3s").attr("href"));
+    });
+});
+</script>
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+<button id="btn4">Show href Value</button>
+</body>
+</html>
