@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#flip").click(function(){
+			$("#panel").slideToggle("slow");
+		});
+	});
+</script>
+<style>
+	#panel,#flip{
+		padding:5px;
+		text-align:center;
+		background-color:yellow;
+		border:solid 1px black;
+	}
+	#panel{
+		padding:50px;
+		display:none;
+	}
+</style>
+</head>
+<body>
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Hello world!</div>
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+<h2 style="color:green">Use a jQuery method to toggle between sliding up and down the <div> element, when clicking the button. 
+The duration of the effect should be 1000 milliseconds</h2>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $("#1").slideToggle(1000);
+        // add code here
+    });
+});
+</script>
+<button>Click to slide up/down div</button><br><br>
+
+<div id="1" style="width:80px;height:80px;background-color:red;"></div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+	$(document).ready(function(){
+		$("#flip").click(function(){
+			$("#panel").slideDown("slow");
+		});
+	});
+</script>
+<style>
+	#panel,#flip{
+		padding: 5px;
+		text-align:center;
+		background-color:#e5eecc;
+		border:solid 1px #c3c3c3;
+	}
+	#panel{
+		padding:50px;
+		display:none;
+	}
+</style>
+<h2>jQuery slideDown() Method</h2>
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello World!!!</div>
+</body>
+</html>

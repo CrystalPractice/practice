@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="../static/customStyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("h2,h3,h4").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui segment">
+        <h1 align="center">jQuery Click</h1>
+    </div>
+    <div class="ui segment">
+        <h2>jQuery click()</h2>
+        <p>When you click on an element, the click event occurs and once the click event occurs it execute the click ()
+            method </p>
+        <h3>Syntax</h3>
+        <div class="ui form">
+            <textarea rows="1" disabled style="font-size: 25px">$(selector).click(function)</textarea>
+        </div>
+    </div>
+    <div class="ui segment">
+        <h1>Example with Code : </h1>
+        <div class="ui form">
+            <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+     $(function () {
+        $("h2,h3,h4").click(function () {
+                $(this).hide();
+            });
+     });
+ &lt;/script&gt;</textarea>
+        </div>
+        <h2>Will disappear</h2>
+        <h3>Will disappear</h3>
+        <h4>Will disappear</h4>
+    </div>
+    <div class="ui right floated buttons">
+        <a href="jQEvents.html">
+            <button class="ui right floated animated green large button" tabindex="0">
+                <div class="visible content">Previous</div>
+                <div class="hidden content">
+                    <i class="left arrow icon"></i>
+                </div>
+            </button>
+        </a>
+        <div class="or"></div>
+        <a href="jQblur.html">
+            <button class="ui right floated animated green large button" tabindex="0">
+                <div class="visible content">Next</div>
+                <div class="hidden content">
+                    <i class="right arrow icon"></i>
+                </div>
+            </button>
+        </a>
+    </div>
+</div>
+</body>
+</html>

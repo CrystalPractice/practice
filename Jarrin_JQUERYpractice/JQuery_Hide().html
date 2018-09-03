@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide(1000);
+    });
+});
+</script>
+</head>
+<body>
+
+<button>Hide</button>
+
+<p>This is a paragraph with little content.</p>
+<p>This is another small paragraph.</p>
+
+</body>
+________________________________________________________________________________________
+
+<h2>Use a jQuery method to hide the <p> element when it is clicked on.
+	The speed should be "slow"
+</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("h1").click(function(){
+        $(this).hide("slow");
+    });
+});
+</script>
+</head>
+<body>
+
+<h1>If you click on me, I will disappear.</h1>
+
+</body>
+</html>
+</html>
