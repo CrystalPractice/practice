@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h2>The jQuery remove() method removes the selected element(s) and its child elements</h2>
+<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+This is some text in the div
+<h5>This is a paragraph in the div.</h5>
+<h6>This is a another paragraph in the div.</h6>
+</div>
+<br>
+<button id="btn3">Remove div element</button>
+<script>
+	$(document).ready(function(){
+		$("#btn3").click(function(){
+			$("#div1").remove();
+		});
+	});
+</script>
+_______________________________________________________________________________________________________________________________________________________
+
+<h2>Filter the Elements to be Removed</h2>
+<p>This is a paragraph.</p>
+<p class="test">This is another paragraph.</p>
+<p class="test">This is another paragraph.</p>
+<button id="btn1">Remove all p elements with class="test"</button>
+<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("p").remove(".test");
+		});
+	});
+</script>
+_______________________________________________________________________________________________________________________________________________________
+
+<p>This is a paragraph.</p>
+<p class="test1" style="color:red;font-size:20px;">This is p element with class="test".</p>
+<p class="test1" style="color:red;font-size:20px;">This is p element with class="test".</p>
+<p class="demo" style="color:green;font-size:25px;">This is p element with class="demo".</p>
+
+<button id="btn2">Remove all p elements with class="test1" and class="demo"</button>
+
+<script>
+	$(document).ready(function(){
+		$("#btn2").click(function(){
+			$("p").remove(".test1,.demo");
+		});
+	});
+</script>
+</body>
+</html>
