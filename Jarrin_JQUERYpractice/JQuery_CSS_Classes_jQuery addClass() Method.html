@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+.important{
+	font-weight:  bold;
+	font-size:   xx-large;
+}
+.blue{
+	color: blue;
+}
+</style>
+<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("h1,h2,p").addClass("blue");
+			$("#div1").addClass("important");
+		});
+	});
+</script>
+</head>
+<body>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<p>This is a paragraph</p>
+<p>This is another paragraph</p>
+<div id="div1">This is some important text!</div>
+<br>
+<button id="btn1">Add classes to elements</button>
+<br>
+_____________________________________________________________________________________________________________
+
+<h3>specify multiple classes within the addClass() method</h3>
+<div id="div2">This is some text</div>
+<div id="div3">This is some text</div>
+<button id="btn2">Add classes to first div element</button>
+<script>
+	$(document).ready(function(){
+		$("#btn2").click(function(){
+			$("#div2").addClass("important blue");
+		});
+	});
+</script>
+</body>
+</html>
