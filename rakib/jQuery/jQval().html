@@ -8,7 +8,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
         $(function () {
-            $(".button").click(function () {
+            $(".btn").click(function () {
                 if ($("#name").val() == '') {
                     alert("Give a name Plz");
                     return false;
@@ -41,7 +41,7 @@
             <div class="ui form">
             <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
      $(function () {
-        $(".button").click(function () {
+        $(".btn").click(function () {
         alert($("#name").val());
      });
  &lt;/script&gt;</textarea>
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <div class="field">
-                        <div class="ui  green right floated button">Show Name</div>
+                        <div class="ui green btn right floated button">Show Name</div>
                     </div>
                     <div class="inline fields">
                         <div class="eight wide field">
@@ -87,6 +87,25 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="ui right floated buttons">
+            <a href="jQtext().html">
+                <button class="ui right floated animated green large button" tabindex="0">
+                    <div class="visible content">Previous</div>
+                    <div class="hidden content">
+                        <i class="left arrow icon"></i>
+                    </div>
+                </button>
+            </a>
+            <div class="or"></div>
+            <a href="jQappend().html">
+                <button class="ui right floated animated green large button" tabindex="0">
+                    <div class="visible content">Next</div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </button>
+            </a>
         </div>
     </div>
 </div>
