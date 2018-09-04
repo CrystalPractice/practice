@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Html / CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="../static/customStyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".button").click(function () {
+                $(".change").text("Changed!");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui segment">
+        <h1 align="center">jQuery HTML / CSS</h1>
+    </div>
+    <div class="ui clearing segment">
+        <p>The jQuery text() method is used to set or return the text content of the selected elements.</p>
+        <div class="ui segment">
+            <h1>Diff between jQ text() method and jQ html() method</h1>
+            <ul class="ui list">
+                <li>The jQuery text() method is used to set or return html content without HTML markup while, html()
+                    method is used to set or return the innerHtml (text + HTML markup).
+                </li>
+                <li>The jQuery text() method can be used in both XML and HTML document while jQuery html() method
+                    can't.
+                </li>
+            </ul>
+        </div>
+        <div class="ui segment">
+            <h1>Example with Code : </h1>
+            <div class="ui form">
+            <textarea rows="6" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+     $(function () {
+        $("button").click(function(){
+        $(".change").text("Hello world!");
+        //$("p").text("Hello world!");
+                   });
+     });
+ &lt;/script&gt;</textarea>
+            </div>
+        </div>
+        <div class="ui segment">
+            <div class="ui green button ">Change the label</div>
+            <label class="change">Will be change</label>
+        </div>
+        <div class="ui right floated buttons">
+            <a href="jQhtml.html">
+                <button class="ui right floated animated green large button" tabindex="0">
+                    <div class="visible content">Previous</div>
+                    <div class="hidden content">
+                        <i class="left arrow icon"></i>
+                    </div>
+                </button>
+            </a>
+            <div class="or"></div>
+            <a href="jQval().html">
+                <button class="ui right floated animated green large button" tabindex="0">
+                    <div class="visible content">Next</div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
