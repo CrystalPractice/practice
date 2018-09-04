@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Html / CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="../static/customStyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".button").click(function () {
+                if ($("#name").val() == '') {
+                    alert("Give a name Plz");
+                    return false;
+                }
+                alert($("#name").val());
+            });
+            $(".game").change(function () {
+                alert("Selected game  " + $(".game").val());
+            });
+            $(".gender").change(function () {
+                alert("Selected Gender  " + $(".gender").val());
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui segment">
+        <h1 align="center">jquery HTML / CSS</h1>
+    </div>
+    <div class="ui segment">
+        <h1>jQuery val()</h1>
+        <p>There are two usage of jQuery val() method.</p>
+        <ul class="ui list">
+            <li>It is used to get current value of the first element in the set of matched elements.</li>
+            <li>It is used to set the value of every matched element.</li>
+        </ul>
+        <div class="ui clearing segment">
+            <h1>jQuery val() example</h1>
+            <div class="ui form">
+            <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+     $(function () {
+        $(".button").click(function () {
+        alert($("#name").val());
+     });
+ &lt;/script&gt;</textarea>
+                <div class="ui segment">
+             <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+     $(function () {
+         $(".game").change(function () {
+          alert("Game Changed  " + $(".game").val());
+     });
+ &lt;/script&gt;</textarea>
+                </div>
+            </div>
+            <div class="ui clearing segment">
+                <div class="ui form">
+                    <div class="inline fields">
+                        <div class="sixteen wide field">
+                            <label>Name</label>
+                            <input type="text" id="name" placeholder="Give ur Name"/>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui  green right floated button">Show Name</div>
+                    </div>
+                    <div class="inline fields">
+                        <div class="eight wide field">
+                            <label>Select gender</label>
+                            <select class="gender">
+                                <option value="">Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <div class="eight wide field">
+                            <label>Select game</label>
+                            <select class="game">
+                                <option value="">Game</option>
+                                <option>Cricket</option>
+                                <option>Football</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
