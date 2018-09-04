@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        var txt = "";
+        txt += "Document width/height: " + $(document).width();
+        txt += "x" + $(document).height() + "\n";
+        txt += "Window width/height: " + $(window).width();
+        txt += "x" + $(window).height();
+        alert(txt);
+    });
+	  $("#btn2").click(function(){
+        $("#div1").width(500).height(500);
+		alert($("#div1").height()); //excluding padding, border and margin.
+		alert($("#div1").innerHeight()); // including padding (not border and margin)
+		alert($("#div1").outerHeight()); // including padding and border.
+		alert($("#div1").outerHeight(true)); //including padding, border and margin
+	});
+});
+</script>
+<style>
+#div1 {
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid blue;
+    background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<button id="btn1">Display dimensions of document and window</button>
+<div id="div1"></div>
+<br>
+
+<button id="btn2">Resize div</button>
+</body>
+</html>

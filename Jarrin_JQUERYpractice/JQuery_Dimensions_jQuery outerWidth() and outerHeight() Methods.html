@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        var txt = "";
+        txt += "Width of div: " + $("#div1").width() + "</br>";
+        txt += "Height of div: " + $("#div1").height() + "</br>";
+        txt += "Outer width of div: " + $("#div1").outerWidth() + "</br>";
+        txt += "Outer height of div: " + $("#div1").outerHeight();
+        $("#div1").html(txt);
+    });
+});
+</script>
+<style>
+#div1 {
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid blue;
+    background-color: lightblue;
+}
+</style>
+<style>
+#div2 {
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid blue;
+    background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<div id="div1"></div>
+<br>
+
+<button id="btn1">Display dimensions of div</button>
+
+<p>outerWidth() - returns the width of an element (includes padding and border).</p>
+<p>outerHeight() - returns the height of an element (includes padding and border).</p>
+______________________________________________________________________________________________________________________________________
+<script>
+$(document).ready(function(){
+    $("#btn2").click(function(){
+        var txt = "";
+        txt += "Width of div: " + $("#div1").width() + "</br>";
+        txt += "Height of div: " + $("#div1").height() + "</br>";
+        txt += "Outer width of div (margin included): " + $("#div1").outerWidth(true) + "</br>";
+        txt += "Outer height of div (margin included): " + $("#div1").outerHeight(true);
+        $("#div2").html(txt);
+    });
+});
+</script>
+<div id="div2"></div>
+<br>
+
+<button id="btn2">Display dimensions of div</button>
+
+<p>outerWidth(true) - returns the width of an element (includes padding, border, and margin).</p>
+<p>outerHeight(true) - returns the height of an element (includes padding, border, and margin).</p>
+
+</body>
+</html>
