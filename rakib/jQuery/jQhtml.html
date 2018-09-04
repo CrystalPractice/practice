@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="../static/customStyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.button').click(function () {
+                $('.changeMe').html("Hello <b>Brother</b>");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui segment">
+        <h1 align="center">jquery HTML / CSS</h1>
+    </div>
+    <div class="ui clearing segment">
+        <h1>jQuery html()</h1>
+        <p>jQuery html() method is used to change the entire content of the selected elements. It replaces the
+            selected element content with new contents</p>
+        <h3>Example with Code</h3>
+        <div class="ui form">
+            <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+     $(function () {
+        $("button").click(function(){
+        $(".changeMe").html("Hello <b>Brother</b>");
+     });
+ &lt;/script&gt;</textarea>
+        </div>
+        <div class="ui segment">
+            <div class="ui green button">change bellow paragraph</div>
+            <p class="changeMe">I will Change</p>
+        </div>
+        <div class="ui right floated buttons">
+            <a href="">
+                <button class="ui right floated animated green large button" tabindex="0">
+                    <div class="visible content">Previous</div>
+                    <div class="hidden content">
+                        <i class="left arrow icon"></i>
+                    </div>
+                </button>
+            </a>
+            <div class="or"></div>
+            <a href="jQtext().html">
+                <button class="ui right floated animated green large button" tabindex="0">
+                    <div class="visible content">Next</div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
