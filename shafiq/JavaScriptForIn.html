@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops</h2>
+
+<p>The for/in statement loops through the properties of an object.</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+    var txt = "";
+    var person = {fname:"John", lname:"Doe", age:25};
+    var x;
+    for (x in person) {
+        txt += person[x] + " ";
+    }
+    document.getElementById("demo").innerHTML = txt;
+    var txt2="";
+    var y;
+    var person2={fname:"Rita", lname:"Sing",sge:"64"};
+    for (y in person2){
+        txt2 +=person2[y]+" ";
+    }
+    document.getElementById("demo2").innerHTML=txt2;
+</script>
+
+</body>
+</html>

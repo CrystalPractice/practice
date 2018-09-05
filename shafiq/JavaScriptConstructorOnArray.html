@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>This "home made" isArray() function returns true when used on an array:</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = isArray(fruits);
+    function isArray(myArray) {
+        return myArray.constructor.toString().indexOf("Array")>-1;
+    }
+
+</script>
+
+</body>
+</html>
