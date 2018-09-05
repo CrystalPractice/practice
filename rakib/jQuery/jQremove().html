@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Display Effect</title>
+    <title>JQuery Html / CSS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
     <link rel="stylesheet" href="../static/customStyle.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
         $(function () {
-            $("#toggle").click(function () {
-                $("#show_hide").toggle();
+            $(".btn").click(function () {
+                $(".removeMe").remove();
             });
         });
     </script>
@@ -17,36 +17,27 @@
 <body>
 <div class="ui container">
     <div class="ui segment">
-        <h1 align="center">jQuery Display Effect </h1>
+        <h1 align="center">jquery HTML / CSS</h1>
     </div>
     <div class="ui segment">
-        <h1>jQuery toggle()</h1>
-        <p>The jQuery toggle() is a special type of method which is used to toggle between the hide() and show() method.
-            It shows the hidden elements and hides the shown element.</p>
-        <h2>Syntex</h2>
-        <div class="ui form">
-            <textarea rows="3" disabled style="font-size: 25px">$(selector).toggle();
-$(selector).toggle(speed, callback);
-$(selector).toggle(speed, easing, callback);
-$(selector).toggle(display);
-            </textarea>
-        </div>
-        <div class="ui segment">
-            <h3>Example with Code</h3>
-            <div class="ui form">
-            <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
-     $(function () {
-       $("#toggle").click(function(){
-        $("#show_hide").toggle();
-     });
- &lt;/script&gt;</textarea>
+        <h1>jQuery remove()</h1>
+        <p>The jQuery remove() method is used to remove the selected elements out of the DOM. It removes the selected
+            element itself, as well as everything inside it (including all texts and child nodes). This method also
+            removes the data and the events of the selected elements.</p>
+        <div class="ui icon message">
+            <i class="sticky note icon"></i>
+            <div class="content"><p>If you want to remove elements without removing data and events, you should use the
+                detach() method. If you want to remove only data and events, use the empty() method.
+                empty() method to remove the content of div element.
+                jQuery remove() method: This method is used to remove the elements as well as its data and events.
+                jQuery empty() method: This method is used to remove only the content from the selected elements.</p>
             </div>
         </div>
-        <div class="ui segment">
-            <p id="show_hide">Show Or Hide me by Toggle </p>
-            <div class="ui pink button" id="toggle">Toggle</div>
+        <div class="ui clearing segment">
+            <p class="removeMe">remove Me to click button</p>
+            <div class="ui red button btn">Remove</div>
             <div class="ui right floated buttons">
-                <a href="jQshow().html">
+                <a href="jQappend().html">
                     <button class="ui right floated animated green large button" tabindex="0">
                         <div class="visible content">Previous</div>
                         <div class="hidden content">
@@ -55,7 +46,7 @@ $(selector).toggle(display);
                     </button>
                 </a>
                 <div class="or"></div>
-                <a href="jQhtml.html">
+                <a href="jQattr().html">
                     <button class="ui right floated animated green large button" tabindex="0">
                         <div class="visible content">Next</div>
                         <div class="hidden content">
