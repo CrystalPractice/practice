@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="../../static/customStyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#h1").mouseenter(function () {
+                $("#mouse_Enter-leave").text("Mouse entered on heading").show().fadeOut(2000);
+            });
+            $("#h1").mouseleave(function () {
+                $("#mouse_Enter-leave").text("Bye Bye... leaving heading").show().fadeOut(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui segment">
+        <h1 align="center">jQuery Events</h1>
+    </div>
+    <div class="ui segment">
+        <h2>jQuery mouseenter()</h2>
+        <p>This function is executed, when the mouse pointer enters the HTML element.
+            <b>When you enter your mouse cursor over the selected element, it triggers the mouseenter event</b> and once
+            the mouseenter event is occurred, it executes the mouseenter() method </p>
+        <div class="ui segment">
+            <h1> Code : </h1>
+            <div class="ui form">
+            <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+     $(function () {
+        $("#h1").mouseenter(function(){
+                $( "#mouse_Enter-leave" ).text( "Mouse entered on heading" ).show().fadeOut( 2000 );
+            });
+     });
+ &lt;/script&gt;</textarea>
+            </div>
+        </div>
+        <h2>jQuery mouseleave()</h2>
+        <p>This function is executed, when the mouse pointer leaves the HTML element.
+            When your mouse cursor leaves the selected element, it triggers the mouseleave event and once the mouseleave
+            event is occurred, it executes the mouseleave() method</p>
+        <div class="ui segment">
+            <h1> Code : </h1>
+            <div class="ui form">
+            <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+     $(function () {
+        $("#h1").mouseleave(function(){
+                $( "#mouse_Enter-leave" ).text( "Bye Bye... leaving heading" ).show().fadeOut( 2000 );
+            });
+     });
+ &lt;/script&gt;</textarea>
+            </div>
+        </div>
+        <div class="ui clearing segment">
+            <h1 id="h1" style="color: indianred">Enter this heading.</h1>
+            <div id="mouse_Enter-leave"></div>
+            <div class="ui right floated buttons">
+                <a href="jQclick.html">
+                    <button class="ui right floated animated green large button" tabindex="0">
+                        <div class="visible content">Previous</div>
+                        <div class="hidden content">
+                            <i class="left arrow icon"></i>
+                        </div>
+                    </button>
+                </a>
+                <div class="or"></div>
+                <a href="keyboardEvents.html">
+                    <button class="ui right floated animated green large button" tabindex="0">
+                        <div class="visible content">Next</div>
+                        <div class="hidden content">
+                            <i class="right arrow icon"></i>
+                        </div>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
