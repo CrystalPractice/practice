@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript const</h2>
+
+<p>You cannot change a primitive value.</p>
+
+<p id="demo"></p>
+
+<script>
+try {
+    const PI = 3.141592653589793;
+	PI = 3.14;      // This will give an error
+	PI = PI + 10;   // This will also give an error
+}
+catch (err) {
+    document.getElementById("demo").innerHTML = err;
+}
+</script>
+_______________________________________________________________________________________________________________
+
+<h2>Block Scope</h2>
+<p id="demo1"></p>
+<script>
+	var x1 = 10;
+	{
+	const x1 = 2;
+	}
+document.getElementById("demo1").innerHTML = x1;
+</script>
+_______________________________________________________________________________________________________________
+
+<h2>Constant Objects can Change</h2>
+<p>Declaring a constant object does NOT 
+	make the objects properties unchangeable
+</p>
+<p id="demo2"></p>
+<script>
+	// Create an object:
+	const car = {
+	type: "Fiat",
+	model: "500",
+	color: "white"
+	
+	};
+	// Change a property:
+	car.color = "red";
+	// Add a property:
+	car.owner = "John";
+	// Display the property:
+	document.getElementById("demo2").innerHTML = "Car owner is " + car.owner + ".Car Color is " + car.color + ".";
+
+</script>
+_______________________________________________________________________________________________________________
+
+<p>But you can NOT reassign a constant object:</p>
+<p id="demo3"></p>
+<script>
+try {
+    const car1 = {type:"Fiat", model:"500", color:"white"};
+    car1 = {type:"Volvo", model:"EX60", color:"red"};
+}
+catch (err) {
+    document.getElementById("demo3").innerHTML = err;
+}
+</script>
+_______________________________________________________________________________________________________________
+
+<h2>Constant Arrays can Change</h2>
+
+<p>Declaring a constant array does NOT make the elements unchangeble:</p>
+
+<p id="demo4"></p>
+<script>
+	// Create an Array:
+	const cars = ["Saab","Volvo","BMW"]; 
+	
+	// Change an element:
+	cars[0] = "Toyota";
+	// Add an element:
+	cars.push("Audi");
+	
+	// Display the Array:
+	document.getElementById("demo4").innerHTML = cars;
+</script>
+_______________________________________________________________________________________________________________
+
+<p>You can NOT reassign a constant array:</p>
+
+<p id="demo5"></p>
+
+<script>
+try {
+    const cars = ["Saab", "Volvo", "BMW"];
+    cars = ["Toyota", "Volvo", "Audi"];
+}
+catch (err) {
+    document.getElementById("demo5").innerHTML = err;
+}
+</script>
+_______________________________________________________________________________________________________________
+
+<h2>JavaScript Hoisting</h2>
+
+<p>With <b>var</b>, you can use a variable before it is declared:</p>
+
+<p id="demo6"></p>
+<p id="demo7"></p>
+
+<script>
+carName = "Volvo";		// You CAN use carName here
+document.getElementById("demo6").innerHTML = carName;
+var carName;
+carName1 = "Volvo";    // You can NOT use carName here
+const carName1 = "Volvo";
+document.getElementById("demo7").innerHTML = carName1;
+</script>
+</body>
+</html>
