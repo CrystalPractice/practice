@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#firstButton").click(function(){
+                $("body").append('<br><br><br><input type="text" id="check" />' +
+                    '<br><br><button onclick="addValue()">Submit</button>');
+
+            });
+        });
+   </script>
+
+</head>
+<body>
+<br>
+<button id="firstButton">Click this for put input text</button>
+</body>
+<script>
+    function addValue(){
+        alert("Text field value is: "+$("#check").val());
+    }
+</script>
+</html>
