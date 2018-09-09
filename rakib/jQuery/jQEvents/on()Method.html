@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="../../static/customStyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("p").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function () {
+                    $(this).css("background-color", "yellow");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui segment">
+        <h2 align="center">jQuery Events</h2>
+    </div>
+    <div class="ui segment">
+        <h2>The on() Method</h2>
+        <p>The on() method attaches one or more event handlers for the selected elements.</p>
+        <div class="ui segment">
+            <h3> Code : </h3>
+            <div class="ui form">
+            <textarea rows="8" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+     $(function () {
+        $("p").on({
+                mouseenter: function(){
+                $(this).css("background-color", "lightgray");
+            },
+                mouseleave: function(){
+                $(this).css("background-color", "lightblue");
+            },
+                click: function(){
+                $(this).css("background-color", "yellow");
+            }
+            });
+     });
+ &lt;/script&gt;</textarea>
+                <div class="ui segment">
+                    <h4>Example :</h4>
+                    <p>I have three event fire power </p>
+                </div>
+                <div class="ui segment">
+                    <h3>Another Example : </h3>
+                    <div class="ui form">
+            <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+     $(function () {
+        $("p").on("click", function(){
+                $(this).hide();
+           });
+     });
+ &lt;/script&gt;</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

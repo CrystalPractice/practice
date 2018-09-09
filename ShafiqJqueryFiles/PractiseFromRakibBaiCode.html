@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--https://www.sanwebe.com/2013/03/addremove-input-fields-dynamically-with-jquery-->
+<!--https://codepedia.info/editor-example/jquery-click-event-for-dynamic-added-element/-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <link rel="stylesheet" href="../static/customStyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var x = 1; //initlal text box count
+            $(".add_field_button").click(function (e) { //on add input button click
+                e.preventDefault();
+                $(".input_fields_wrap").append('<div><input type="text" placeholder="plz give a Name" id="' + x + '" name="mytext[]"/><div id="' + x + '" class=" ui viewName green button">View Name</div></div>'); //add input box
+                x++;
+            });
+            $(".input_fields_wrap").on("click", ".viewName", function (e) {
+                e.preventDefault();
+                var name = $(this).attr('id');
+                if ($("#" + name + "").val() == '') {
+                    alert("Plz Write Name");
+                    return false;
+                }
+                alert("" + $("#" + name + "").val());
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui segment">
+        <div class="ui add_field_button button">Add Name Field</div>
+        <div class="ui segment">
+            <div class="ui form">
+                <div class="ui input_fields_wrap field"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
