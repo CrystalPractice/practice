@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  </head>
+<body>
+<button id="start">Start Animation</button>
+<button id="stop">Stop Animation</button>
+
+<div style="background: red;height: 100px;width: 100px;"></div>
+
+<script>
+$(document).ready(function(){
+	  $("#start").click(function(){
+        $("div").animate({ backgroundColor: "green",
+				      height: 240,
+					  width: 240
+					  },1500);
+       $("div").animate({ backgroundColor: "blue",
+					  height: 260,
+					  width: 260
+					  },1500);
+	   $("div").animate({ backgroundColor: "yellow",
+				      height: 300,
+					  width: 300
+					  },1500);
+	   $("div").animate({ backgroundColor: "red",
+					 height: 100,
+					  width: 100
+					  },1500);
+    });
+	$("#stop").click(function(){
+		$("div").clearQueue();
+	});
+});
+</script>
+</body>
+</html>
