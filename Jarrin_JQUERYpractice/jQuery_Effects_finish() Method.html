@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<button id="start">Start Animation</button>
+<button id="finish">Finish Current Animation</button>
+
+<div style="background:red; height:100px; width:100px;"></div>
+
+<script>
+	$(document).ready(function(){
+		$("#start").click(function(){
+			$("div").animate({height: 300}, 3000);
+			$("div").animate({width:  300}, 3000);
+		});
+		$("#finish").click(function(){
+			$("div").finish();
+		});
+	});
+</script>
+</body>
+</html>
