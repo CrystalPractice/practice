@@ -10,11 +10,12 @@
 
 <body>
 <h1 class="ui violet block header">
- HomeWork No:3
+ HomeWork No:3<i class="smile icon"></i>
 </h1>
 <div class="ui inverted segment">
 <center>
-<button class="massive ui purple button" data-tooltip="Add users to your feed" data-inverted="" id="btn1">ADD</button>
+<button class="massive ui purple button" data-tooltip="Add users to your feed" id="btn1">
+<i class="user plus icon"></i>ADD</button>
 </center>
 <div class="ui raised very padded text container segment">
 	<div class="row" style="background-color: pink">
@@ -37,12 +38,12 @@
 			
 		$("#btn1").click(function (e) { 
                 e.preventDefault();
-			$(".nameRow").append('<div id="row1" class="row" style="background-color: skyblue">' + 
+			$(".nameRow").append('<div id="row1" class="row" style="background-color: skyblue"><i class="user icon"></i>' + 
 			'<div class="col-sm-2"><input type="text" class="FN" /><label style="display: none" class="FNL"></label></div><div class="col-sm-2">' +
 			'<input type="text" class="LN" /> <label style="display: none" class="LNL"></label></div><div class="col-sm-1">' + 
-			'<button id="btn2" onclick="ADD(this)">+</button>' +
-			'<button id="btn3" style="display: none" onclick="Edit(this)">edit</button></div>' + 
-			'<div class="col-sm-2"><label class="FullN"></label></div><br><br></div>');
+			'<button id="btn2" onclick="ADD(this)"><i class="plus icon"></i></button>' +
+			'<button id="btn3" style="display: none" onclick="Edit(this)"><i class="edit icon"></i></button></div>' + 
+			'<div class="col-sm-4"><label class="FullN"></label></div><br><br></div>');
 		
 		});
 	});
