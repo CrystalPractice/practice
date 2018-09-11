@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<h1 class="ui violet block header">
+ HomeWork No:3
+</h1>
+<div class="ui inverted segment">
+<center>
+<button class="massive ui purple button" data-tooltip="Add users to your feed" data-inverted="" id="btn1">ADD</button>
+</center>
+<div class="ui raised very padded text container segment">
+	<div class="row" style="background-color: pink">
+		<div class="col-sm-2"><b><u>FirstName</u></b></div>
+		<div class="col-sm-2"><b><u>LastName</u></b></div>
+		<div class="col-sm-1"><b>&nbsp;&nbsp;</b></div>
+		<div class="col-sm-2"><b><u>FullName</u></b></div>
+	</div>
+	
+	<div id="tablelayout">
+		<div class="nameRow">
+		
+		</div>
+	</div>
+
+</div>
+</div>
+<script>
+	$(document).ready(function(){
+			
+		$("#btn1").click(function (e) { 
+                e.preventDefault();
+			$(".nameRow").append('<div id="row1" class="row" style="background-color: skyblue">' + 
+			'<div class="col-sm-2"><input type="text" class="FN" /><label style="display: none" class="FNL"></label></div><div class="col-sm-2">' +
+			'<input type="text" class="LN" /> <label style="display: none" class="LNL"></label></div><div class="col-sm-1">' + 
+			'<button id="btn2" onclick="ADD(this)">+</button>' +
+			'<button id="btn3" style="display: none" onclick="Edit(this)">edit</button></div>' + 
+			'<div class="col-sm-2"><label class="FullN"></label></div><br><br></div>');
+		
+		});
+	});
+		function ADD(e){
+		
+			var fName = $(e).closest(".row").find(".FN").val();
+			var lName = $(e).closest(".row").find(".LN").val();
+			if(fName == "" && lName == ""){
+				alert("Please fill the input fields!!!!");
+			}else{
+			
+			$(e).closest(".row").find(".FullN").text(fName + " " + lName);
+			$(e).closest(".row").find(".FN").hide();
+			$(e).closest(".row").find(".LN").hide();
+			$(e).closest(".row").find(".FNL").show();
+			$(e).closest(".row").find(".LNL").show();
+			$(e).closest(".row").find(".LNL").text(lName);
+			$(e).closest(".row").find(".FNL").text(fName);
+			$(e).closest(".row").find("#btn3").show();
+			$(e).closest(".row").find("#btn2").hide();
+			}
+		
+		}
+		function Edit(e){
+			
+			var fName = $(e).closest(".row").find(".FN").val();
+			var lName = $(e).closest(".row").find(".LN").val();
+			var lName1 = $(e).closest(".row").find(".LNL").val();
+			var fName1 = $(e).closest(".row").find(".FNL").val();
+			$(e).closest(".row").find(".FNL").hide();
+			$(e).closest(".row").find(".LNL").hide();
+			$(e).closest(".row").find(".FN").show();
+			$(e).closest(".row").find(".LN").show();
+			$(e).closest(".row").find(".LN").text(lName1);
+			$(e).closest(".row").find(".FN").text(fName1);
+			
+			$(e).closest(".row").find(".FullN").text(fName + " " + lName);
+			
+			
+			
+		
+		}
+	
+	
+		
+</script>
+</body>
+</html>
