@@ -13,39 +13,33 @@
 <div class="ui segment">
 <div class="row">
     <div class="col-sm-1"></div>
-    <div class="col-sm-1">First Name</div>
-    <div class="col-sm-1">Second Name</div>
+    <div class="col-sm-1"><b>First Name</b></div>
+    <div class="col-sm-1"><b>Second Name</b></div>
     <div class="col-sm-1"></div>
-    <div class="col-sm-8">Full Name</div>
-</div>
-<div class="container">
-    <div id="contain">
+    <div class="col-sm-8"><b>Full Name</b></div>
+</div><br>
+<div id="content">
 
-
-    </div>
 </div>
 </div>
 
-    <script>
-
+<script>
         $(document).ready(function(){
             $("#f_button").click(function(){
-                $("#contain").append('<div class="row"><div col-sm-1><input type="text class="data1" />' +
-                    '<div col-sm-1><input type="text class="data2" /></div> ' +
-                    '<div class="col-sm-1"><button id=""s_button onclick="myFunctionAdd(this)">+</button></div>' +
-                    '<div class="col-sm-8"><label class="fullData"></label></div></div>'
-                );
-
+                $("#content").append('<div class="row"><div class="col-sm-1"></div>' +
+                    '<div class="col-sm-1"><input type="text class="fn" /></div>' +
+                    '<div class="col-sm-1"><input type="text class="sn" /></div>' +
+                    '<div class="col-sm-1"><button id="s_button" onclick="MyFunctionAdd(this)">+</button></div>' +
+                    '<br><div class="col-sm-8"><label class="fullName"></label></div></div>');
             });
         });
-        function myFunctionAdd(s) {
-            var firstName = $(s).closest(".row").find(".data1").val();
-            var secondName = $(s).closest(".row").find("data2").val();
-            $(s).closest(".row").find(".fulldata").text(firstName + " " + firstName);
-            
-        }
-
-    </script>
-
+   function MyFunctionAdd(s) {
+       var fName = $(s).closest(".row").find("input")[0].value;
+       var lName = $(s).closest(".row").find("input")[1].value;
+       $(s).closest(".row").find(".fullName").text(fName + " " + lName);
+       $(s).closest(".row").find(".fn").replaceWith("<label>" + $(s).closest(".row").find("input")[0].value + "</label>");
+       $(s).closest(".row").find(".ln").replaceWith("<label>" + $(s).closest(".row").find("input")[1].value + "</label>");
+}
+</script>
 </body>
 </html>
