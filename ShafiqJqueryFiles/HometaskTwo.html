@@ -3,45 +3,49 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="f_button">
+    <button>Add</Button></div><br>
+</div>
+<div class="ui segment">
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1">First Name</div>
+    <div class="col-sm-1">Second Name</div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-8">Full Name</div>
+</div>
+<div class="container">
+    <div id="contain">
+
+
+    </div>
+</div>
+</div>
+
     <script>
 
         $(document).ready(function(){
             $("#f_button").click(function(){
-                $("#contain").append('<div></div>'+
-                    '<div><input type="text id="data1" /><input type="text" id="data2" />' +
-                    '<button>+</button></div>'
+                $("#contain").append('<div class="row"><div col-sm-1><input type="text class="data1" />' +
+                    '<div col-sm-1><input type="text class="data2" /></div> ' +
+                    '<div class="col-sm-1"><button id=""s_button onclick="myFunctionAdd(this)">+</button></div>' +
+                    '<div class="col-sm-8"><label class="fullData"></label></div></div>'
                 );
 
             });
         });
-        </script>
-    <script>
-        function myFunction(){
-            $(document).ready(function(){
-                $("#btn2").click(function(){
-
-                });
-
-
-            });
-
-
+        function myFunctionAdd(s) {
+            var firstName = $(s).closest(".row").find(".data1").val();
+            var secondName = $(s).closest(".row").find("data2").val();
+            $(s).closest(".row").find(".fulldata").text(firstName + " " + firstName);
+            
         }
-</script>
-</head>
-<body>
-    <div id="f_button">
-        <button>Add</Button></div><br>
 
-
-
-</div>
-    <div class="container">
-        <form id="contain">
-
-
-        </form>
-    </div>
+    </script>
 
 </body>
 </html>
