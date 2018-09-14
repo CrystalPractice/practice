@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="f_button">
+    <button>Add</Button></div><br>
+</div>
+<div class="ui segment">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"><b>First Name</b></div>
+        <div class="col-sm-1"><b>Second Name</b></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8"><b>Full Name</b></div>
+    </div><br>
+    <div id="content">
+
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#f_button").click(function(){
+            $("#content").append('<div class="row"><div class="col-sm-1"></div>' +
+                '<div class="col-sm-1"><input type="text class="fn" /><label style="display: none" class="fnL"></label></div>' +
+                '<div class="col-sm-1"><input type="text class="sn" /><label style="display: none" class="snL"></label></div>' +
+                '<div class="col-sm-1"><button id="addbtn" onclick="MyFunctionAdd(this)"><i class="plus icon"></i></button>' +
+                '<button id="editbtn" style="display: none" onclick="myFunctionEdit(this)"><i class="edit icon"></i></button></div>' +
+                '<br><div class="col-sm-8"><label class="fullName"></label></div></div>');
+        });
+    });
+    function MyFunctionAdd(s) {
+        var fName = $(s).closest(".row").find("input")[0].value;
+        var lName = $(s).closest(".row").find("input")[1].value;
+        if (fName=="" &&  lName=="") {
+            alert("Please fill up to first name and last name");
+
+        } else {
+            $(s).closest(".row").find(".fullName").text(fName + " " + lName);
+            $(s).closest(".row").find("input").hide();
+            $(s).closest(".row").find(".fnL").show();
+            $(s).closest(".row").find(".snL").show();
+            $(s).closest(".row").find(".fnL").text(fName);
+            $(s).closest(".row").find(".snL").text(lName);
+            $(s).closest(".row").find("#editbtn").show();
+            $(s).closest(".row").find("#addbtn").hide();
+
+        }
+    }
+    function myFunctionEdit(s) {
+        var fName = $(s).closest(".row").find("input")[0].value;
+        var lName = $(s).closest(".row").find("input")[1].value;
+        var fNameL = $(s).closest(".row").find("fnl").val();
+        var lNameL = $(s).closest(".row").find("snl").val();
+        $(s).closest(".row").find(".fnL").hide();
+        $(s).closest(".row").find(".snL").hide();
+        $(s).closest(".row").find("input").show();
+        $(s).closest(".row").find(".fn").text(fNameL);
+        $(s).closest(".row").find(".sn").text(lNameL);
+        $(s).closest(".row").find(".fullName").text(fName + " " + lName);
+
+    }
+</script>
+</body>
+</html>
