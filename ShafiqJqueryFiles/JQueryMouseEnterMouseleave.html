@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").mouseenter(function(){
+                $("p").css("background-color", "lightgreen");
+            });
+            $("p").mouseleave(function(){
+                $("p").css("background-color", "yellow");
+            });
+            $("#h1").mouseleave(function(){
+                $( "div" ).text( "Bye Bye... leaving heading" ).show().fadeOut( 2000 );
+            });
+        });
+    </script>
+</head>
+<body>
+<p>Move your mouse cursor over this statement.</p>
+<h1 id="h1">Enter this heading.</h1>
+<div></div>
+</body>
+</html>

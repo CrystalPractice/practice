@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").keydown(function(){
+                $("input").css("background-color", "green");
+            });
+            $("input").keyup(function(){
+                $("input").css("background-color", "violet");
+            });
+        });
+    </script>
+</head>
+<body>
+Write something: <input type="text">
+</body>
+</html>
+
