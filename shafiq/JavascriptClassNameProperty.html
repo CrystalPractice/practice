@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .mystyle {
+            width: 300px;
+            height: 100px;
+            background-color: green;
+            text-align: center;
+            font-size: 25px;
+            color: coral;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<p>Click the button to set a class for div.</p>
+
+<div id="myDIV">
+    I am a DIV element
+</div>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+    function myFunction() {
+        document.getElementById("myDIV").className = "mystyle";
+    }
+</script>
+
+</body>
+</html>
