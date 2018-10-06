@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript this Keyword</h2>
+<p>In this example <strong>this</strong> refers to person2, even if it is a method of person1:</p>
+
+<p id="demo"></p>
+
+<script>
+    var person1 = {
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+    }
+    var person2 = {
+        firstName:"John",
+        lastName: "Doe",
+    }
+    var x = person1.fullName.call(person2);
+    document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
