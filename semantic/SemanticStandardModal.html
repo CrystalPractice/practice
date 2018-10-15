@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+</head>
+<body>
+<div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">
+        Profile Picture
+    </div>
+    <div class="image content">
+        <div class="ui medium image">
+            <img src="ksi.JPG">
+        </div>
+        <div class="description">
+            <div class="ui header">We've auto-chosen a profile image for you.</div>
+            <p>Is it okay to use this photo?</p>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui black deny button">
+            Nope
+        </div>
+        <div class="ui positive right labeled icon button">
+            Yep, that's me
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
+<div class="ui modal">
+    <div class="header">Header</div>
+    <div class="content">
+        <p></p>
+    </div>
+    <div class="actions">
+        <div class="ui approve button">Approve</div>
+        <div class="ui button">Neutral</div>
+        <div class="ui cancel button">Cancel</div>
+    </div>
+</div>
+
+
+<script>
+    $('.ui.modal')
+        .modal('show')
+    ;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+</head>
+<body>
+<div class="ui basic modal">
+    <div class="ui icon header">
+        <i class="archive icon"></i>
+        Archive Old Messages
+    </div>
+    <div class="content">
+        <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
+    </div>
+    <div class="actions">
+        <div class="ui red basic cancel inverted button">
+            <i class="remove icon"></i>
+            No
+        </div>
+        <div class="ui green ok inverted button">
+            <i class="checkmark icon"></i>
+            Yes
+        </div>
+    </div>
+</div>
+<script>
+    $('.ui.basic.modal')
+        .modal('show')
+    ;
+</script>
+
+</body>
+</html>
