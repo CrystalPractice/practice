@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JQ val()</title>
+		<link rel="stylesheet" href="../css/custom.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="ui container">
+			<div class="ui segment">
+				<h1 align="center">jQuery val()</h1>
+			</div>
+			<div class="ui segment">
+				<h1>jQuery val()</h1>
+				<p>There are two usage of jQuery val() method.</p>
+				<ul class="ui list">
+					<li>It is used to get current value of the first element in the set of matched elements.</li>
+					<li>It is used to set the value of every matched element.</li>
+				</ul>
+				<div class="ui clearing segment">
+					<h1>jQuery val() example</h1>
+					<div class="ui form">
+					<textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+			 $(function () {
+				$(".btn").click(function () {
+				alert($("#firstName").val());
+				alert($("#lastName").val());
+			 });
+		 &lt;/script&gt;</textarea>
+						<div class="ui segment">
+					 <textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+			 $(function () {
+				 $(".game").change(function () {
+				  alert("Game Changed  " + $(".game").val());
+			 });
+		 &lt;/script&gt;</textarea>
+						</div>
+					</div>
+					<div class="ui clearing segment">
+						<div class="ui form">
+							<div class="two fields">
+								<div class="field error">
+									<label>First Name</label>
+									<input id="firstName" placeholder="First Name" type="text">
+								</div>
+								<div class="field">
+									<label>Last Name</label>
+									<input id="lastName" placeholder="Last Name" type="text">
+								</div>
+							</div>
+							<div class="field">
+								<div class="ui green btn right floated button">Show First Name</div>
+							</div>
+							<div class="inline fields">
+								<div class="eight wide field">
+									<label>Select gender</label>
+									<select class="gender">
+										<option value="">Gender</option>
+										<option>Male</option>
+										<option>Female</option>
+									</select>
+								</div>
+							</div>
+							<div class="inline field error">
+								<div class="ui checkbox">
+								  <input type="checkbox" tabindex="0" class="hidden">
+								  <label>I agree to the Terms and Conditions</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ui right floated buttons">
+					<a href="5thjQtext().html">
+						<button class="ui right floated animated green large button" tabindex="0">
+							<div class="visible content">Previous</div>
+							<div class="hidden content">
+								<i class="left arrow icon"></i>
+							</div>
+						</button>
+					</a>
+					<div class="or"></div>
+					<a href="7thjQappend().html">
+						<button class="ui right floated animated green large button" tabindex="0">
+							<div class="visible content">Next</div>
+							<div class="hidden content">
+								<i class="right arrow icon"></i>
+							</div>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function () {
+		$(".btn").click(function () {
+			if ($("#firstName").val() == '') {
+				alert("Please enter first name!");
+				return false;
+			}
+			alert($("#firstName").val());
+			
+			if ($("#lastName").val() == '') {
+				alert("Please enter last name!");
+				return false;
+			}
+			alert($("#lastName").val());
+		});
+		$(".gender").change(function () {
+			alert("Selected Gender  " + $(".gender").val());
+		});
+	});
+</script>

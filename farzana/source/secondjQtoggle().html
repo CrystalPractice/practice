@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Toggle</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
+		</script>
+	</head>
+	<body>
+		<div class="ui container">
+			<div class="ui segment">
+				<h2 class="ui header" align="center">Semantic Icon Header</h2>
+			</div>
+			<div class="ui segment">
+				<section>
+					<h2 class="ui icon header">
+					  <i class="settings icon"></i>
+					  <div class="content">
+						jQuery toggle()
+						<div class="sub header">The jQuery toggle() is a special type of method which is used to toggle between the hide() and show() method. It shows the hidden elements and hides the shown element.</div>
+					  </div>
+					</h2>
+				</section>
+				<h3 class="ui header">Semantic Text Area</h3>
+				<section>
+				<div class="ui form">
+					<textarea rows="3" disabled style="font-size: 25px">
+						$(selector).toggle();
+						$(selector).toggle(speed, callback);
+						$(selector).toggle(speed, easing, callback);
+						$(selector).toggle(display);
+					</textarea>
+				</div>
+				</section>
+			</div>
+			<form class="ui form">
+				<div id="show_hide">
+					<div class="field">
+						<label>First Name</label>
+						<input type="text" name="first-name" placeholder="First Name">
+					</div>
+					<div class="field">
+							<label>Last Name</label>
+							<input type="text" name="last-name" placeholder="Last Name">
+					</div>
+					<div class="field">
+						<div class="ui checkbox">
+							<input type="checkbox" tabindex="0" class="hidden">
+							<label>I agree to the Terms and Conditions</label>
+						</div>
+					</div>
+				</div>
+				<div class="ui pink button" id="toggle">Toggle</div>
+			</form>
+			<div class="ui right floated buttons">
+				<a href="firstSemanticjQSelector().html">
+					<button class="ui right floated animated green large button">
+                    <div class="visible content">Previous</div>
+                    <div class="hidden content">
+                        <i class="left arrow icon"></i>
+                    </div>
+					</button>
+				</a>
+				<div class="or"></div>
+				<a href="thirdjQfadeInOut().html">
+					<button class="ui right floated animated green large button">
+                    <div class="visible content">Next</div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+					</button>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript" language="javascript">  
+	$(function () {
+		$("#toggle").click(function () {
+			$("#show_hide").toggle();
+		});
+	});
+ </script> 

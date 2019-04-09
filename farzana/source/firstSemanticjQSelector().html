@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Semantic UI & JQ Selector</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
+		</script>
+	</head>
+	<body>
+		<div class="ui container">
+			<div class="ui segment">
+				<h1 align="center">My First Template on Semantic UI & jQuery</h1>
+			</div>
+			<div class="ui segment">
+				<section>jQuery Selectors
+				jQuery Selectors are used to select and manipulate HTML elements. They are very important part of jQuery library.
+
+				With jQuery selectors, you can find or select HTML elements based on their id, classes, attributes, types and much more from a DOM.
+
+				In simple words, you can say that selectors are used to select one or more HTML elements using jQuery and once the element is selected then you can perform various operation on that.
+
+				All jQuery selectors start with a dollor sign and parenthesis e.g. $(). It is known as the factory function.
+				</section>
+			</div>
+			<div class="ui segment">
+				<section>
+					<div class="jqHideShow">
+						<p>A flag can use the two digit country code, the full name, or a common alias</p>
+						<i class="france flag"></i>
+						<i class="myanmar flag"></i>
+						<i class="ae flag"></i>
+					</div>
+				</section>
+			</div>
+			<button class="ui primary large button" id="show">Show</button>
+			<button class="ui large button" id="hide">Hide</button>
+			<a href="secondjQtoggle().html">
+                <button class="ui right floated animated green large button">
+                    <div class="visible content">Next</div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </button>
+            </a>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript" language="javascript">  
+	 $(document).ready(function() {  
+		$("section").css("background-color", "lavender");
+		$("#hide").click(function(){  
+			$(".jqHideShow").hide();  
+		});
+		$("#show").click(function(){  
+			$(".jqHideShow").show();  
+		}); 	
+	 });  
+ </script> 
