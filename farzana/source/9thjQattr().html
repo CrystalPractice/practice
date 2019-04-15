@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JQ attr()</title>
+		<link rel="stylesheet" href="../css/custom.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="ui container">
+			<div class="ui segment">
+				<h1 align="center"> jQuery attr()</h1>
+			</div>
+			<div class="ui segment">
+				<h2>jQuery attr()</h2>
+				<p>The jQuery attr() method is used to set or return attributes and values of the selected elements.
+					There are two usage of jQuery attr() method.</p>
+				<ol class="ui list">
+					<li>To return attribute value: This method returns the value of the first matched element.</li>
+					<li>To set attribute value: This method is used to set one or more attribute/value pairs of the set of
+						matched elements.
+					</li>
+				</ol>
+				<div class="ui segment">
+					<img class="ui small image" src="../images/jquery-effects.png"/>
+				</div>
+				<div class="ui clearing segment">
+					<div class="ui green right floated button btn">make the image Big</div>
+				</div>
+				<div class="ui clearing segment">
+					<div class="ui right floated buttons">
+						<a href="8thjQremove().html">
+							<button class="ui right floated animated green large button" tabindex="0">
+								<div class="visible content">Previous</div>
+								<div class="hidden content">
+									<i class="left arrow icon"></i>
+								</div>
+							</button>
+						</a>
+						<div class="or"></div>
+					  <a href="jQEvents/jQEvents.html">
+							<button class="ui right floated animated green large button" tabindex="0">
+								<div class="visible content">Next</div>
+								<div class="hidden content">
+									<i class="right arrow icon"></i>
+								</div>
+							</button>
+					 </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function () {
+		$('.btn').click(function () {
+			$("image").attr("width", "500");
+		});
+</script>

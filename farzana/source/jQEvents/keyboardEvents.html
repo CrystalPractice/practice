@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JQuery Events</title>
+		<link rel="stylesheet" href="../css/custom.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="ui container">
+			<div class="ui segment">
+				<h1 align="center">jQuery Events</h1>
+			</div>
+			<div class="ui clearing segment">
+				<h1>jQuery keydown()</h1>
+				<p>When you <b>press a key on the keyboard, the keydown() event is occurred</b> and once the keydown() event is
+					occurred</p>
+				<div class="ui segment">
+					<h3> Code : </h3>
+					<div class="ui form">
+					<textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+			 $(function () {
+				$("input").keydown(function(){
+						$("input").css("background-color", "green");
+					});
+			 });
+		 &lt;/script&gt;</textarea>
+					</div>
+				</div>
+				<h1>jQuery keypress()</h1>
+				<p>The jQuery keypress () event is occurred when a keyboard button is pressed down. <b>This event is similar to
+					keydown() event.</b></p>
+				<div class="ui segment">
+					<h3> Code : </h3>
+					<div class="ui form">
+					<textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+			 var i = 0;
+			 $(function () {
+				$("input").keypress(function(){
+						$("span").text (i += 1);
+					});
+			 });
+		 &lt;/script&gt;</textarea>
+					</div>
+				</div>
+				<h1>jQuery keyup()</h1>
+				<p>The jQuery keyup() event occurs when a keyboard button is released after pressing.</p>
+				<div class="ui segment">
+					<h3> Code : </h3>
+					<div class="ui form">
+					<textarea rows="5" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+			 var i = 0;
+			 $(function () {
+				$("input").keyup(function(){
+						$("input").css("background-color", "yellow");
+					});
+			 });
+		 &lt;/script&gt;</textarea>
+					</div>
+				</div>
+				<div class="ui form">
+					<div class="field">
+						<label>First Name</label>
+						<input type="text" name="first-name" placeholder="First Name"><span></span>
+					</div>
+				</div>
+				<div class="ui right floated buttons">
+					<a href="mouseEnter-leave.html">
+						<button class="ui right floated animated green large button" tabindex="0">
+							<div class="visible content">Previous</div>
+							<div class="hidden content">
+								<i class="left arrow icon"></i>
+							</div>
+						</button>
+					</a>
+					<div class="or"></div>
+					<a href="jQblur.html">
+						<button class="ui right floated animated green large button" tabindex="0">
+							<div class="visible content">Next</div>
+							<div class="hidden content">
+								<i class="right arrow icon"></i>
+							</div>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function () {
+		$('input').keydown(function () {
+			$("input").css("background-color", "green");
+		});
+		$('input').keyup(function () {
+			$("input").css("background-color", "Khaki");
+		});
+	});
+</script>

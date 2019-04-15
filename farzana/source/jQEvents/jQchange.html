@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JQ change()</title>		
+		<link rel="stylesheet" href="../css/custom.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="ui container">
+			<div class="ui segment">
+				<h2 align="center">jQuery Events</h2>
+			</div>
+			<div class="ui segment">
+				<h2>jQuery change()</h2>
+				<p>jQuery change event occurs when the value of an element is changed. It works only on form fields. When the
+					change event occurs, the change () method attaches a function with it to run.</p>
+				<div class="ui icon message">
+					<i class="sticky note icon"></i>
+					<div class="content">
+						<p>This event is limited to "input" elements, "textarea" boxes and "select" elements.</p>
+					</div>
+				</div>
+				<h1>Example with Code : </h1>
+				<div class="ui form">
+					<textarea rows="6" disabled style="font-size: 25px">&lt;script type="text/javascript"&gt;
+			 $(function () {
+				$( "select" ) .change(function () {
+						//document.getElementById("loc").innerHTML="You selected: "+$("#se").val();
+						$("#loc").html("You have selected   " + $("#se").val());
+					});
+			 });
+		 &lt;/script&gt;</textarea>
+				</div>
+				<div class="ui clearing segment">
+					<div class="ui form">
+						<select class="ui dropdown" id="se">
+							<option>Gender</option>
+							<option>Male</option>
+							<option>Female</option>
+						</select>
+					</div>
+					<div id="loc"></div>
+					<div class="ui right floated buttons">
+						<a href="jQselect().html">
+							<button class="ui right floated animated green large button" tabindex="0">
+								<div class="visible content">Previous</div>
+								<div class="hidden content">
+									<i class="left arrow icon"></i>
+								</div>
+							</button>
+						</a>
+						<div class="or"></div>
+						<a href="jQsubmit.html">
+							<button class="ui right floated animated green large button" tabindex="0">
+								<div class="visible content">Next</div>
+								<div class="hidden content">
+									<i class="right arrow icon"></i>
+								</div>
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function () {
+		$("select").change(function () {
+			$("#loc").html("You have selected   " + $("#se").val());
+		});
+	});
+</script>
